@@ -1,0 +1,2419 @@
+Supported PMU models:
+	[7, netburst, "Pentium4"]
+	[8, netburst_p, "Pentium4 (Prescott)"]
+	[11, core, "Intel Core"]
+	[14, atom, "Intel Atom"]
+	[15, nhm, "Intel Nehalem"]
+	[16, nhm_ex, "Intel Nehalem EX"]
+	[17, nhm_unc, "Intel Nehalem uncore"]
+	[18, ix86arch, "Intel X86 architectural PMU"]
+	[51, perf, "perf_events generic PMU"]
+	[52, wsm, "Intel Westmere (single-socket)"]
+	[53, wsm_dp, "Intel Westmere DP"]
+	[54, wsm_unc, "Intel Westmere uncore"]
+	[55, amd64_k7, "AMD64 K7"]
+	[56, amd64_k8_revb, "AMD64 K8 RevB"]
+	[57, amd64_k8_revc, "AMD64 K8 RevC"]
+	[58, amd64_k8_revd, "AMD64 K8 RevD"]
+	[59, amd64_k8_reve, "AMD64 K8 RevE"]
+	[60, amd64_k8_revf, "AMD64 K8 RevF"]
+	[61, amd64_k8_revg, "AMD64 K8 RevG"]
+	[62, amd64_fam10h_barcelona, "AMD64 Fam10h Barcelona"]
+	[63, amd64_fam10h_shanghai, "AMD64 Fam10h Shanghai"]
+	[64, amd64_fam10h_istanbul, "AMD64 Fam10h Istanbul"]
+	[68, snb, "Intel Sandy Bridge"]
+	[69, amd64_fam14h_bobcat, "AMD64 Fam14h Bobcat"]
+	[70, amd64_fam15h_interlagos, "AMD64 Fam15h Interlagos"]
+	[71, snb_ep, "Intel Sandy Bridge EP"]
+Detected PMU models:
+	[51, perf, "perf_events generic PMU", 20 events, 1 max encoding, 0 counters, OS generic PMU]
+	[63, amd64_fam10h_shanghai, "AMD64 Fam10h Shanghai", 122 events, 1 max encoding, 4 counters, core PMU]
+Total events: 2019 available, 142 supported
+#-----------------------------
+IDX	 : 106954752
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CPU_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_CPU_CYCLES
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954753
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_INSTRUCTIONS
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954754
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_REFERENCES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_CACHE_REFERENCES
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954755
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_CACHE_MISSES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954756
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_INSTRUCTIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954757
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_BRANCH_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_BRANCH_MISSES
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954758
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_BUS_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_HW_BUS_CYCLES
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954759
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_CPU_CLOCK
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_CLOCK
+Code     : 0x0
+#-----------------------------
+IDX	 : 106954760
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_TASK_CLOCK
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_TASK_CLOCK
+Code     : 0x1
+#-----------------------------
+IDX	 : 106954761
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_PAGE_FAULTS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS
+Code     : 0x2
+#-----------------------------
+IDX	 : 106954762
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_CONTEXT_SWITCHES
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_CONTEXT_SWITCHES
+Code     : 0x3
+#-----------------------------
+IDX	 : 106954763
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_CPU_MIGRATIONS
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_CPU_MIGRATIONS
+Code     : 0x4
+#-----------------------------
+IDX	 : 106954764
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_PAGE_FAULTS_MIN
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS_MIN
+Code     : 0x5
+#-----------------------------
+IDX	 : 106954765
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_SW_PAGE_FAULTS_MAJ
+Equiv	 : None
+Flags    : None
+Desc     : PERF_COUNT_SW_PAGE_FAULTS_MAJ
+Code     : 0x6
+#-----------------------------
+IDX	 : 106954766
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_L1D
+Equiv	 : None
+Flags    : None
+Desc     : L1 data cache
+Code     : 0x0
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954767
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_L1I
+Equiv	 : None
+Flags    : None
+Desc     : L1 instruction cache
+Code     : 0x1
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-02 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-03 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954768
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_LL
+Equiv	 : None
+Flags    : None
+Desc     : Last level cache
+Code     : 0x2
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954769
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_DTLB
+Equiv	 : None
+Flags    : None
+Desc     : Data Translation Lookaside Buffer
+Code     : 0x3
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x100 : PMU : [WRITE] : None : write access
+Umask-02 : 0x200 : PMU : [PREFETCH] : None : prefetch access
+Umask-03 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-04 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954770
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_ITLB
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Translation Lookaside Buffer
+Code     : 0x4
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-02 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 106954771
+PMU name : perf (perf_events generic PMU)
+Name     : PERF_COUNT_HW_CACHE_BPU
+Equiv	 : None
+Flags    : None
+Desc     : Branch Prediction Unit
+Code     : 0x5
+Umask-00 : 0x00 : PMU : [READ] : None : read access
+Umask-01 : 0x00 : PMU : [ACCESS] : None : hit access
+Umask-02 : 0x10000 : PMU : [MISS] : None : miss access
+#-----------------------------
+IDX	 : 132120576
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCHED_FPU
+Equiv	 : None
+Flags    : None
+Desc     : Dispatched FPU Operations
+Code     : 0x0
+Umask-00 : 0x01 : PMU : [OPS_ADD] : None : Add pipe ops excluding load ops and SSE move ops
+Umask-01 : 0x02 : PMU : [OPS_MULTIPLY] : None : Multiply pipe ops excluding load ops and SSE move ops
+Umask-02 : 0x04 : PMU : [OPS_STORE] : None : Store pipe ops excluding load ops and SSE move ops
+Umask-03 : 0x08 : PMU : [OPS_ADD_PIPE_LOAD_OPS] : None : Add pipe load ops and SSE move ops
+Umask-04 : 0x10 : PMU : [OPS_MULTIPLY_PIPE_LOAD_OPS] : None : Multiply pipe load ops and SSE move ops
+Umask-05 : 0x20 : PMU : [OPS_STORE_PIPE_LOAD_OPS] : None : Store pipe load ops and SSE move ops
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120577
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CYCLES_NO_FPU_OPS_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : Cycles in which the FPU is Empty
+Code     : 0x1
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120578
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCHED_FPU_OPS_FAST_FLAG
+Equiv	 : None
+Flags    : None
+Desc     : Dispatched Fast Flag FPU Operations
+Code     : 0x2
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120579
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_SSE_OPERATIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired SSE Operations
+Code     : 0x3
+Umask-00 : 0x01 : PMU : [SINGLE_ADD_SUB_OPS] : None : Single precision add/subtract ops
+Umask-01 : 0x02 : PMU : [SINGLE_MUL_OPS] : None : Single precision multiply ops
+Umask-02 : 0x04 : PMU : [SINGLE_DIV_OPS] : None : Single precision divide/square root ops
+Umask-03 : 0x08 : PMU : [DOUBLE_ADD_SUB_OPS] : None : Double precision add/subtract ops
+Umask-04 : 0x10 : PMU : [DOUBLE_MUL_OPS] : None : Double precision multiply ops
+Umask-05 : 0x20 : PMU : [DOUBLE_DIV_OPS] : None : Double precision divide/square root ops
+Umask-06 : 0x40 : PMU : [OP_TYPE] : None : Op type: 0=uops. 1=FLOPS
+Umask-07 : 0x7f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120580
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_MOVE_OPS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Move Ops
+Code     : 0x4
+Umask-00 : 0x01 : PMU : [LOW_QW_MOVE_UOPS] : None : Merging low quadword move uops
+Umask-01 : 0x02 : PMU : [HIGH_QW_MOVE_UOPS] : None : Merging high quadword move uops
+Umask-02 : 0x04 : PMU : [ALL_OTHER_MERGING_MOVE_UOPS] : None : All other merging move uops
+Umask-03 : 0x08 : PMU : [ALL_OTHER_MOVE_UOPS] : None : All other move uops
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120581
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_SERIALIZING_OPS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Serializing Ops
+Code     : 0x5
+Umask-00 : 0x01 : PMU : [SSE_BOTTOM_EXECUTING_UOPS] : None : SSE bottom-executing uops retired
+Umask-01 : 0x02 : PMU : [SSE_BOTTOM_SERIALIZING_UOPS] : None : SSE bottom-serializing uops retired
+Umask-02 : 0x04 : PMU : [X87_BOTTOM_EXECUTING_UOPS] : None : X87 bottom-executing uops retired
+Umask-03 : 0x08 : PMU : [X87_BOTTOM_SERIALIZING_UOPS] : None : X87 bottom-serializing uops retired
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120582
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : FP_SCHEDULER_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Number of Cycles that a Serializing uop is in the FP Scheduler
+Code     : 0x6
+Umask-00 : 0x01 : PMU : [BOTTOM_EXECUTE_CYCLES] : None : Number of cycles a bottom-execute uop is in the FP scheduler
+Umask-01 : 0x02 : PMU : [BOTTOM_SERIALIZING_CYCLES] : None : Number of cycles a bottom-serializing uop is in the FP scheduler
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120583
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : SEGMENT_REGISTER_LOADS
+Equiv	 : None
+Flags    : None
+Desc     : Segment Register Loads
+Code     : 0x20
+Umask-00 : 0x01 : PMU : [ES] : None : ES
+Umask-01 : 0x02 : PMU : [CS] : None : CS
+Umask-02 : 0x04 : PMU : [SS] : None : SS
+Umask-03 : 0x08 : PMU : [DS] : None : DS
+Umask-04 : 0x10 : PMU : [FS] : None : FS
+Umask-05 : 0x20 : PMU : [GS] : None : GS
+Umask-06 : 0x40 : PMU : [HS] : None : HS
+Umask-07 : 0x7f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120584
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE
+Equiv	 : None
+Flags    : None
+Desc     : Pipeline Restart Due to Self-Modifying Code
+Code     : 0x21
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120585
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : PIPELINE_RESTART_DUE_TO_PROBE_HIT
+Equiv	 : None
+Flags    : None
+Desc     : Pipeline Restart Due to Probe Hit
+Code     : 0x22
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120586
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : LS_BUFFER_2_FULL_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : LS Buffer 2 Full
+Code     : 0x23
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120587
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : LOCKED_OPS
+Equiv	 : None
+Flags    : None
+Desc     : Locked Operations
+Code     : 0x24
+Umask-00 : 0x01 : PMU : [EXECUTED] : None : The number of locked instructions executed
+Umask-01 : 0x02 : PMU : [CYCLES_SPECULATIVE_PHASE] : None : The number of cycles spent in speculative phase
+Umask-02 : 0x04 : PMU : [CYCLES_NON_SPECULATIVE_PHASE] : None : The number of cycles spent in non-speculative phase (including cache miss penalty)
+Umask-03 : 0x08 : PMU : [CYCLES_WAITING] : None : The number of cycles waiting for a cache hit (cache miss penalty).
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120588
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_CLFLUSH_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired CLFLUSH Instructions
+Code     : 0x26
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120589
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_CPUID_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired CPUID Instructions
+Code     : 0x27
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120590
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS
+Equiv	 : None
+Flags    : None
+Desc     : Cancelled Store to Load Forward Operations
+Code     : 0x2a
+Umask-00 : 0x01 : PMU : [ADDRESS_MISMATCHES] : None : Address mismatches (starting byte not the same).
+Umask-01 : 0x02 : PMU : [STORE_IS_SMALLER_THAN_LOAD] : None : Store is smaller than load.
+Umask-02 : 0x04 : PMU : [MISALIGNED] : None : Misaligned.
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120591
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : SMIS_RECEIVED
+Equiv	 : None
+Flags    : None
+Desc     : SMIs Received
+Code     : 0x2b
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120592
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DATA_CACHE_ACCESSES
+Equiv	 : None
+Flags    : None
+Desc     : Data Cache Accesses
+Code     : 0x40
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120593
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DATA_CACHE_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : Data Cache Misses
+Code     : 0x41
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120594
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DATA_CACHE_REFILLS
+Equiv	 : None
+Flags    : None
+Desc     : Data Cache Refills from L2 or Northbridge
+Code     : 0x42
+Umask-00 : 0x01 : PMU : [SYSTEM] : None : Refill from the Northbridge
+Umask-01 : 0x02 : PMU : [L2_SHARED] : None : Shared-state line from L2
+Umask-02 : 0x04 : PMU : [L2_EXCLUSIVE] : None : Exclusive-state line from L2
+Umask-03 : 0x08 : PMU : [L2_OWNED] : None : Owned-state line from L2
+Umask-04 : 0x10 : PMU : [L2_MODIFIED] : None : Modified-state line from L2
+Umask-05 : 0x1f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120595
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DATA_CACHE_REFILLS_FROM_SYSTEM
+Equiv	 : None
+Flags    : None
+Desc     : Data Cache Refills from the Northbridge
+Code     : 0x43
+Umask-00 : 0x01 : PMU : [INVALID] : None : Invalid
+Umask-01 : 0x02 : PMU : [SHARED] : None : Shared
+Umask-02 : 0x04 : PMU : [EXCLUSIVE] : None : Exclusive
+Umask-03 : 0x08 : PMU : [OWNED] : None : Owned
+Umask-04 : 0x10 : PMU : [MODIFIED] : None : Modified
+Umask-05 : 0x1f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120596
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DATA_CACHE_LINES_EVICTED
+Equiv	 : None
+Flags    : None
+Desc     : Data Cache Lines Evicted
+Code     : 0x44
+Umask-00 : 0x01 : PMU : [INVALID] : None : Invalid
+Umask-01 : 0x02 : PMU : [SHARED] : None : Shared
+Umask-02 : 0x04 : PMU : [EXCLUSIVE] : None : Exclusive
+Umask-03 : 0x08 : PMU : [OWNED] : None : Owned
+Umask-04 : 0x10 : PMU : [MODIFIED] : None : Modified
+Umask-05 : 0x20 : PMU : [BY_PREFETCHNTA] : None : Cache line evicted was brought into the cache with by a PrefetchNTA instruction.
+Umask-06 : 0x40 : PMU : [NOT_BY_PREFETCHNTA] : None : Cache line evicted was not brought into the cache with by a PrefetchNTA instruction.
+Umask-07 : 0x7f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120597
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L1_DTLB_MISS_AND_L2_DTLB_HIT
+Equiv	 : None
+Flags    : None
+Desc     : L1 DTLB Miss and L2 DTLB Hit
+Code     : 0x45
+Umask-00 : 0x01 : PMU : [L2_4K_TLB_HIT] : None : L2 4K TLB hit
+Umask-01 : 0x02 : PMU : [L2_2M_TLB_HIT] : None : L2 2M TLB hit
+Umask-02 : 0x04 : PMU : [L2_1G_TLB_HIT] : None : L2 1G TLB hit
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120598
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L1_DTLB_AND_L2_DTLB_MISS
+Equiv	 : None
+Flags    : None
+Desc     : L1 DTLB and L2 DTLB Miss
+Code     : 0x46
+Umask-00 : 0x01 : PMU : [4K_TLB_RELOAD] : None : 4K TLB reload
+Umask-01 : 0x02 : PMU : [2M_TLB_RELOAD] : None : 2M TLB reload
+Umask-02 : 0x04 : PMU : [1G_TLB_RELOAD] : None : 1G TLB reload
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120599
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MISALIGNED_ACCESSES
+Equiv	 : None
+Flags    : None
+Desc     : Misaligned Accesses
+Code     : 0x47
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120600
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS
+Equiv	 : None
+Flags    : None
+Desc     : Microarchitectural Late Cancel of an Access
+Code     : 0x48
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120601
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS
+Equiv	 : None
+Flags    : None
+Desc     : Microarchitectural Early Cancel of an Access
+Code     : 0x49
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120602
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : SCRUBBER_SINGLE_BIT_ECC_ERRORS
+Equiv	 : None
+Flags    : None
+Desc     : Single-bit ECC Errors Recorded by Scrubber
+Code     : 0x4a
+Umask-00 : 0x01 : PMU : [SCRUBBER_ERROR] : None : Scrubber error
+Umask-01 : 0x02 : PMU : [PIGGYBACK_ERROR] : None : Piggyback scrubber errors
+Umask-02 : 0x04 : PMU : [LOAD_PIPE_ERROR] : None : Load pipe error
+Umask-03 : 0x08 : PMU : [STORE_WRITE_PIPE_ERROR] : None : Store write pipe error
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120603
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : PREFETCH_INSTRUCTIONS_DISPATCHED
+Equiv	 : None
+Flags    : None
+Desc     : Prefetch Instructions Dispatched
+Code     : 0x4b
+Umask-00 : 0x01 : PMU : [LOAD] : None : Load (Prefetch, PrefetchT0/T1/T2)
+Umask-01 : 0x02 : PMU : [STORE] : None : Store (PrefetchW)
+Umask-02 : 0x04 : PMU : [NTA] : None : NTA (PrefetchNTA)
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120604
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : DCACHE Misses by Locked Instructions
+Code     : 0x4c
+Umask-00 : 0x02 : PMU : [DATA_CACHE_MISSES_BY_LOCKED_INSTRUCTIONS] : None : Data cache misses by locked instructions
+Umask-01 : 0x02 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120605
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L1_DTLB_HIT
+Equiv	 : None
+Flags    : None
+Desc     : L1 DTLB Hit
+Code     : 0x4d
+Umask-00 : 0x01 : PMU : [L1_4K_TLB_HIT] : None : L1 4K TLB hit
+Umask-01 : 0x02 : PMU : [L1_2M_TLB_HIT] : None : L1 2M TLB hit
+Umask-02 : 0x04 : PMU : [L1_1G_TLB_HIT] : None : L1 1G TLB hit
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120606
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INEFFECTIVE_SW_PREFETCHES
+Equiv	 : None
+Flags    : None
+Desc     : Ineffective Software Prefetches
+Code     : 0x52
+Umask-00 : 0x01 : PMU : [SW_PREFETCH_HIT_IN_L1] : None : Software prefetch hit in the L1.
+Umask-01 : 0x08 : PMU : [SW_PREFETCH_HIT_IN_L2] : None : Software prefetch hit in L2.
+Umask-02 : 0x09 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120607
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : GLOBAL_TLB_FLUSHES
+Equiv	 : None
+Flags    : None
+Desc     : Global TLB Flushes
+Code     : 0x54
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120608
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MEMORY_REQUESTS
+Equiv	 : None
+Flags    : None
+Desc     : Memory Requests by Type
+Code     : 0x65
+Umask-00 : 0x01 : PMU : [NON_CACHEABLE] : None : Requests to non-cacheable (UC) memory
+Umask-01 : 0x02 : PMU : [WRITE_COMBINING] : None : Requests to write-combining (WC) memory or WC buffer flushes to WB memory
+Umask-02 : 0x80 : PMU : [STREAMING_STORE] : None : Streaming store (SS) requests
+Umask-03 : 0x83 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120609
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DATA_PREFETCHES
+Equiv	 : None
+Flags    : None
+Desc     : Data Prefetcher
+Code     : 0x67
+Umask-00 : 0x01 : PMU : [CANCELLED] : None : Cancelled prefetches
+Umask-01 : 0x02 : PMU : [ATTEMPTED] : None : Prefetch attempts
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120610
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MAB_REQUESTS
+Equiv	 : None
+Flags    : None
+Desc     : Average L1 refill latency for Icache and Dcache misses (request count for cache refills)
+Code     : 0x68
+Umask-00 : 0x00 : PMU : [BUFFER_0] : None : Buffer 0
+Umask-01 : 0x01 : PMU : [BUFFER_1] : None : Buffer 1
+Umask-02 : 0x02 : PMU : [BUFFER_2] : None : Buffer 2
+Umask-03 : 0x03 : PMU : [BUFFER_3] : None : Buffer 3
+Umask-04 : 0x04 : PMU : [BUFFER_4] : None : Buffer 4
+Umask-05 : 0x05 : PMU : [BUFFER_5] : None : Buffer 5
+Umask-06 : 0x06 : PMU : [BUFFER_6] : None : Buffer 6
+Umask-07 : 0x07 : PMU : [BUFFER_7] : None : Buffer 7
+Umask-08 : 0x08 : PMU : [BUFFER_8] : None : Buffer 8
+Umask-09 : 0x09 : PMU : [BUFFER_9] : None : Buffer 9
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120611
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MAB_WAIT_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Average L1 refill latency for Icache and Dcache misses (cycles that requests spent waiting for the refills)
+Code     : 0x69
+Umask-00 : 0x00 : PMU : [BUFFER_0] : None : Buffer 0
+Umask-01 : 0x01 : PMU : [BUFFER_1] : None : Buffer 1
+Umask-02 : 0x02 : PMU : [BUFFER_2] : None : Buffer 2
+Umask-03 : 0x03 : PMU : [BUFFER_3] : None : Buffer 3
+Umask-04 : 0x04 : PMU : [BUFFER_4] : None : Buffer 4
+Umask-05 : 0x05 : PMU : [BUFFER_5] : None : Buffer 5
+Umask-06 : 0x06 : PMU : [BUFFER_6] : None : Buffer 6
+Umask-07 : 0x07 : PMU : [BUFFER_7] : None : Buffer 7
+Umask-08 : 0x08 : PMU : [BUFFER_8] : None : Buffer 8
+Umask-09 : 0x09 : PMU : [BUFFER_9] : None : Buffer 9
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120612
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : SYSTEM_READ_RESPONSES
+Equiv	 : None
+Flags    : None
+Desc     : Northbridge Read Responses by Coherency State
+Code     : 0x6c
+Umask-00 : 0x01 : PMU : [EXCLUSIVE] : None : Exclusive
+Umask-01 : 0x02 : PMU : [MODIFIED] : None : Modified
+Umask-02 : 0x04 : PMU : [SHARED] : None : Shared
+Umask-03 : 0x08 : PMU : [OWNED] : None : Owned
+Umask-04 : 0x10 : PMU : [DATA_ERROR] : None : Data Error
+Umask-05 : 0x1f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120613
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : QUADWORDS_WRITTEN_TO_SYSTEM
+Equiv	 : None
+Flags    : None
+Desc     : Octwords Written to System
+Code     : 0x6d
+Umask-00 : 0x01 : PMU : [QUADWORD_WRITE_TRANSFER] : None : Octword write transfer
+Umask-01 : 0x01 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120614
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_CLK_UNHALTED
+Equiv	 : None
+Flags    : None
+Desc     : CPU Clocks not Halted
+Code     : 0x76
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120615
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : REQUESTS_TO_L2
+Equiv	 : None
+Flags    : None
+Desc     : Requests to L2 Cache
+Code     : 0x7d
+Umask-00 : 0x01 : PMU : [INSTRUCTIONS] : None : IC fill
+Umask-01 : 0x02 : PMU : [DATA] : None : DC fill
+Umask-02 : 0x04 : PMU : [TLB_WALK] : None : TLB fill (page table walks)
+Umask-03 : 0x08 : PMU : [SNOOP] : None : Tag snoop request
+Umask-04 : 0x10 : PMU : [CANCELLED] : None : Cancelled request
+Umask-05 : 0x20 : PMU : [HW_PREFETCH_FROM_DC] : None : Hardware prefetch from DC
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120616
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L2_CACHE_MISS
+Equiv	 : None
+Flags    : None
+Desc     : L2 Cache Misses
+Code     : 0x7e
+Umask-00 : 0x01 : PMU : [INSTRUCTIONS] : None : IC fill
+Umask-01 : 0x02 : PMU : [DATA] : None : DC fill (includes possible replays, whereas EventSelect 041h does not)
+Umask-02 : 0x04 : PMU : [TLB_WALK] : None : TLB page table walk
+Umask-03 : 0x08 : PMU : [HW_PREFETCH_FROM_DC] : None : Hardware prefetch from DC
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120617
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L2_FILL_WRITEBACK
+Equiv	 : None
+Flags    : None
+Desc     : L2 Fill/Writeback
+Code     : 0x7f
+Umask-00 : 0x01 : PMU : [L2_FILLS] : None : L2 fills (victims from L1 caches, TLB page table walks and data prefetches)
+Umask-01 : 0x02 : PMU : [L2_WRITEBACKS] : None : L2 Writebacks to system.
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120618
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_CACHE_FETCHES
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache Fetches
+Code     : 0x80
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120619
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_CACHE_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache Misses
+Code     : 0x81
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120620
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_CACHE_REFILLS_FROM_L2
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache Refills from L2
+Code     : 0x82
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120621
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache Refills from System
+Code     : 0x83
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120622
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L1_ITLB_MISS_AND_L2_ITLB_HIT
+Equiv	 : None
+Flags    : None
+Desc     : L1 ITLB Miss and L2 ITLB Hit
+Code     : 0x84
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120623
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L1_ITLB_MISS_AND_L2_ITLB_MISS
+Equiv	 : None
+Flags    : None
+Desc     : L1 ITLB Miss and L2 ITLB Miss
+Code     : 0x85
+Umask-00 : 0x01 : PMU : [4K_PAGE_FETCHES] : None : Instruction fetches to a 4K page.
+Umask-01 : 0x02 : PMU : [2M_PAGE_FETCHES] : None : Instruction fetches to a 2M page.
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120624
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE
+Equiv	 : None
+Flags    : None
+Desc     : Pipeline Restart Due to Instruction Stream Probe
+Code     : 0x86
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120625
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_FETCH_STALL
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Fetch Stall
+Code     : 0x87
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120626
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETURN_STACK_HITS
+Equiv	 : None
+Flags    : None
+Desc     : Return Stack Hits
+Code     : 0x88
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120627
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETURN_STACK_OVERFLOWS
+Equiv	 : None
+Flags    : None
+Desc     : Return Stack Overflows
+Code     : 0x89
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120628
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_CACHE_VICTIMS
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache Victims
+Code     : 0x8b
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120629
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INSTRUCTION_CACHE_LINES_INVALIDATED
+Equiv	 : None
+Flags    : None
+Desc     : Instruction Cache Lines Invalidated
+Code     : 0x8c
+Umask-00 : 0x01 : PMU : [INVALIDATING_PROBE_NO_IN_FLIGHT] : None : Invalidating probe that did not hit any in-flight instructions.
+Umask-01 : 0x02 : PMU : [INVALIDATING_PROBE_ONE_OR_MORE_IN_FLIGHT] : None : Invalidating probe that hit one or more in-flight instructions.
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120630
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : ITLB_RELOADS
+Equiv	 : None
+Flags    : None
+Desc     : ITLB Reloads
+Code     : 0x99
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120631
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : ITLB_RELOADS_ABORTED
+Equiv	 : None
+Flags    : None
+Desc     : ITLB Reloads Aborted
+Code     : 0x9a
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120632
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Instructions
+Code     : 0xc0
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120633
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_UOPS
+Equiv	 : None
+Flags    : None
+Desc     : Retired uops
+Code     : 0xc1
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120634
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_BRANCH_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Branch Instructions
+Code     : 0xc2
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120635
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Mispredicted Branch Instructions
+Code     : 0xc3
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120636
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_TAKEN_BRANCH_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Taken Branch Instructions
+Code     : 0xc4
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120637
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED
+Equiv	 : None
+Flags    : None
+Desc     : Retired Taken Branch Instructions Mispredicted
+Code     : 0xc5
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120638
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_FAR_CONTROL_TRANSFERS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Far Control Transfers
+Code     : 0xc6
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120639
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_BRANCH_RESYNCS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Branch Resyncs
+Code     : 0xc7
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120640
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_NEAR_RETURNS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Near Returns
+Code     : 0xc8
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120641
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_NEAR_RETURNS_MISPREDICTED
+Equiv	 : None
+Flags    : None
+Desc     : Retired Near Returns Mispredicted
+Code     : 0xc9
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120642
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_INDIRECT_BRANCHES_MISPREDICTED
+Equiv	 : None
+Flags    : None
+Desc     : Retired Indirect Branches Mispredicted
+Code     : 0xca
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120643
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_MMX_AND_FP_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired MMX/FP Instructions
+Code     : 0xcb
+Umask-00 : 0x01 : PMU : [X87] : None : X87 instructions
+Umask-01 : 0x02 : PMU : [MMX_AND_3DNOW] : None : MMX and 3DNow! instructions
+Umask-02 : 0x04 : PMU : [PACKED_SSE_AND_SSE2] : None : SSE instructions (SSE, SSE2, SSE3, and SSE4A)
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120644
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS
+Equiv	 : None
+Flags    : None
+Desc     : Retired Fastpath Double Op Instructions
+Code     : 0xcc
+Umask-00 : 0x01 : PMU : [POSITION_0] : None : With low op in position 0
+Umask-01 : 0x02 : PMU : [POSITION_1] : None : With low op in position 1
+Umask-02 : 0x04 : PMU : [POSITION_2] : None : With low op in position 2
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120645
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INTERRUPTS_MASKED_CYCLES
+Equiv	 : None
+Flags    : None
+Desc     : Interrupts-Masked Cycles
+Code     : 0xcd
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120646
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING
+Equiv	 : None
+Flags    : None
+Desc     : Interrupts-Masked Cycles with Interrupt Pending
+Code     : 0xce
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120647
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : INTERRUPTS_TAKEN
+Equiv	 : None
+Flags    : None
+Desc     : Interrupts Taken
+Code     : 0xcf
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120648
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DECODER_EMPTY
+Equiv	 : None
+Flags    : None
+Desc     : Decoder Empty
+Code     : 0xd0
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120649
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALLS
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stalls
+Code     : 0xd1
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120650
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_BRANCH_ABORT
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for Branch Abort to Retire
+Code     : 0xd2
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120651
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_SERIALIZATION
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for Serialization
+Code     : 0xd3
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120652
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_SEGMENT_LOAD
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for Segment Load
+Code     : 0xd4
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120653
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_REORDER_BUFFER_FULL
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for Reorder Buffer Full
+Code     : 0xd5
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120654
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_RESERVATION_STATION_FULL
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for Reservation Station Full
+Code     : 0xd6
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120655
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_FPU_FULL
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for FPU Full
+Code     : 0xd7
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120656
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_LS_FULL
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for LS Full
+Code     : 0xd8
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120657
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_WAITING_FOR_ALL_QUIET
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall Waiting for All Quiet
+Code     : 0xd9
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120658
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC
+Equiv	 : None
+Flags    : None
+Desc     : Dispatch Stall for Far Transfer or Resync to Retire
+Code     : 0xda
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120659
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : FPU_EXCEPTIONS
+Equiv	 : None
+Flags    : None
+Desc     : FPU Exceptions
+Code     : 0xdb
+Umask-00 : 0x01 : PMU : [X87_RECLASS_MICROFAULTS] : None : X87 reclass microfaults
+Umask-01 : 0x02 : PMU : [SSE_RETYPE_MICROFAULTS] : None : SSE retype microfaults
+Umask-02 : 0x04 : PMU : [SSE_RECLASS_MICROFAULTS] : None : SSE reclass microfaults
+Umask-03 : 0x08 : PMU : [SSE_AND_X87_MICROTRAPS] : None : SSE and x87 microtraps
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120660
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DR0_BREAKPOINT_MATCHES
+Equiv	 : None
+Flags    : None
+Desc     : DR0 Breakpoint Matches
+Code     : 0xdc
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120661
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DR1_BREAKPOINT_MATCHES
+Equiv	 : None
+Flags    : None
+Desc     : DR1 Breakpoint Matches
+Code     : 0xdd
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120662
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DR2_BREAKPOINT_MATCHES
+Equiv	 : None
+Flags    : None
+Desc     : DR2 Breakpoint Matches
+Code     : 0xde
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120663
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DR3_BREAKPOINT_MATCHES
+Equiv	 : None
+Flags    : None
+Desc     : DR3 Breakpoint Matches
+Code     : 0xdf
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120664
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : DRAM_ACCESSES_PAGE
+Equiv	 : None
+Flags    : None
+Desc     : DRAM Accesses
+Code     : 0xe0
+Umask-00 : 0x01 : PMU : [HIT] : None : DCT0 Page hit
+Umask-01 : 0x02 : PMU : [MISS] : None : DCT0 Page Miss
+Umask-02 : 0x04 : PMU : [CONFLICT] : None : DCT0 Page Conflict
+Umask-03 : 0x08 : PMU : [DCT1_PAGE_HIT] : None : DCT1 Page hit
+Umask-04 : 0x10 : PMU : [DCT1_PAGE_MISS] : None : DCT1 Page Miss
+Umask-05 : 0x20 : PMU : [DCT1_PAGE_CONFLICT] : None : DCT1 Page Conflict
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120665
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS
+Equiv	 : None
+Flags    : None
+Desc     : DRAM Controller Page Table Overflows
+Code     : 0xe1
+Umask-00 : 0x01 : PMU : [DCT0_PAGE_TABLE_OVERFLOW] : None : DCT0 Page Table Overflow
+Umask-01 : 0x02 : PMU : [DCT1_PAGE_TABLE_OVERFLOW] : None : DCT1 Page Table Overflow
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120666
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MEMORY_CONTROLLER_SLOT_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : Memory Controller DRAM Command Slots Missed
+Code     : 0xe2
+Umask-00 : 0x01 : PMU : [DCT0_COMMAND_SLOTS_MISSED] : None : DCT0 Command Slots Missed
+Umask-01 : 0x02 : PMU : [DCT1_COMMAND_SLOTS_MISSED] : None : DCT1 Command Slots Missed
+Umask-02 : 0x03 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120667
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MEMORY_CONTROLLER_TURNAROUNDS
+Equiv	 : None
+Flags    : None
+Desc     : Memory Controller Turnarounds
+Code     : 0xe3
+Umask-00 : 0x01 : PMU : [CHIP_SELECT] : None : DCT0 DIMM (chip select) turnaround
+Umask-01 : 0x02 : PMU : [READ_TO_WRITE] : None : DCT0 Read to write turnaround
+Umask-02 : 0x04 : PMU : [WRITE_TO_READ] : None : DCT0 Write to read turnaround
+Umask-03 : 0x08 : PMU : [DCT1_DIMM] : None : DCT1 DIMM (chip select) turnaround
+Umask-04 : 0x10 : PMU : [DCT1_READ_TO_WRITE_TURNAROUND] : None : DCT1 Read to write turnaround
+Umask-05 : 0x20 : PMU : [DCT1_WRITE_TO_READ_TURNAROUND] : None : DCT1 Write to read turnaround
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120668
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MEMORY_CONTROLLER_BYPASS
+Equiv	 : None
+Flags    : None
+Desc     : Memory Controller Bypass Counter Saturation
+Code     : 0xe4
+Umask-00 : 0x01 : PMU : [HIGH_PRIORITY] : None : Memory controller high priority bypass
+Umask-01 : 0x02 : PMU : [LOW_PRIORITY] : None : Memory controller medium priority bypass
+Umask-02 : 0x04 : PMU : [DRAM_INTERFACE] : None : DCT0 DCQ bypass
+Umask-03 : 0x08 : PMU : [DRAM_QUEUE] : None : DCT1 DCQ bypass
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120669
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : THERMAL_STATUS_AND_ECC_ERRORS
+Equiv	 : None
+Flags    : None
+Desc     : Thermal Status
+Code     : 0xe8
+Umask-00 : 0x04 : PMU : [CLKS_DIE_TEMP_TOO_HIGH] : None : Number of times the HTC trip point is crossed
+Umask-01 : 0x08 : PMU : [CLKS_TEMP_THRESHOLD_EXCEEDED] : None : Number of clocks when STC trip point active
+Umask-02 : 0x10 : PMU : [STC_TRIP_POINTS_CROSSED] : None : Number of times the STC trip point is crossed
+Umask-03 : 0x20 : PMU : [CLOCKS_HTC_P_STATE_INACTIVE] : None : Number of clocks HTC P-state is inactive.
+Umask-04 : 0x40 : PMU : [CLOCKS_HTC_P_STATE_ACTIVE] : None : Number of clocks HTC P-state is active
+Umask-05 : 0x7c : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120670
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_IO_REQUESTS_TO_MEMORY_IO
+Equiv	 : None
+Flags    : None
+Desc     : CPU/IO Requests to Memory/IO
+Code     : 0xe9
+Umask-00 : 0x01 : PMU : [I_O_TO_I_O] : None : IO to IO
+Umask-01 : 0x02 : PMU : [I_O_TO_MEM] : None : IO to Mem
+Umask-02 : 0x04 : PMU : [CPU_TO_I_O] : None : CPU to IO
+Umask-03 : 0x08 : PMU : [CPU_TO_MEM] : None : CPU to Mem
+Umask-04 : 0x10 : PMU : [TO_REMOTE_NODE] : None : To remote node
+Umask-05 : 0x20 : PMU : [TO_LOCAL_NODE] : None : To local node
+Umask-06 : 0x40 : PMU : [FROM_REMOTE_NODE] : None : From remote node
+Umask-07 : 0x80 : PMU : [FROM_LOCAL_NODE] : None : From local node
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120671
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CACHE_BLOCK
+Equiv	 : None
+Flags    : None
+Desc     : Cache Block Commands
+Code     : 0xea
+Umask-00 : 0x01 : PMU : [VICTIM_WRITEBACK] : None : Victim Block (Writeback)
+Umask-01 : 0x04 : PMU : [DCACHE_LOAD_MISS] : None : Read Block (Dcache load miss refill)
+Umask-02 : 0x08 : PMU : [SHARED_ICACHE_REFILL] : None : Read Block Shared (Icache refill)
+Umask-03 : 0x10 : PMU : [READ_BLOCK_MODIFIED] : None : Read Block Modified (Dcache store miss refill)
+Umask-04 : 0x20 : PMU : [READ_TO_DIRTY] : None : Change-to-Dirty (first store to clean block already in cache)
+Umask-05 : 0x3d : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120672
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : SIZED_COMMANDS
+Equiv	 : None
+Flags    : None
+Desc     : Sized Commands
+Code     : 0xeb
+Umask-00 : 0x01 : PMU : [NON_POSTED_WRITE_BYTE] : None : Non-Posted SzWr Byte (1-32 bytes) Legacy or mapped IO, typically 1-4 bytes
+Umask-01 : 0x02 : PMU : [NON_POSTED_WRITE_DWORD] : None : Non-Posted SzWr DW (1-16 dwords) Legacy or mapped IO, typically 1 DWORD
+Umask-02 : 0x04 : PMU : [POSTED_WRITE_BYTE] : None : Posted SzWr Byte (1-32 bytes) Subcache-line DMA writes, size varies; also flushes of partially-filled Write Combining buffer
+Umask-03 : 0x08 : PMU : [POSTED_WRITE_DWORD] : None : Posted SzWr DW (1-16 dwords) Block-oriented DMA writes, often cache-line sized; also processor Write Combining buffer flushes
+Umask-04 : 0x10 : PMU : [READ_BYTE_4_BYTES] : None : SzRd Byte (4 bytes) Legacy or mapped IO
+Umask-05 : 0x20 : PMU : [READ_DWORD_1_16_DWORDS] : None : SzRd DW (1-16 dwords) Block-oriented DMA reads, typically cache-line size
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120673
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : PROBE
+Equiv	 : None
+Flags    : None
+Desc     : Probe Responses and Upstream Requests
+Code     : 0xec
+Umask-00 : 0x01 : PMU : [MISS] : None : Probe miss
+Umask-01 : 0x02 : PMU : [HIT_CLEAN] : None : Probe hit clean
+Umask-02 : 0x04 : PMU : [HIT_DIRTY_NO_MEMORY_CANCEL] : None : Probe hit dirty without memory cancel (probed by Sized Write or Change2Dirty)
+Umask-03 : 0x08 : PMU : [HIT_DIRTY_WITH_MEMORY_CANCEL] : None : Probe hit dirty with memory cancel (probed by DMA read or cache refill request)
+Umask-04 : 0x10 : PMU : [UPSTREAM_DISPLAY_REFRESH_READS] : None : Upstream display refresh/ISOC reads
+Umask-05 : 0x20 : PMU : [UPSTREAM_NON_DISPLAY_REFRESH_READS] : None : Upstream non-display refresh reads
+Umask-06 : 0x40 : PMU : [UPSTREAM_WRITES] : None : Upstream ISOC writes
+Umask-07 : 0x80 : PMU : [UPSTREAM_NON_ISOC_WRITES] : None : Upstream non-ISOC writes
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120674
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : GART
+Equiv	 : None
+Flags    : None
+Desc     : GART Events
+Code     : 0xee
+Umask-00 : 0x01 : PMU : [APERTURE_HIT_FROM_CPU] : None : GART aperture hit on access from CPU
+Umask-01 : 0x02 : PMU : [APERTURE_HIT_FROM_IO] : None : GART aperture hit on access from IO
+Umask-02 : 0x04 : PMU : [MISS] : None : GART miss
+Umask-03 : 0x08 : PMU : [REQUEST_HIT_TABLE_WALK] : None : GART/DEV Request hit table walk in progress
+Umask-04 : 0x10 : PMU : [DEV_HIT] : None : DEV hit
+Umask-05 : 0x20 : PMU : [DEV_MISS] : None : DEV miss
+Umask-06 : 0x40 : PMU : [DEV_ERROR] : None : DEV error
+Umask-07 : 0x80 : PMU : [MULTIPLE_TABLE_WALK] : None : GART/DEV multiple table walk in progress
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120675
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MEMORY_CONTROLLER_REQUESTS
+Equiv	 : None
+Flags    : None
+Desc     : Memory Controller Requests
+Code     : 0x1f0
+Umask-00 : 0x01 : PMU : [WRITE_REQUESTS] : None : Write requests sent to the DCT
+Umask-01 : 0x02 : PMU : [READ_REQUESTS] : None : Read requests (including prefetch requests) sent to the DCT
+Umask-02 : 0x04 : PMU : [PREFETCH_REQUESTS] : None : Prefetch requests sent to the DCT
+Umask-03 : 0x08 : PMU : [32_BYTES_WRITES] : None : 32 Bytes Sized Writes
+Umask-04 : 0x10 : PMU : [64_BYTES_WRITES] : None : 64 Bytes Sized Writes
+Umask-05 : 0x20 : PMU : [32_BYTES_READS] : None : 32 Bytes Sized Reads
+Umask-06 : 0x40 : PMU : [64_BYTES_READS] : None : 64 Byte Sized Reads
+Umask-07 : 0x80 : PMU : [READ_REQUESTS_WHILE_WRITES_REQUESTS] : None : Read requests sent to the DCT while writes requests are pending in the DCT
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120676
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE
+Equiv	 : None
+Flags    : None
+Desc     : CPU to DRAM Requests to Target Node
+Code     : 0x1e0
+Umask-00 : 0x01 : PMU : [LOCAL_TO_0] : None : From Local node to Node 0
+Umask-01 : 0x02 : PMU : [LOCAL_TO_1] : None : From Local node to Node 1
+Umask-02 : 0x04 : PMU : [LOCAL_TO_2] : None : From Local node to Node 2
+Umask-03 : 0x08 : PMU : [LOCAL_TO_3] : None : From Local node to Node 3
+Umask-04 : 0x10 : PMU : [LOCAL_TO_4] : None : From Local node to Node 4
+Umask-05 : 0x20 : PMU : [LOCAL_TO_5] : None : From Local node to Node 5
+Umask-06 : 0x40 : PMU : [LOCAL_TO_6] : None : From Local node to Node 6
+Umask-07 : 0x80 : PMU : [LOCAL_TO_7] : None : From Local node to Node 7
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120677
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : IO_TO_DRAM_REQUESTS_TO_TARGET_NODE
+Equiv	 : None
+Flags    : None
+Desc     : IO to DRAM Requests to Target Node
+Code     : 0x1e1
+Umask-00 : 0x01 : PMU : [LOCAL_TO_0] : None : From Local node to Node 0
+Umask-01 : 0x02 : PMU : [LOCAL_TO_1] : None : From Local node to Node 1
+Umask-02 : 0x04 : PMU : [LOCAL_TO_2] : None : From Local node to Node 2
+Umask-03 : 0x08 : PMU : [LOCAL_TO_3] : None : From Local node to Node 3
+Umask-04 : 0x10 : PMU : [LOCAL_TO_4] : None : From Local node to Node 4
+Umask-05 : 0x20 : PMU : [LOCAL_TO_5] : None : From Local node to Node 5
+Umask-06 : 0x40 : PMU : [LOCAL_TO_6] : None : From Local node to Node 6
+Umask-07 : 0x80 : PMU : [LOCAL_TO_7] : None : From Local node to Node 7
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120678
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3
+Equiv	 : None
+Flags    : None
+Desc     : CPU Read Command Latency to Target Node 0-3
+Code     : 0x1e2
+Umask-00 : 0x01 : PMU : [READ_BLOCK] : None : Read block
+Umask-01 : 0x02 : PMU : [READ_BLOCK_SHARED] : None : Read block shared
+Umask-02 : 0x04 : PMU : [READ_BLOCK_MODIFIED] : None : Read block modified
+Umask-03 : 0x08 : PMU : [CHANGE_TO_DIRTY] : None : Change-to-Dirty
+Umask-04 : 0x10 : PMU : [LOCAL_TO_0] : None : From Local node to Node 0
+Umask-05 : 0x20 : PMU : [LOCAL_TO_1] : None : From Local node to Node 1
+Umask-06 : 0x40 : PMU : [LOCAL_TO_2] : None : From Local node to Node 2
+Umask-07 : 0x80 : PMU : [LOCAL_TO_3] : None : From Local node to Node 3
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120679
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3
+Equiv	 : None
+Flags    : None
+Desc     : CPU Read Command Requests to Target Node 0-3
+Code     : 0x1e3
+Umask-00 : 0x01 : PMU : [READ_BLOCK] : None : Read block
+Umask-01 : 0x02 : PMU : [READ_BLOCK_SHARED] : None : Read block shared
+Umask-02 : 0x04 : PMU : [READ_BLOCK_MODIFIED] : None : Read block modified
+Umask-03 : 0x08 : PMU : [CHANGE_TO_DIRTY] : None : Change-to-Dirty
+Umask-04 : 0x10 : PMU : [LOCAL_TO_0] : None : From Local node to Node 0
+Umask-05 : 0x20 : PMU : [LOCAL_TO_1] : None : From Local node to Node 1
+Umask-06 : 0x40 : PMU : [LOCAL_TO_2] : None : From Local node to Node 2
+Umask-07 : 0x80 : PMU : [LOCAL_TO_3] : None : From Local node to Node 3
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120680
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7
+Equiv	 : None
+Flags    : None
+Desc     : CPU Read Command Latency to Target Node 4-7
+Code     : 0x1e4
+Umask-00 : 0x01 : PMU : [READ_BLOCK] : None : Read block
+Umask-01 : 0x02 : PMU : [READ_BLOCK_SHARED] : None : Read block shared
+Umask-02 : 0x04 : PMU : [READ_BLOCK_MODIFIED] : None : Read block modified
+Umask-03 : 0x08 : PMU : [CHANGE_TO_DIRTY] : None : Change-to-Dirty
+Umask-04 : 0x10 : PMU : [LOCAL_TO_4] : None : From Local node to Node 4
+Umask-05 : 0x20 : PMU : [LOCAL_TO_5] : None : From Local node to Node 5
+Umask-06 : 0x40 : PMU : [LOCAL_TO_6] : None : From Local node to Node 6
+Umask-07 : 0x80 : PMU : [LOCAL_TO_7] : None : From Local node to Node 7
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120681
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7
+Equiv	 : None
+Flags    : None
+Desc     : CPU Read Command Requests to Target Node 4-7
+Code     : 0x1e5
+Umask-00 : 0x01 : PMU : [READ_BLOCK] : None : Read block
+Umask-01 : 0x02 : PMU : [READ_BLOCK_SHARED] : None : Read block shared
+Umask-02 : 0x04 : PMU : [READ_BLOCK_MODIFIED] : None : Read block modified
+Umask-03 : 0x08 : PMU : [CHANGE_TO_DIRTY] : None : Change-to-Dirty
+Umask-04 : 0x10 : PMU : [LOCAL_TO_4] : None : From Local node to Node 4
+Umask-05 : 0x20 : PMU : [LOCAL_TO_5] : None : From Local node to Node 5
+Umask-06 : 0x40 : PMU : [LOCAL_TO_6] : None : From Local node to Node 6
+Umask-07 : 0x80 : PMU : [LOCAL_TO_7] : None : From Local node to Node 7
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120682
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7
+Equiv	 : None
+Flags    : None
+Desc     : CPU Command Latency to Target Node 0-3/4-7
+Code     : 0x1e6
+Umask-00 : 0x01 : PMU : [READ_SIZED] : None : Read Sized
+Umask-01 : 0x02 : PMU : [WRITE_SIZED] : None : Write Sized
+Umask-02 : 0x04 : PMU : [VICTIM_BLOCK] : None : Victim Block
+Umask-03 : 0x08 : PMU : [NODE_GROUP_SELECT] : None : Node Group Select. 0=Nodes 0-3. 1= Nodes 4-7.
+Umask-04 : 0x10 : PMU : [LOCAL_TO_0_4] : None : From Local node to Node 0/4
+Umask-05 : 0x20 : PMU : [LOCAL_TO_1_5] : None : From Local node to Node 1/5
+Umask-06 : 0x40 : PMU : [LOCAL_TO_2_6] : None : From Local node to Node 2/6
+Umask-07 : 0x80 : PMU : [LOCAL_TO_3_7] : None : From Local node to Node 3/7
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120683
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7
+Equiv	 : None
+Flags    : None
+Desc     : CPU Requests to Target Node 0-3/4-7
+Code     : 0x1e7
+Umask-00 : 0x01 : PMU : [READ_SIZED] : None : Read Sized
+Umask-01 : 0x02 : PMU : [WRITE_SIZED] : None : Write Sized
+Umask-02 : 0x04 : PMU : [VICTIM_BLOCK] : None : Victim Block
+Umask-03 : 0x08 : PMU : [NODE_GROUP_SELECT] : None : Node Group Select. 0=Nodes 0-3. 1= Nodes 4-7.
+Umask-04 : 0x10 : PMU : [LOCAL_TO_0_4] : None : From Local node to Node 0/4
+Umask-05 : 0x20 : PMU : [LOCAL_TO_1_5] : None : From Local node to Node 1/5
+Umask-06 : 0x40 : PMU : [LOCAL_TO_2_6] : None : From Local node to Node 2/6
+Umask-07 : 0x80 : PMU : [LOCAL_TO_3_7] : None : From Local node to Node 3/7
+Umask-08 : 0xff : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120684
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : HYPERTRANSPORT_LINK0
+Equiv	 : None
+Flags    : None
+Desc     : HyperTransport Link 0 Transmit Bandwidth
+Code     : 0xf6
+Umask-00 : 0x01 : PMU : [COMMAND_DWORD_SENT] : None : Command DWORD sent
+Umask-01 : 0x02 : PMU : [DATA_DWORD_SENT] : None : Data DWORD sent
+Umask-02 : 0x04 : PMU : [BUFFER_RELEASE_DWORD_SENT] : None : Buffer release DWORD sent
+Umask-03 : 0x08 : PMU : [NOP_DWORD_SENT] : None : Nop DW sent (idle)
+Umask-04 : 0x10 : PMU : [ADDRESS_EXT_DWORD_SENT] : None : Address extension DWORD sent
+Umask-05 : 0x20 : PMU : [PER_PACKET_CRC_SENT] : None : Per packet CRC sent
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Umask-07 : 0x80 : PMU : [SUBLINK_MASK] : None : SubLink Mask
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120685
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : HYPERTRANSPORT_LINK1
+Equiv	 : None
+Flags    : None
+Desc     : HyperTransport Link 1 Transmit Bandwidth
+Code     : 0xf7
+Umask-00 : 0x01 : PMU : [COMMAND_DWORD_SENT] : None : Command DWORD sent
+Umask-01 : 0x02 : PMU : [DATA_DWORD_SENT] : None : Data DWORD sent
+Umask-02 : 0x04 : PMU : [BUFFER_RELEASE_DWORD_SENT] : None : Buffer release DWORD sent
+Umask-03 : 0x08 : PMU : [NOP_DWORD_SENT] : None : Nop DW sent (idle)
+Umask-04 : 0x10 : PMU : [ADDRESS_EXT_DWORD_SENT] : None : Address extension DWORD sent
+Umask-05 : 0x20 : PMU : [PER_PACKET_CRC_SENT] : None : Per packet CRC sent
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Umask-07 : 0x80 : PMU : [SUBLINK_MASK] : None : SubLink Mask
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120686
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : HYPERTRANSPORT_LINK2
+Equiv	 : None
+Flags    : None
+Desc     : HyperTransport Link 2 Transmit Bandwidth
+Code     : 0xf8
+Umask-00 : 0x01 : PMU : [COMMAND_DWORD_SENT] : None : Command DWORD sent
+Umask-01 : 0x02 : PMU : [DATA_DWORD_SENT] : None : Data DWORD sent
+Umask-02 : 0x04 : PMU : [BUFFER_RELEASE_DWORD_SENT] : None : Buffer release DWORD sent
+Umask-03 : 0x08 : PMU : [NOP_DWORD_SENT] : None : Nop DW sent (idle)
+Umask-04 : 0x10 : PMU : [ADDRESS_EXT_DWORD_SENT] : None : Address extension DWORD sent
+Umask-05 : 0x20 : PMU : [PER_PACKET_CRC_SENT] : None : Per packet CRC sent
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Umask-07 : 0x80 : PMU : [SUBLINK_MASK] : None : SubLink Mask
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120687
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : HYPERTRANSPORT_LINK3
+Equiv	 : None
+Flags    : None
+Desc     : HyperTransport Link 3 Transmit Bandwidth
+Code     : 0x1f9
+Umask-00 : 0x01 : PMU : [COMMAND_DWORD_SENT] : None : Command DWORD sent
+Umask-01 : 0x02 : PMU : [DATA_DWORD_SENT] : None : Data DWORD sent
+Umask-02 : 0x04 : PMU : [BUFFER_RELEASE_DWORD_SENT] : None : Buffer release DWORD sent
+Umask-03 : 0x08 : PMU : [NOP_DWORD_SENT] : None : Nop DW sent (idle)
+Umask-04 : 0x10 : PMU : [ADDRESS_EXT_DWORD_SENT] : None : Address DWORD sent
+Umask-05 : 0x20 : PMU : [PER_PACKET_CRC_SENT] : None : Per packet CRC sent
+Umask-06 : 0x3f : PMU : [ALL] : [default] : All sub-events selected
+Umask-07 : 0x80 : PMU : [SUBLINK_MASK] : None : SubLink Mask
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120688
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : READ_REQUEST_TO_L3_CACHE
+Equiv	 : None
+Flags    : None
+Desc     : Read Request to L3 Cache
+Code     : 0x4e0
+Umask-00 : 0x01 : PMU : [READ_BLOCK_EXCLUSIVE] : None : Read Block Exclusive (Data cache read)
+Umask-01 : 0x02 : PMU : [READ_BLOCK_SHARED] : None : Read Block Shared (Instruction cache read)
+Umask-02 : 0x04 : PMU : [READ_BLOCK_MODIFY] : None : Read Block Modify
+Umask-03 : 0x07 : PMU : [ANY_READ] : [default] : Any read modes (exclusive, shared, modify)
+Umask-04 : 0xf0 : PMU : [ALL_CORES] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120689
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L3_CACHE_MISSES
+Equiv	 : None
+Flags    : None
+Desc     : L3 Cache Misses
+Code     : 0x4e1
+Umask-00 : 0x01 : PMU : [READ_BLOCK_EXCLUSIVE] : None : Read Block Exclusive (Data cache read)
+Umask-01 : 0x02 : PMU : [READ_BLOCK_SHARED] : None : Read Block Shared (Instruction cache read)
+Umask-02 : 0x04 : PMU : [READ_BLOCK_MODIFY] : None : Read Block Modify
+Umask-03 : 0x07 : PMU : [ANY_READ] : [default] : Any read modes (exclusive, shared, modify)
+Umask-04 : 0xf0 : PMU : [ALL_CORES] : [default] : All cores
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120690
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L3_FILLS_CAUSED_BY_L2_EVICTIONS
+Equiv	 : None
+Flags    : None
+Desc     : L3 Fills caused by L2 Evictions
+Code     : 0x4e2
+Umask-00 : 0x01 : PMU : [SHARED] : None : Shared
+Umask-01 : 0x02 : PMU : [EXCLUSIVE] : None : Exclusive
+Umask-02 : 0x04 : PMU : [OWNED] : None : Owned
+Umask-03 : 0x08 : PMU : [MODIFIED] : None : Modified
+Umask-04 : 0x0f : PMU : [ANY_STATE] : [default] : Any line state (shared, owned, exclusive, modified)
+Umask-05 : 0xf0 : PMU : [ALL_CORES] : [default] : All cores
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120691
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : L3_EVICTIONS
+Equiv	 : None
+Flags    : None
+Desc     : L3 Evictions
+Code     : 0x4e3
+Umask-00 : 0x01 : PMU : [SHARED] : None : Shared
+Umask-01 : 0x02 : PMU : [EXCLUSIVE] : None : Exclusive
+Umask-02 : 0x04 : PMU : [OWNED] : None : Owned
+Umask-03 : 0x08 : PMU : [MODIFIED] : None : Modified
+Umask-04 : 0x0f : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120692
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : PAGE_SIZE_MISMATCHES
+Equiv	 : None
+Flags    : None
+Desc     : Page Size Mismatches
+Code     : 0x165
+Umask-00 : 0x01 : PMU : [GUEST_LARGER] : None : Guest page size is larger than the host page size.
+Umask-01 : 0x02 : PMU : [MTRR_MISMATCH] : None : MTRR mismatch.
+Umask-02 : 0x04 : PMU : [HOST_LARGER] : None : Host page size is larger than the guest page size.
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120693
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : RETIRED_X87_OPS
+Equiv	 : None
+Flags    : None
+Desc     : Retired x87 Floating Point Operations
+Code     : 0x1c0
+Umask-00 : 0x01 : PMU : [ADD_SUB_OPS] : None : Add/subtract ops
+Umask-01 : 0x02 : PMU : [MUL_OPS] : None : Multiply ops
+Umask-02 : 0x04 : PMU : [DIV_OPS] : None : Divide ops
+Umask-03 : 0x07 : PMU : [ALL] : [default] : All sub-events selected
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120694
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : IBS_OPS_TAGGED
+Equiv	 : None
+Flags    : None
+Desc     : IBS Ops Tagged
+Code     : 0x1cf
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120695
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : LFENCE_INST_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : LFENCE Instructions Retired
+Code     : 0x1d3
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120696
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : SFENCE_INST_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : SFENCE Instructions Retired
+Code     : 0x1d4
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)
+#-----------------------------
+IDX	 : 132120697
+PMU name : amd64_fam10h_shanghai (AMD64 Fam10h Shanghai)
+Name     : MFENCE_INST_RETIRED
+Equiv	 : None
+Flags    : None
+Desc     : MFENCE Instructions Retired
+Code     : 0x1d5
+Modif-00 : 0x00 : PMU : [k] : monitor at priv level 0 (boolean)
+Modif-01 : 0x01 : PMU : [u] : monitor at priv level 1, 2, 3 (boolean)
+Modif-02 : 0x02 : PMU : [e] : edge level (boolean)
+Modif-03 : 0x03 : PMU : [i] : invert (boolean)
+Modif-04 : 0x04 : PMU : [c] : counter-mask in range [0-255] (integer)
+Modif-05 : 0x05 : PMU : [h] : monitor in hypervisor (boolean)
+Modif-06 : 0x06 : PMU : [g] : measure in guest (boolean)

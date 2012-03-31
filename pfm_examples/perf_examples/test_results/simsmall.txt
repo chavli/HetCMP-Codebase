@@ -1,0 +1,1594 @@
+[PARSEC] Benchmarks to run:  blackscholes bodytrack facesim ferret freqmine raytrace swaptions fluidanimate vips x264 canneal streamcluster
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+in_4K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_4K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 4096
+Num of Runs: 100
+Size of data: 163840
+
+real	0m0.223s
+user	0m0.217s
+sys	0m0.003s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark bodytrack ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+sequenceB_1/
+sequenceB_1/BodyShapeParameters.txt
+sequenceB_1/CALIB/
+sequenceB_1/CALIB/Camera1.cal
+sequenceB_1/CALIB/Camera2.cal
+sequenceB_1/CALIB/Camera3.cal
+sequenceB_1/CALIB/Camera4.cal
+sequenceB_1/CAM1/
+sequenceB_1/CAM1/image0000.bmp
+sequenceB_1/CAM2/
+sequenceB_1/CAM2/image0000.bmp
+sequenceB_1/CAM3/
+sequenceB_1/CAM3/image0000.bmp
+sequenceB_1/CAM4/
+sequenceB_1/CAM4/image0000.bmp
+sequenceB_1/FG1/
+sequenceB_1/FG1/image0000.bmp
+sequenceB_1/FG2/
+sequenceB_1/FG2/image0000.bmp
+sequenceB_1/FG3/
+sequenceB_1/FG3/image0000.bmp
+sequenceB_1/FG4/
+sequenceB_1/FG4/image0000.bmp
+sequenceB_1/InitialPose.txt
+sequenceB_1/PoseParameters.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/bodytrack/inst/amd64-linux.gcc-serial/bin/bodytrack sequenceB_1 4 1 1000 5 0 1':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+
+Running Single Threaded
+
+Using dataset : sequenceB_1/
+1000 particles with 5 annealing layers
+
+Processing frame 0
+
+real	0m2.431s
+user	0m2.394s
+sys	0m0.029s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark facesim ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+Face_Data/
+Face_Data/Eftychis_840k/
+Face_Data/Eftychis_840k/Front_370k/
+Face_Data/Eftychis_840k/Front_370k/attachment_list.txt
+Face_Data/Eftychis_840k/Front_370k/buccinator_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/buccinator_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/corrugator_supercilii_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/corrugator_supercilii_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/cranium.attached_nodes
+Face_Data/Eftychis_840k/Front_370k/cranium_extended.attached_nodes
+Face_Data/Eftychis_840k/Front_370k/depressor_anguli_oris_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/depressor_anguli_oris_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/depressor_labii_inferioris_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/depressor_labii_inferioris_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/face_simulation.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_1.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_128.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_16.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_2.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_3.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_32.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_4.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_6.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_64.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_8.tet
+Face_Data/Eftychis_840k/Front_370k/face_simulation_original.log
+Face_Data/Eftychis_840k/Front_370k/flesh.attached_nodes
+Face_Data/Eftychis_840k/Front_370k/flesh_extended.attached_nodes
+Face_Data/Eftychis_840k/Front_370k/jaw.attached_nodes
+Face_Data/Eftychis_840k/Front_370k/jaw_joint_parameters
+Face_Data/Eftychis_840k/Front_370k/levator_anguli_oris_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/levator_anguli_oris_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/levator_labii_superioris_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/levator_labii_superioris_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/llsan_lateral_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/llsan_lateral_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/llsan_medial_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/llsan_medial_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/mentalis_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/mentalis_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/muscle_list.txt
+Face_Data/Eftychis_840k/Front_370k/nasalis_alar_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/nasalis_alar_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/nasalis_transverse.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/node_divisions_1.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_128.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_16.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_2.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_3.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_32.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_4.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_6.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_64.dat
+Face_Data/Eftychis_840k/Front_370k/node_divisions_8.dat
+Face_Data/Eftychis_840k/Front_370k/orbicularis_oculi_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/orbicularis_oculi_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/orbicularis_oris.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/particle_positions_1.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_128.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_16.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_2.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_3.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_32.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_4.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_6.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_64.dat
+Face_Data/Eftychis_840k/Front_370k/particle_positions_8.dat
+Face_Data/Eftychis_840k/Front_370k/peak_isometric_stress_list.txt
+Face_Data/Eftychis_840k/Front_370k/procerus_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/procerus_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/risorius_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/risorius_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/zygomatic_major_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/zygomatic_major_right.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/zygomatic_minor_left.constitutive_data
+Face_Data/Eftychis_840k/Front_370k/zygomatic_minor_right.constitutive_data
+Face_Data/Eftychis_840k/eftychis_cranium_collision_surface.phi
+Face_Data/Eftychis_840k/eftychis_cranium_collision_surface.rgd
+Face_Data/Eftychis_840k/eftychis_cranium_collision_surface.tri
+Face_Data/Eftychis_840k/eftychis_cranium_collision_surface_smoothed.phi
+Face_Data/Eftychis_840k/eftychis_cranium_collision_surface_smoothed.rgd
+Face_Data/Eftychis_840k/eftychis_cranium_collision_surface_smoothed.tri
+Face_Data/Eftychis_840k/eftychis_jaw_collision_surface.phi
+Face_Data/Eftychis_840k/eftychis_jaw_collision_surface.rgd
+Face_Data/Eftychis_840k/eftychis_jaw_collision_surface.tri
+Face_Data/Eftychis_840k/eftychis_jaw_collision_surface_smoothed.phi
+Face_Data/Eftychis_840k/eftychis_jaw_collision_surface_smoothed.rgd
+Face_Data/Eftychis_840k/eftychis_jaw_collision_surface_smoothed.tri
+Face_Data/Motion_Data/
+Face_Data/Motion_Data/Storytelling_Controls/
+Face_Data/Motion_Data/Storytelling_Controls/storytelling_controls.1
+Face_Data/Motion_Data/Storytelling_Controls/storytelling_controls.2
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/facesim/inst/amd64-linux.gcc-serial/bin/facesim -timing -threads 1':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Creating directory using system("mkdir -p Storytelling/output")...Successful!
+Simulation                                        Reading simulation model : ./Face_Data/Eftychis_840k/Front_370k/face_simulation.tet
+Total particles = 80598
+Total tetrahedra = 372126
+muscles = 32
+attachments = 3
+
+           455600309 PERF_COUNT_HW_CACHE_REFERENCES (0.00% scaling, ena=929839421, run=929839421)
+
+             6595670 PERF_COUNT_HW_CACHE_MISSES (0.00% scaling, ena=929845556, run=929845556)
+
+             3036479 PERF_COUNT_HW_CACHE_LL (0.00% scaling, ena=929848681, run=929848681)
+
+          2037435624 PERF_COUNT_HW_CPU_CYCLES (0.00% scaling, ena=929851868, run=929851868)
+
+           911967916 PERF_COUNT_HW_CACHE_REFERENCES (29.04% scaling, ena=2719955004, run=1929984638)
+
+             3625343 PERF_COUNT_HW_CACHE_MISSES (29.04% scaling, ena=2719959928, run=1929989562)
+
+             1375420 PERF_COUNT_HW_CACHE_LL (29.04% scaling, ena=2719962759, run=1929992393)
+
+          3927148965 PERF_COUNT_HW_CPU_CYCLES (29.04% scaling, ena=2719965578, run=1929995212)
+
+           557595178 PERF_COUNT_HW_CACHE_REFERENCES (21.24% scaling, ena=3720036271, run=2930065905)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=10197313 : prev=10221013)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=4148127 : prev=4411899)
+
+          2195157838 PERF_COUNT_HW_CPU_CYCLES (21.24% scaling, ena=3720045398, run=2930075032)
+
+          4435132431 PERF_COUNT_HW_CACHE_REFERENCES (71.82% scaling, ena=12824264046, run=3614227700)
+
+            85237458 PERF_COUNT_HW_CACHE_MISSES (71.82% scaling, ena=12824264046, run=3614227700)
+
+            19275739 PERF_COUNT_HW_CACHE_LL (71.82% scaling, ena=12824264046, run=3614227700)
+
+         19941768108 PERF_COUNT_HW_CPU_CYCLES (71.82% scaling, ena=12824264046, run=3614227700)
+
+           185558336 PERF_COUNT_HW_CACHE_REFERENCES (68.46% scaling, ena=13640381642, run=4302443569)
+
+            52743730 PERF_COUNT_HW_CACHE_MISSES (68.46% scaling, ena=13640381642, run=4302443569)
+
+             7969802 PERF_COUNT_HW_CACHE_LL (68.46% scaling, ena=13640381642, run=4302443569)
+
+          1764794167 PERF_COUNT_HW_CPU_CYCLES (68.46% scaling, ena=13640381642, run=4302443569)
+
+          1179660407 PERF_COUNT_HW_CACHE_REFERENCES (70.39% scaling, ena=15904269654, run=4708781057)
+
+            36611977 PERF_COUNT_HW_CACHE_MISSES (70.39% scaling, ena=15904276051, run=4708787454)
+
+             7536963 PERF_COUNT_HW_CACHE_LL (70.39% scaling, ena=15904279074, run=4708790477)
+
+          4952447188 PERF_COUNT_HW_CPU_CYCLES (70.39% scaling, ena=15904282038, run=4708793441)
+
+           985279074 PERF_COUNT_HW_CACHE_REFERENCES (66.37% scaling, ena=16930302007, run=5693111529)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=165244166 : prev=184790478)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=38582160 : prev=38930631)
+
+          2261398243 PERF_COUNT_HW_CPU_CYCLES (66.37% scaling, ena=16930315614, run=5693125136)
+
+           591118267 PERF_COUNT_HW_CACHE_REFERENCES (62.67% scaling, ena=17930421954, run=6693231476)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=150774545 : prev=165244166)
+
+             4532029 PERF_COUNT_HW_CACHE_LL (62.67% scaling, ena=17930431951, run=6693241473)
+
+          2202163472 PERF_COUNT_HW_CPU_CYCLES (62.67% scaling, ena=17930435107, run=6693244629)
+
+           756037051 PERF_COUNT_HW_CACHE_REFERENCES (59.36% scaling, ena=18930545211, run=7693354733)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=138840436 : prev=150774545)
+
+             1984000 PERF_COUNT_HW_CACHE_LL (59.36% scaling, ena=18930554977, run=7693364499)
+
+          2200260414 PERF_COUNT_HW_CPU_CYCLES (59.36% scaling, ena=18930558289, run=7693367811)
+
+           751731326 PERF_COUNT_HW_CACHE_REFERENCES (56.38% scaling, ena=19930676070, run=8693485592)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=129482453 : prev=138840436)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=44517905 : prev=45098189)
+
+          2199024810 PERF_COUNT_HW_CPU_CYCLES (56.38% scaling, ena=19930689538, run=8693499060)
+
+           862739073 PERF_COUNT_HW_CACHE_REFERENCES (53.69% scaling, ena=20930787385, run=9693596907)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=122101547 : prev=129482453)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=43893331 : prev=44517905)
+
+          2198114785 PERF_COUNT_HW_CPU_CYCLES (53.69% scaling,
+  Frame 1                                          ena=20930799933, run=9693609455)
+
+           857651800 PERF_COUNT_HW_CACHE_REFERENCES (51.24% scaling, ena=21931025903, run=10693835425)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=116071561 : prev=122101547)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=42415003 : prev=43893331)
+
+          2197769540 PERF_COUNT_HW_CPU_CYCLES (51.24% scaling, ena=21931038899, run=10693848421)
+
+           376931163 PERF_COUNT_HW_CACHE_REFERENCES (49.00% scaling, ena=22931157253, run=11693966775)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=111074488 : prev=116071561)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=41515356 : prev=42415003)
+
+          2197077454 PERF_COUNT_HW_CPU_CYCLES (49.00% scaling, ena=22931170558, run=11693980080)
+
+           316405487 PERF_COUNT_HW_CACHE_REFERENCES (46.96% scaling, ena=23931271551, run=12694081073)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=106873191 : prev=111074488)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=39917967 : prev=41515356)
+
+          2196673861 PERF_COUNT_HW_CPU_CYCLES (46.96% scaling, ena=23931280008, run=12694089530)
+
+           333016944 PERF_COUNT_HW_CACHE_REFERENCES (45.07% scaling, ena=24931382452, run=13694191974)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=103290898 : prev=106873191)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=38563115 : prev=39917967)
+
+          2196403536 PERF_COUNT_HW_CPU_CYCLES (45.07% scaling, ena=24931390794, run=13694200316)
+
+           346179430 PERF_COUNT_HW_CACHE_REFERENCES (43.33% scaling, ena=25931491969, run=14694301491)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=100191630 : prev=103290898)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=37440049 : prev=38563115)
+
+          2196181316 PERF_COUNT_HW_CPU_CYCLES (43.33% scaling, ena=25931500306, run=14694309828)
+
+           787278078 PERF_COUNT_HW_CACHE_REFERENCES (41.72% scaling, ena=26931604671, run=15694414193)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=97595463 : prev=100191630)
+
+             1240291 PERF_COUNT_HW_CACHE_LL (41.72% scaling, ena=26931614400, run=15694423922)
+
+          2196021463 PERF_COUNT_HW_CPU_CYCLES (41.72% scaling, ena=26931617760, run=15694427282)
+
+           820992684 PERF_COUNT_HW_CACHE_REFERENCES (40.23% scaling, ena=27931729158, run=16694538680)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=95213613 : prev=97595463)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=38299644 : prev=38680340)
+
+          2195888101 PERF_COUNT_HW_CPU_CYCLES (40.23% scaling, ena=27931742347, run=16694551869)
+
+         13732832692 PERF_COUNT_HW_CACHE_REFERENCES (66.35% scaling, ena=52581110033, run=17694944714)
+
+            89525258 PERF_COUNT_HW_CACHE_MISSES (66.35% scaling, ena=52581116873, run=17694951554)
+
+            39453202 PERF_COUNT_HW_CACHE_LL (66.35% scaling, ena=52581122558, run=17694957239)
+
+         54061737513 PERF_COUNT_HW_CPU_CYCLES (66.35% scaling, ena=52581131121, run=17694965802)
+
+           603279581 PERF_COUNT_HW_CACHE_REFERENCES (65.11% scaling, ena=53581237516, run=18695072197)
+
+            27410493 PERF_COUNT_HW_CACHE_MISSES (65.11% scaling, ena=53581243857, run=18695078538)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=76164992 : prev=77752846)
+
+          2197424088 PERF_COUNT_HW_CPU_CYCLES (65.11% scaling, ena=53581250543, run=18695085224)
+
+           603182000 PERF_COUNT_HW_CACHE_REFERENCES (63.92% scaling, ena=54581357381, run=19695192062)
+
+            25801845 PERF_COUNT_HW_CACHE_MISSES (63.92% scaling, ena=54581363638, run=19695198319)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=74765326 : prev=76164992)
+
+          2197171649 PERF_COUNT_HW_CPU_CYCLES (63.92% scaling, ena=54581370134, run=19695204815)
+
+           606317600 PERF_COUNT_HW_CACHE_REFERENCES (62.77% scaling, ena=55581484830, run=20695319511)
+
+            24557188 PERF_COUNT_HW_CACHE_MISSES (62.77% scaling, ena=55581490983, run=20695325664)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=73539967 : prev=74765326)
+
+          2196959846 PERF_COUNT_HW_CPU_CYCLES (62.77% scaling, ena=55581497403, run=20695332084)
+
+           596319458 PERF_COUNT_HW_CACHE_REFERENCES (61.66% scaling, ena=56581705490, run=21695540171)
+
+            23472466 PERF_COUNT_HW_CACHE_MISSES (61.66% scaling, ena=56581711832, run=21695546513)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=72494907 : prev=73539967)
+
+          2196971950 PERF_COUNT_HW_CPU_CYCLES (61.66% scaling, ena=56581718654, run=21695553335)
+
+           602780915 PERF_COUNT_HW_CACHE_REFERENCES (60.59% scaling, ena=57581822709, run=22695657390)
+
+            22494286 PERF_COUNT_HW_CACHE_MISSES (60.59% scaling, ena=57581828815, run=22695663496)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=71567943 : prev=72494907)
+
+          2196570144 PERF_COUNT_HW_CPU_CYCLES (60.59% scaling, ena=57581835382, run=22695670063)
+
+           593541714 PERF_COUNT_HW_CACHE_REFERENCES (59.55% scaling, ena=58581911438, run=23695746119)
+
+            21418534 PERF_COUNT_HW_CACHE_MISSES (59.55% scaling, ena=58581917828, run=23695752509)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=70777751 : prev=71567943)
+
+          2196347594 PERF_COUNT_HW_CPU_CYCLES (59.55% scaling, ena=58581924594, run=23695759275)
+
+           531901057 PERF_COUNT_HW_CACHE_REFERENCES (58.55% scaling, ena=59582040891, run=24695875572)
+
+            17856110 PERF_COUNT_HW_CACHE_MISSES (58.55% scaling, ena=59582047284, run=24695881965)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=70386181 : prev=70777751)
+
+          2196311097 PERF_COUNT_HW_CPU_CYCLES (58.55% scaling, ena=59582053740, run=24695888421)
+
+           577404982 PERF_COUNT_HW_CACHE_REFERENCES (57.58% scaling, ena=60582167115, run=25696001796)
+
+            27622133 PERF_COUNT_HW_CACHE_MISSES (57.58% scaling, ena=60582173494, run=25696008175)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=69663792 : prev=70386181)
+
+          2196193781 PERF_COUNT_HW_CPU_CYCLES (57.58% scaling, ena=60582179956, run=25696014637)
+
+           573017149 PERF_COUNT_HW_CACHE_REFERENCES (56.65% scaling, ena=61582283939, run=26696118620)
+
+            26718788 PERF_COUNT_HW_CACHE_MISSES (56.65% scaling, ena=61582290139, run=26696124820)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=69002072 : prev=69663792)
+
+          2196073094 PERF_COUNT_HW_CPU_CYCLES (56.65% scaling, ena=61582298249, run=26696132930)
+
+           571253407 PERF_COUNT_HW_CACHE_REFERENCES (55.74% scaling, ena=62582410733, run=27696245414)
+
+            26034585 PERF_COUNT_HW_CACHE_MISSES (55.74% scaling, ena=62582416825, run=27696251506)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=68410858 : prev=69002072)
+
+          2195998213 PERF_COUNT_HW_CPU_CYCLES (55.74% scaling, ena=62582423772, run=27696258453)
+
+           567225947 PERF_COUNT_HW_CACHE_REFERENCES (54.87% scaling, ena=63582533983, run=28696368664)
+
+            25347581 PERF_COUNT_HW_CACHE_MISSES (54.87% scaling, ena=63582540409, run=28696375090)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=67908516 : prev=68410858)
+
+          2195910926 PERF_COUNT_HW_CPU_CYCLES (54.87% scaling, ena=63582546891, run=28696381572)
+
+           574180512 PERF_COUNT_HW_CACHE_REFERENCES (54.02% scaling, ena=64582587378, run=29696422059)
+
+            24801576 PERF_COUNT_HW_CACHE_MISSES (54.02% scaling, ena=64582592935, run=29696427616)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=67464352 : prev=67908516)
+
+          2195669958 PERF_COUNT_HW_CPU_CYCLES (54.02% scaling, ena=64582599406, run=29696434087)
+
+           569759798 PERF_COUNT_HW_CACHE_REFERENCES (53.19% scaling, ena=65582708677, run=30696543358)
+
+            24056830 PERF_COUNT_HW_CACHE_MISSES (53.19% scaling, ena=65582715190, run=30696549871)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=67061610 : prev=67464352)
+
+          2195767772 PERF_COUNT_HW_CPU_CYCLES (53.19% scaling, ena=65582721648, run=30696556329)
+
+           529591080 PERF_COUNT_HW_CACHE_REFERENCES (52.40% scaling, ena=66582848863, run=31696683544)
+
+            17292823 PERF_COUNT_HW_CACHE_MISSES (52.40% scaling, ena=66582855195, run=31696689876)
+
+              222653 PERF_COUNT_HW_CACHE_LL (52.40% scaling, ena=66582858353, run=31696693034)
+
+          2195742971 PERF_COUNT_HW_CPU_CYCLES (52.40% scaling, ena=66582861598, run=31696696279)
+
+           385427018 PERF_COUNT_HW_CACHE_REFERENCES (51.62% scaling, ena=67583078720, run=32696913401)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=514175142 : prev=519624109)
+
+             2014069 PERF_COUNT_HW_CACHE_LL (51.62% scaling, ena=67583088348, run=32696923029)
+
+          2195893184 PERF_COUNT_HW_CPU_CYCLES (51.62% scaling, ena=67583091825, run=32696926506)
+
+           384158968 PERF_COUNT_HW_CACHE_REFERENCES (50.87% scaling, ena=68583217032, run=33697051713)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=506323231 : prev=514175142)
+
+             1849059 PERF_COUNT_HW_CACHE_LL (50.87% scaling, ena=68583226921, run=33697061602)
+
+          2195642672 PERF_COUNT_HW_CPU_CYCLES (50.87% scaling, ena=68583230388, run=33697065069)
+
+           385375094 PERF_COUNT_HW_CACHE_REFERENCES (50.14% scaling, ena=69583108663, run=34696943344)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=498936940 : prev=506323231)
+
+             1776841 PERF_COUNT_HW_CACHE_LL (50.14% scaling, ena=69583117798, run=34696952479)
+
+          2195011452 PERF_COUNT_HW_CPU_CYCLES (50.14% scaling, ena=69583121280, run=34696955961)
+
+           400654993 PERF_COUNT_HW_CACHE_REFERENCES (49.43% scaling, ena=70583242108, run=35697076789)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=491954634 : prev=498936940)
+
+             1745620 PERF_COUNT_HW_CACHE_LL (49.43% scaling, ena=70583252062, run=35697086743)
+
+          2195544698 PERF_COUNT_HW_CPU_CYCLES (49.43% scaling, ena=70583255434, run=35697090115)
+
+           405351781 PERF_COUNT_HW_CACHE_REFERENCES (48.74% scaling, ena=71583376911, run=36697211592)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=485353254 : prev=491954634)
+
+             1726732 PERF_COUNT_HW_CACHE_LL (48.73% scaling, ena=71583393869, run=36697228550)
+
+          2195523043 PERF_COUNT_HW_CPU_CYCLES (48.73% scaling, ena=71583397131, run=36697231812)
+
+           402109493 PERF_COUNT_HW_CACHE_REFERENCES (48.06% scaling, ena=72583518431, run=37697353112)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=479102902 : prev=485353254)
+
+             1783366 PERF_COUNT_HW_CACHE_LL (48.06% scaling, ena=72583527969, run=37697362650)
+
+          2195465495 PERF_COUNT_HW_CPU_CYCLES (48.06% scaling, ena=72583531181, run=37697365862)
+
+           411522755 PERF_COUNT_HW_CACHE_REFERENCES (47.41% scaling, ena=73583649995, run=38697484676)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=473176947 : prev=479102902)
+
+             1749138 PERF_COUNT_HW_CACHE_LL (47.41% scaling, ena=73583659594, run=38697494275)
+
+          2195427280 PERF_COUNT_HW_CPU_CYCLES (47.41% scaling, ena=73583662908, run=38697497589)
+
+           415155903 PERF_COUNT_HW_CACHE_REFERENCES (46.77% scaling, ena=74583776102, run=39697610783)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=467549526 : prev=473176947)
+
+             1687135 PERF_COUNT_HW_CACHE_LL (46.77% scaling, ena=74583785774, run=39697620455)
+
+          2195390174 PERF_COUNT_HW_CPU_CYCLES (46.77% scaling, ena=74583788994, run=39697623675)
+
+           418603740 PERF_COUNT_HW_CACHE_REFERENCES (46.16% scaling, ena=75583911235, run=40697745916)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=462198433 : prev=467549526)
+
+             1663610 PERF_COUNT_HW_CACHE_LL (46.16% scaling, ena=75583920701, run=40697755382)
+
+          2195383638 PERF_COUNT_HW_CPU_CYCLES (46.16% scaling, ena=75583924238, run=40697758919)
+
+           419423064 PERF_COUNT_HW_CACHE_REFERENCES (45.55% scaling, ena=76584045768, run=41697880449)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=457105663 : prev=462198433)
+
+             1653706 PERF_COUNT_HW_CACHE_LL (45.55% scaling, ena=76584055363, run=41697890044)
+
+          2195354743 PERF_COUNT_HW_CPU_CYCLES (45.55% scaling, ena=76584058590, run=41697893271)
+
+           417882756 PERF_COUNT_HW_CACHE_REFERENCES (44.97% scaling, ena=77584180429, run=42698015110)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=452251833 : prev=457105663)
+
+             1704947 PERF_COUNT_HW_CACHE_LL (44.97% scaling, ena=77584190254, run=42698024935)
+
+          2195332264 PERF_COUNT_HW_CPU_CYCLES (44.97% scaling, ena=77584193548, run=42698028229)
+
+           425994397 PERF_COUNT_HW_CACHE_REFERENCES (44.39% scaling, ena=78584420129, run=43698254810)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=447620736 : prev=452251833)
+
+             1680485 PERF_COUNT_HW_CACHE_LL (44.39% scaling, ena=78584430033, run=43698264714)
+
+          2195540085 PERF_COUNT_HW_CPU_CYCLES (44.39% scaling, ena=78584433327, run=43698268008)
+
+           422607926 PERF_COUNT_HW_CACHE_REFERENCES (43.84% scaling, ena=79584560026, run=44698394707)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=443198524 : prev=447620736)
+
+             1631708 PERF_COUNT_HW_CACHE_LL (43.84% scaling, ena=79584569716, run=44698404397)
+
+          2195294109 PERF_COUNT_HW_CPU_CYCLES (43.84% scaling, ena=79584572890, run=44698407571)
+
+           427386444 PERF_COUNT_HW_CACHE_REFERENCES (43.29% scaling, ena=80584691805, run=45698526486)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=438969641 : prev=443198524)
+
+             1610939 PERF_COUNT_HW_CACHE_LL (43.29% scaling, ena=80584701443, run=45698536124)
+
+          2195262922 PERF_COUNT_HW_CPU_CYCLES (43.29% scaling, ena=80584704739, run=45698539420)
+
+           427097561 PERF_COUNT_HW_CACHE_REFERENCES (42.76% scaling, ena=81584819785, run=46698654466)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=434922463 : prev=438969641)
+
+             1602061 PERF_COUNT_HW_CACHE_LL (42.76% scaling, ena=81584829509, run=46698664190)
+
+          2195236173 PERF_COUNT_HW_CPU_CYCLES (42.76% scaling, ena=81584832803, run=46698667484)
+
+           428416742 PERF_COUNT_HW_CACHE_REFERENCES (42.24% scaling, ena=82584954979, run=47698789660)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=431045550 : prev=434922463)
+
+             1665472 PERF_COUNT_HW_CACHE_LL (42.24% scaling, ena=82584964585, run=47698799266)
+
+          2195234776 PERF_COUNT_HW_CPU_CYCLES (42.24% scaling, ena=82584967943, run=47698802624)
+
+           435067336 PERF_COUNT_HW_CACHE_REFERENCES (41.74% scaling, ena=83585088037, run=48698922718)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=427328761 : prev=431045550)
+
+             1624895 PERF_COUNT_HW_CACHE_LL (41.74% scaling, ena=83585097718, run=48698932399)
+
+          2195214351 PERF_COUNT_HW_CPU_CYCLES (41.74% scaling, ena=83585101072, run=48698935753)
+
+           437160469 PERF_COUNT_HW_CACHE_REFERENCES (41.24% scaling, ena=84585221441, run=49699056122)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=423761688 : prev=427328761)
+
+             1581618 PERF_COUNT_HW_CACHE_LL (41.24% scaling, ena=84585231407, run=49699066088)
+
+          2195200602 PERF_COUNT_HW_CPU_CYCLES (41.24% scaling, ena=84585234723, run=49699069404)
+
+           435014906 PERF_COUNT_HW_CACHE_REFERENCES (40.76% scaling, ena=85585364684, run=50699199365)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=420335893 : prev=423761688)
+
+             1572950 PERF_COUNT_HW_CACHE_LL (40.76% scaling, ena=85585374264, run=50699208945)
+
+          2195205630 PERF_COUNT_HW_CPU_CYCLES (40.76% scaling, ena=85585379886, run=50699214567)
+
+           440953888 PERF_COUNT_HW_CACHE_REFERENCES (40.29% scaling, ena=86585500264, run=51699334945)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=417043401 : prev=420335893)
+
+             1557448 PERF_COUNT_HW_CACHE_LL (40.29% scaling, ena=86585510035, run=51699344716)
+
+          2195171501 PERF_COUNT_HW_CPU_CYCLES (40.29% scaling, ena=86585513331, run=51699348012)
+
+           436013526 PERF_COUNT_HW_CACHE_REFERENCES (39.83% scaling, ena=87585635803, run=52699470484)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=413876240 : prev=417043401)
+
+             1622069 PERF_COUNT_HW_CACHE_LL (39.83% scaling, ena=87585645637, run=52699480318)
+
+          2195164320 PERF_COUNT_HW_CPU_CYCLES (39.83% scaling, ena=87585649176, run=52699483857)
+
+           437836053 PERF_COUNT_HW_CACHE_REFERENCES (39.38% scaling, ena=88585771143, run=53699605824)
+
+inconsistent scali
+  END Frame 1                                      44.8674 s
+SIMULATION                                          0.0000
+  FRAME                                            44.8674
+    ADB                                            44.8621
+      UPBS                                          6.8603
+        UPBS (FEM) - Initialize                     0.2905 s
+        UPBS (FEM) - Element loop                   6.5696 s
+        UPBS (CPF)                                  0.0000 s
+      ADO                                          38.0017
+        ADO - Update collision bodies               0.0000 s
+        AOTSQ                                      38.0017
+          AOTSQ - Initialize                        0.0025 s
+          AOTSQ - NR loop                          37.9991
+            AOTSQ - NR loop - Initialize            0.0020 s
+            UCPF                                    0.5375 s
+            NRS                                    29.6457
+              NRS - Initialize                      0.0000 s
+              NRS - Boundary conditions 1           0.0020 s
+              UPBS                                  7.3645
+                UPBS (FEM) - Initialize             0.0078 s
+                UPBS (FEM) - Element loop           7.3565 s
+                UPBS (CPF)                          0.0000 s
+              AVIF                                  0.4410
+                AVIF (FEM)                          0.4394 s
+                AVIF (CPF)                          0.0015 s
+              NRS - Boundary conditions 2           0.0005 s
+              NRS - Compute residual                0.0026
+              NRS - Copy initial guess              0.0026 s
+              CGI                                  21.7411
+            UPBS                                    7.3638
+              UPBS (FEM) - Initialize               0.0080 s
+              UPBS (FEM) - Element loop             7.3556 s
+              UPBS (CPF)                            0.0000 s
+            AVIF                                    0.4443
+              AVIF (FEM)                            0.4427 s
+              AVIF (CPF)                            0.0015 s
+            AOTSQ - NR loop - Boundary conditions   0.0005 s
+            AOTSQ - NR loop - Compute residual      0.0026 s
+
+real	0m57.913s
+user	0m57.407s
+sys	0m0.383s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark ferret ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+corel/
+corel/__cass.env
+corel/corel.raw
+corel/lsh.lsh
+corel/map_corel.map
+queries/
+queries/acorn.jpg
+queries/air-fighter.jpg
+queries/airplane-2.jpg
+queries/airplane-takeoff-3.jpg
+queries/alcatraz-island-prison.jpg
+queries/american-flag-3.jpg
+queries/apartment.jpg
+queries/apollo-2.jpg
+queries/apollo-earth.jpg
+queries/apple-11.jpg
+queries/apple-14.jpg
+queries/apple-16.jpg
+queries/apple-7.jpg
+queries/aquarium-fish-25.jpg
+queries/arches-9.jpg
+queries/arches.jpg
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/ferret/inst/amd64-linux.gcc-serial/bin/ferret corel lsh queries 10 20 1 output.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+ng PERF_COUNT_HW_CACHE_MISSES (cur=410827755 : prev=413876240)
+
+             1600891 PERF_COUNT_HW_CACHE_LL (39.38% scaling, ena=88585780617, run=53699615298)
+
+          2195150151 PERF_COUNT_HW_CPU_CYCLES (39.38% scaling, ena=88585783955, run=53699618636)
+
+           577111123 PERF_COUNT_HW_CACHE_REFERENCES (38.94% scaling, ena=89585989431, run=54699824112)
+
+            20204363 PERF_COUNT_HW_CACHE_MISSES (38.94% scaling, ena=89585994900, run=54699829581)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=104295938 : prev=104389022)
+
+          2195320012 PERF_COUNT_HW_CPU_CYCLES (38.94% scaling, ena=89586001415, run=54699836096)
+
+           587925935 PERF_COUNT_HW_CACHE_REFERENCES (38.51% scaling, ena=90586107233, run=55699941914)
+
+            21031406 PERF_COUNT_HW_CACHE_MISSES (38.51% scaling, ena=90586112820, run=55699947501)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=104214447 : prev=104295938)
+
+          2195089467 PERF_COUNT_HW_CPU_CYCLES (38.51% scaling, ena=90586119270, run=55699953951)
+
+           588720555 PERF_COUNT_HW_CACHE_REFERENCES (38.09% scaling, ena=91586231494, run=56700066175)
+
+            21124103 PERF_COUNT_HW_CACHE_MISSES (38.09% scaling, ena=91586237058, run=56700071739)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=104105922 : prev=104214447)
+
+          2195093141 PERF_COUNT_HW_CPU_CYCLES (38.09% scaling, ena=91586243561, run=56700078242)
+
+           588637207 PERF_COUNT_HW_CACHE_REFERENCES (37.68% scaling, ena=92586356220, run=57700190901)
+
+            20886366 PERF_COUNT_HW_CACHE_MISSES (37.68% scaling, ena=92586361748, run=57700196429)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=104030281 : prev=104105922)
+
+          2195080912 PERF_COUNT_HW_CPU_CYCLES (37.68% scaling, ena=92586368428, run=57700203109)
+
+           586439021 PERF_COUNT_HW_CACHE_REFERENCES (37.28% scaling, ena=93586485455, run=58700320136)
+
+            20769007 PERF_COUNT_HW_CACHE_MISSES (37.28% scaling, ena=93586491265, run=58700325946)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=103973800 : prev=104030281)
+
+          2195084413 PERF_COUNT_HW_CPU_CYCLES (37.28% scaling, ena=93586497772, run=58700332453)
+
+           585870861 PERF_COUNT_HW_CACHE_REFERENCES (36.88% scaling, ena=94586608637, run=59700443318)
+
+            20575474 PERF_COUNT_HW_CACHE_MISSES (36.88% scaling, ena=94586614313, run=59700448994)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=103936405 : prev=103973800)
+
+          2195062917 PERF_COUNT_HW_CPU_CYCLES (36.88% scaling, ena=94586620652, run=59700455333)
+
+           583385596 PERF_COUNT_HW_CACHE_REFERENCES (36.50% scaling, ena=95586579468, run=60700414149)
+
+            20331644 PERF_COUNT_HW_CACHE_MISSES (36.50% scaling, ena=95586584820, run=60700419501)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=103913545 : prev=103936405)
+
+          2194710712 PERF_COUNT_HW_CPU_CYCLES (36.50% scaling, ena=95586591122, run=60700425803)
+
+           519475908 PERF_COUNT_HW_CACHE_REFERENCES (36.12% scaling, ena=96586706454, run=61700541135)
+
+             9051299 PERF_COUNT_HW_CACHE_MISSES (36.12% scaling, ena=96586712721, run=61700547402)
+
+              673476 PERF_COUNT_HW_CACHE_LL (36.12% scaling, ena=96586715966, run=61700550647)
+
+          2195059431 PERF_COUNT_HW_CPU_CYCLES (36.12% scaling, ena=96586719282, run=61700553963)
+
+        108400967866 PERF_COUNT_HW_CACHE_REFERENCES (79.24% scaling, ena=301232658689, run=62532306502)
+
+          1216500680 PERF_COUNT_HW_CACHE_MISSES (79.24% scaling, ena=301232664420, run=62532312233)
+
+           232724019 PERF_COUNT_HW_CACHE_LL (79.24% scaling, ena=301232667545, run=62532315358)
+
+        448987660273 PERF_COUNT_HW_CPU_CYCLES (79.24% scaling, ena=301232670758, run=62532318571)
+
+           572487721 PERF_COUNT_HW_CACHE_REFERENCES (78.98% scaling, ena=302232317126, run=63531964939)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1761227702 : prev=1781302097)
+
+             1554664 PERF_COUNT_HW_CACHE_LL (78.98% scaling, ena=302232325028, run=63531972841)
+
+          2195627165 PERF_COUNT_HW_CPU_CYCLES (78.98% scaling, ena=302232328076, run=6353197QUERY TIME: 1.854 seconds
+
+real	0m1.882s
+user	0m1.838s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark freqmine ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+kosarak_250k.dat
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/freqmine/inst/amd64-linux.gcc-serial/bin/freqmine kosarak_250k.dat 220':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+transaction number is 250000
+1425
+11337
+34098
+63741
+99770
+149038
+199629
+221458
+198502
+143333
+83353
+39081
+14773
+4463
+1043
+176
+19
+1
+the data preparation cost 0.243646 seconds, the FPgrowth cost 2.331956 seconds
+
+real	0m2.578s
+user	0m2.519s
+sys	0m0.057s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark raytrace ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+happy_buddha.obj
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/raytrace/inst/amd64-linux.gcc-serial/bin/rtview happy_buddha.obj -nodisplay -automove -nthreads 1 -frames 3 -res 480 270':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+initializing LRT ray tracer ...
+default BVH builder : binnedalldimssavespace
+Options:   automove = 1;
+     files = happy_buddha.obj;
+    frames = 3;
+ nodisplay = 1;
+  nthreads = 1;
+       res = [480, 270];
+
+Using memory framebuffer...
+Adding obj file: happy_buddha.obj
+5889)
+
+          2777645540 PERF_COUNT_HW_CACHE_REFERENCES (79.03% scaling, ena=307554391325, run=64483853025)
+
+            29351905 PERF_COUNT_HW_CACHE_MISSES (79.03% scaling, ena=307554396203, run=64483857903)
+
+             8178082 PERF_COUNT_HW_CACHE_LL (79.03% scaling, ena=307554398755, run=64483860455)
+
+         11668421383 PERF_COUNT_HW_CPU_CYCLES (79.03% scaling, ena=307554401208, run=64483862908)
+
+           663356210 PERF_COUNT_HW_CACHE_REFERENCES (78.78% scaling, ena=308553969423, run=65483431123)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1772336854 : prev=1790579607)
+
+             3172959 PERF_COUNT_HW_CACHE_LL (78.78% scaling, ena=308553969423, run=65483431123)
+
+          2195475314 PERF_COUNT_HW_CPU_CYCLES (78.78% scaling, ena=308553969423, run=65483431123)
+
+           171555463 PERF_COUNT_HW_CACHE_REFERENCES (78.52% scaling, ena=309553992231, run=66483424259)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1751789583 : prev=1772336854)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=348806674 : prev=350216745)
+
+          2196509385 PERF_COUNT_HW_CPU_CYCLES (78.52% scaling, ena=309553992231, run=66483424259)
+
+          4492685314 PERF_COUNT_HW_CACHE_REFERENCES (78.84% scaling, ena=318504533736, run=67410269744)
+
+            83097799 PERF_COUNT_HW_CACHE_MISSES (78.84% scaling, ena=318504533736, run=67410269744)
+
+            13312684 PERF_COUNT_HW_CACHE_LL (78.84% scaling, ena=318504533736, run=67410269744)
+
+         19628376029 PERF_COUNT_HW_CPU_CYCLES (78.84% scaling, ena=318504533736, run=67410269744)
+
+          1652152704 PERF_COUNT_HW_CACHE_REFERENCES (78.67% scaling, ena=320133626886, run=68297254816)
+
+            47770565 PERF_COUNT_HW_CACHE_MISSES (78.67% scaling, ena=320133634684, run=68297262614)
+
+             6627702 PERF_COUNT_HW_CACHE_LL (78.67% scaling, ena=320133638358, run=68297266288)
+
+          3559001309 PERF_COUNT_HW_CPU_CYCLES (78.67% scaling, ena=320133642018, run=68297269948)
+
+          2205877320 PERF_COUNT_HW_CACHE_REFERENCES (78.42% scaling, ena=321132355884, run=69295983814)
+
+            11024542 PERF_COUNT_HW_CACHE_MISSES (78.42% scaling, ena=321132361694, run=69295989624)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=367012201 : prev=368747060)
+
+          2193614301 PERF_COUNT_HW_CPU_CYCLES (78.42% scaling, ena=321132368159, run=69295996089)
+
+          2271531301 PERF_COUNT_HW_CACHE_REFERENCES (78.18% scaling, ena=322132284622, run=70295912552)
+
+             3422494 PERF_COUNT_HW_CACHE_MISSES (78.18% scaling, ena=322132290257, run=70295918187)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=364550131 : prev=367012201)
+
+          2196464591 PERF_COUNT_HW_CPU_CYCLES (78.18% scaling, ena=322132296640, run=70295924570)
+
+          2257915408 PERF_COUNT_HW_CACHE_REFERENCES (77.94% scaling, ena=323131384029, run=71295011959)
+
+             3060956 PERF_COUNT_HW_CACHE_MISSES (77.94% scaling, ena=323131390258, run=71295018188)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=361640348 : prev=364550131)
+
+          2194436197 PERF_COUNT_HW_CPU_CYCLES (77.94% scaling, ena=323131396585, run=71295024515)
+
+          2201767730 PERF_COUNT_HW_CACHE_REFERENCES (77.70% scaling, ena=324131407726, run=72295035656)
+
+             2078289 PERF_COUNT_HW_CACHE_MISSES (77.70% scaling, ena=324131413633, run=72295041563)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=359664735 : prev=361640348)
+
+          2196559776 PERF_COUNT_HW_CPU_CYCLES (77.70% scaling, ena=324131420065, run=72295047995)
+
+          2171467401 PERF_COUNT_HW_CACHE_REFERENCES (77.46% scaling, ena=325130473874, run=73294101804)
+
+             2163732 PERF_COUNT_HW_CACHE_MISSES (77.46% scaling, ena=325130479663, run=73294107593)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=357028129 : prev=359664735)
+
+          2194272869 PERF_COUNT_HW_CPU_CYCLES (77.46% scaling, ena=325130486074, run=73294114004)
+
+          2070700009 PERF_COUNT_HW_CACHE_REFERENCES (77.22% scaling, ena=326130457921, run=74294085851)
+
+             1314642 PERF_COUNT_HW_CACHE_MISSES (77.22% scaling, ena=326130464192, run=74294092122)
+
+inconsistenUsing auto camera...
+adding 543522 vertices
+adding 1087425 triangles
+finalizing geometry
+vertices            543522 (6369.4 KB)
+triangles           1087425 (12743.3 KB)
+texture coordinates 0 (0 KB)
+No materials -> create dummy material
+building index
+using BVH builder default
+t scaling PERF_COUNT_HW_CACHE_LL (cur=356407444 : prev=357028129)
+
+          2196325487 PERF_COUNT_HW_CPU_CYCLES (77.22% scaling, ena=326130470757, run=74294098687)
+
+          2112055473 PERF_COUNT_HW_CACHE_REFERENCES (76.98% scaling, ena=327129633614, run=75293261544)
+
+             1395060 PERF_COUNT_HW_CACHE_MISSES (76.98% scaling, ena=327129639277, run=75293267207)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=353550040 : prev=356407444)
+
+          2194438858 PERF_COUNT_HW_CPU_CYCLES (76.98% scaling, ena=327129645592, run=75293273522)
+
+          2075402660 PERF_COUNT_HW_CACHE_REFERENCES (76.75% scaling, ena=328129679680, run=76293307610)
+
+             1177555 PERF_COUNT_HW_CACHE_MISSES (76.75% scaling, ena=328129685345, run=76293313275)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=350735871 : prev=353550040)
+
+          2196416325 PERF_COUNT_HW_CPU_CYCLES (76.75% scaling, ena=328129691570, run=76293319500)
+
+          2034137636 PERF_COUNT_HW_CACHE_REFERENCES (76.52% scaling, ena=329128878899, run=77292506829)
+
+             1885896 PERF_COUNT_HW_CACHE_MISSES (76.52% scaling, ena=329128884846, run=77292512776)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=348153987 : prev=350735871)
+
+          2194426689 PERF_COUNT_HW_CPU_CYCLES (76.52% scaling, ena=329128891383, run=77292519313)
+
+          1999075375 PERF_COUNT_HW_CACHE_REFERENCES (76.28% scaling, ena=330129005374, run=78292633304)
+
+             1670165 PERF_COUNT_HW_CACHE_MISSES (76.28% scaling, ena=330129011806, run=78292639736)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=345691696 : prev=348153987)
+
+          2196527510 PERF_COUNT_HW_CPU_CYCLES (76.28% scaling, ena=330129018305, run=78292646235)
+
+          1958806523 PERF_COUNT_HW_CACHE_REFERENCES (76.05% scaling, ena=331128167483, run=79291795413)
+
+             1854729 PERF_COUNT_HW_CACHE_MISSES (76.05% scaling, ena=331128173769, run=79291801699)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=343098165 : prev=345691696)
+
+          2194228822 PERF_COUNT_HW_CPU_CYCLES (76.05% scaling, ena=331128180178, run=79291808108)
+
+         14886780630 PERF_COUNT_HW_CACHE_REFERENCES (77.40% scaling, ena=355284904588, run=80292580258)
+
+           125607364 PERF_COUNT_HW_CACHE_MISSES (77.40% scaling, ena=355284910645, run=80292586315)
+
+            28985268 PERF_COUNT_HW_CACHE_LL (77.40% scaling, ena=355284914039, run=80292589709)
+
+         53002533978 PERF_COUNT_HW_CPU_CYCLES (77.40% scaling, ena=355284917033, run=80292592703)
+
+           915017904 PERF_COUNT_HW_CACHE_REFERENCES (77.18% scaling, ena=356284096394, run=81291772064)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2020099717 : prev=2039313371)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=368684192 : prev=372083433)
+
+          2194368684 PERF_COUNT_HW_CPU_CYCLES (77.18% scaling, ena=356284109073, run=81291784743)
+
+          2444088463 PERF_COUNT_HW_CACHE_REFERENCES (77.13% scaling, ena=359866504055, run=82292165677)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2016198242 : prev=2020099717)
+
+             2880607 PERF_COUNT_HW_CACHE_LL (77.13% scaling, ena=359866513666, run=82292175288)
+
+          7862095379 PERF_COUNT_HW_CPU_CYCLES (77.13% scaling, ena=359866516827, run=82292178449)
+
+          1666606430 PERF_COUNT_HW_CACHE_REFERENCES (77.02% scaling, ena=362512623716, run=83291541625)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2006995860 : prev=2016198242)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=370029321 : prev=371564799)
+
+          5807677414 PERF_COUNT_HW_CPU_CYCLES (77.02% scaling, ena=362512636505, run=83291554414)
+
+           640576085 PERF_COUNT_HW_CACHE_REFERENCES (76.81% scaling, ena=363512723273, run=84291641182)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1988821715 : prev=2006995860)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=366934216 : prev=370029321)
+
+          2196401676 PERF_COUNT_HW_CPU_CYCLES (76.81% scaling, ena=363512744789, run=84291662698)
+
+           683019744 PERF_COUNT_HW_CACHE_REFERENCES (76.60% scaling, ena=364511913832, run=85290831741)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1971433174 : prev=1988821715)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=364183326 : prev=366934216)
+
+          2194212477 PERF_COUNT_HW_CPU_CYCLES (76.60% scaling, ena=364511926617, run=85290844526)
+
+           877741409 PERF_COUNT_HW_CACHE_REFERENCES (76.39% scaling, ena=365512121187, run=86291039096)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1956395492 : prev=1971433174)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=361249707 : prev=364183326)
+
+          2196567883 PERF_COUNT_HW_CPU_CYCLES (76.39% scaling, ena=365512129408, run=86291047317)
+
+           867611397 PERF_COUNT_HW_CACHE_REFERENCES (76.18% scaling, ena=366511300560, run=87290218469)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1941700508 : prev=1956395492)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=358480947 : prev=361249707)
+
+          2194146817 PERF_COUNT_HW_CPU_CYCLES (76.18% scaling, ena=366511309593, run=87290227502)
+
+           877021599 PERF_COUNT_HW_CACHE_REFERENCES (75.98% scaling, ena=367511325551, run=88290243460)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1927385917 : prev=1941700508)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=355681973 : prev=358480947)
+
+          2196091107 PERF_COUNT_HW_CPU_CYCLES (75.98% scaling, ena=367511333722, run=88290251631)
+
+           814371529 PERF_COUNT_HW_CACHE_REFERENCES (75.77% scaling, ena=368510513698, run=89289431607)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1912989818 : prev=1927385917)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=353145343 : prev=355681973)
+
+          2194078204 PERF_COUNT_HW_CPU_CYCLES (75.77% scaling, ena=368510525551, run=89289443460)
+
+           866129575 PERF_COUNT_HW_CACHE_REFERENCES (75.57% scaling, ena=369510629391, run=90289547300)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1899357541 : prev=1912989818)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=350476825 : prev=353145343)
+
+          2196232645 PERF_COUNT_HW_CPU_CYCLES (75.57% scaling, ena=369510637843, run=90289555752)
+
+           834860471 PERF_COUNT_HW_CACHE_REFERENCES (75.36% scaling, ena=370509815873, run=91288733782)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1885837309 : prev=1899357541)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=348000526 : prev=350476825)
+
+          2194034477 PERF_COUNT_HW_CPU_CYCLES (75.36% scaling, ena=370509826016, run=91288743925)
+
+           860162560 PERF_COUNT_HW_CACHE_REFERENCES (75.16% scaling, ena=371509927122, run=92288845031)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1872786959 : prev=1885837309)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=345472199 : prev=348000526)
+
+          2196165432 PERF_COUNT_HW_CPU_CYCLES (75.16% scaling, ena=371509936221, run=92288854130)
+
+           819264815 PERF_COUNT_HW_CACHE_REFERENCES (74.96% scaling, ena=372509127619, run=93288045528)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1859789013 : prev=1872786959)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=342931092 : prev=345472199)
+
+          2193999526 PERF_COUNT_HW_CPU_CYCLES (74.96% scaling, ena=372509139900, run=93288057809)
+
+           752916246 PERF_COUNT_HW_CACHE_REFERENCES (74.76% scaling, ena=373509204242, run=94288122151)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1846400871 : prev=1859789013)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=340868889 : prev=342931092)
+
+          2195994870 PERF_COUNT_HW_CPU_CYCLES (74.76% scaling, ena=373509216964, run=94288134873)
+
+           836821791 PERF_COUNT_HW_CACHE_REFERENCES (74.56% scaling, ena=374508376947, run=95287294856)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1834264230 : prev=1846400871)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=338439991 : prev=340868889)
+
+          2193885102 PERF_COUNT_HW_CPU_CYCLES (74.56% scaling, ena=374508385312, run=95287303221)
+
+           816284091 PERF_COUNT_HW_CACHE_REFERENCES (74.36% scaling, ena=375508480266, run=96287398175)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1822078416 : prev=1834264230)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=336218186 : prev=338439991)
+
+          2196043501 PERF_COUNT_HW_CPU_CYCLES (74.36% scaling, ena=375508490680, run=96287408589)
+
+           841309878 PERF_COUNT_HW_CACHE_REFERENCES (74.16% scaling, ena=376507763433, run=97286681342)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1810484209 : prev=1822078416)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=333830220 : prev=336218186)
+
+          2194088279 PERF_COUNT_HW_CPU_CYCLES (74.16% scaling, ena=376507772193, run=97286690102)
+
+           838253139 PERF_COUNT_HW_CACHE_REFERENCES (73.96% scaling, ena=377507868232, run=98286786141)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1799119676 : prev=1810484209)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=331583795 : prev=333830220)
+
+          2195995807 PERF_COUNT_HW_CPU_CYCLES (73.96% scaling, ena=377507877239, run=98286795148)
+
+           750326444 PERF_COUNT_HW_CACHE_REFERENCES (73.77% scaling, ena=378506963780, run=99285881689)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1787257372 : prev=1799119676)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=329791121 : prev=331583795)
+
+          2193609652 PERF_COUNT_HW_CPU_CYCLES (73.77% scaling, ena=378506976101, run=99285894010)
+
+           819721764 PERF_COUNT_HW_CACHE_REFERENCES (73.57% scaling, ena=379507072932, run=100285990841)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1776311196 : prev=1787257372)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=327618730 : prev=329791121)
+
+          2195936986 PERF_COUNT_HW_CPU_CYCLES (73.57% scaling, ena=379507082047, run=100285999956)
+
+           829547938 PERF_COUNT_HW_CACHE_REFERENCES (73.38% scaling, ena=380506240035, run=101285157944)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1765726109 : prev=1776311196)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=325417258 : prev=327618730)
+
+          2193739210 PERF_COUNT_HW_CPU_CYCLES (73.38% scaling, ena=380506248146, run=101285166055)
+
+           806924683 PERF_COUNT_HW_CACHE_REFERENCES (73.19% scaling, ena=381506325269, run=102285243178)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1755131071 : prev=1765726109)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=323395676 : prev=325417258)
+
+          2195863612 PERF_COUNT_HW_CPU_CYCLES (73.19% scaling, ena=381506334570, run=102285252479)
+
+           814737141 PERF_COUNT_HW_CACHE_REFERENCES (73.00% scaling, ena=382505524177, run=103284442086)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1744952965 : prev=1755131071)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=321341734 : prev=323395676)
+
+          2193767261 PERF_COUNT_HW_CPU_CYCLES (73.00% scaling, ena=382505531991, run=103284449900)
+
+           608581752 PERF_COUNT_HW_CACHE_REFERENCES (72.81% scaling, ena=383505390187, run=104284308096)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1732848384 : prev=1744952965)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=319399530 : prev=321341734)
+
+          2195301064 PERF_COUNT_HW_CPU_CYCLES (72.81% scaling, ena=383505402931, run=104284320840)
+
+           752324845 PERF_COUNT_HW_CACHE_REFERENCES (72.62% scaling, ena=384504561532, run=105283479441)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1722506765 : prev=1732848384)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=317779106 : prev=319399530)
+
+          2193669537 PERF_COUNT_HW_CPU_CYCLES (72.62% scaling, ena=384504573245, run=105283491154)
+
+           811361588 PERF_COUNT_HW_CACHE_REFERENCES (72.43% scaling, ena=385504595691, run=106283513600)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1712862171 : prev=1722506765)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=315845625 : prev=317779106)
+
+          2195650519 PERF_COUNT_HW_CPU_CYCLES (72.43% scaling, ena=385504604403, run=106283522312)
+
+           782649755 PERF_COUNT_HW_CACHE_REFERENCES (72.24% scaling, ena=386503773803, run=107282691712)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1703270838 : prev=1712862171)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=314151779 : prev=315845625)
+
+          2193649816 PERF_COUNT_HW_CPU_CYCLES (72.24% scaling, ena=386503784384, run=107282702293)
+
+           806640855 PERF_COUNT_HW_CACHE_REFERENCES (72.06% scaling, ena=387503976058, run=108282893967)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1694019528 : prev=1703270838)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=312317650 : prev=314151779)
+
+          2195986175 PERF_COUNT_HW_CPU_CYCLES (72.06% scaling, ena=387503985024, run=108282902933)
+
+           752506172 PERF_COUNT_HW_CACHE_REFERENCES (71.87% scaling, ena=388501068553, run=109279986462)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1684705905 : prev=1694019528)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=310815811 : prev=312317650)
+
+          2188398272 PERF_COUNT_HW_CPU_CYCLES (71.87% scaling, ena=388501081696, run=109279999605)
+
+           799163755 PERF_COUNT_HW_CACHE_REFERENCES (71.69% scaling, ena=389501168014, run=110280085923)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1675785058 : prev=1684705905)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=308995526 : prev=310815811)
+
+          2195730726 PERF_COUNT_HW_CPU_CYCLES (71.69% scaling, ena=389501176470, run=110280094379)
+
+           769402655 PERF_COUNT_HW_CACHE_REFERENCES (71.50% scaling, ena=390500321411, run=111279239320)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1666827582 : prev=1675785058)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=307481581 : prev=308995526)
+
+          2193536841 PERF_COUNT_HW_CPU_CYCLES (71.50% scaling, ena=390500333211, run=111279251120)
+
+           796312725 PERF_COUNT_HW_CACHE_REFERENCES (71.32% scaling, ena=391500426978, run=112279344887)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1658253241 : prev=1666827582)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=305770186 : prev=307481581)
+
+          2195717470 PERF_COUNT_HW_CPU_CYCLES (71.32% scaling, ena=391500436752, run=112279354661)
+
+           786506690 PERF_COUNT_HW_CACHE_REFERENCES (71.14% scaling, ena=392499610791, run=113278528700)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1649802366 : prev=1658253241)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=304124230 : prev=305770186)
+
+          2193563529 PERF_COUNT_HW_CPU_CYCLES (71.14% scaling, ena=392499619507, run=113278537416)
+
+           705170608 PERF_COUNT_HW_CACHE_REFERENCES (70.96% scaling, ena=393499672871, run=114278590780)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1640645036 : prev=1649802366)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=302430178 : prev=304124230)
+
+          2195564880 PERF_COUNT_HW_CPU_CYCLES (70.96% scaling, ena=393499685370, run=114278603279)
+
+           764605869 PERF_COUNT_HW_CACHE_REFERENCES (70.78% scaling, ena=394498434245, run=115277352154)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1632331173 : prev=1640645036)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=301034758 : prev=302430178)
+
+          2192491667 PERF_COUNT_HW_CPU_CYCLES (70.78% scaling, ena=394498444137, run=115277362046)
+
+           782743240 PERF_COUNT_HW_CACHE_REFERENCES (70.60% scaling, ena=395498535398, run=116277453307)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1624365398 : prev=1632331173)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=299441763 : prev=301034758)
+
+          2195646000 PERF_COUNT_HW_CPU_CYCLES (70.60% scaling, ena=395498544207, run=116277462116)
+
+           775134213 PERF_COUNT_HW_CACHE_REFERENCES (70.42% scaling, ena=396497720275, run=117276638184)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1616525902 : prev=1624365398)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=297952195 : prev=299441763)
+
+          2193513775 PERF_COUNT_HW_CPU_CYCLES (70.42% scaling, ena=396497730605, run=117276648514)
+
+           783620354 PERF_COUNT_HW_CACHE_REFERENCES (70.24% scaling, ena=397497827576, run=118276745485)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1608747281 : prev=1616525902)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=296485899 : prev=297952195)
+
+          2195621220 PERF_COUNT_HW_Cbuild time 41.5746
+done
+sceneAABB =[[[-0.04615,0.049738,-0.047301,0] ],[[0.035226,0.24777,0.034077,0] ]]
+Rendering 3 frames... 
+PU_CYCLES (70.24% scaling, ena=397497836690, run=118276754599)
+
+           789033806 PERF_COUNT_HW_CACHE_REFERENCES (70.07% scaling, ena=398497085480, run=119276003389)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1601351860 : prev=1608747281)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=294935910 : prev=296485899)
+
+          2193621430 PERF_COUNT_HW_CPU_CYCLES (70.07% scaling, ena=398497094180, run=119276012089)
+
+           731435686 PERF_COUNT_HW_CACHE_REFERENCES (69.89% scaling, ena=399497183206, run=120276101115)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1593498317 : prev=1601351860)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=293472875 : prev=294935910)
+
+          2195587445 PERF_COUNT_HW_CPU_CYCLES (69.89% scaling, ena=399497194420, run=120276112329)
+
+           782722308 PERF_COUNT_HW_CACHE_REFERENCES (69.72% scaling, ena=400496370392, run=121275288301)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1586377924 : prev=1593498317)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=291956377 : prev=293472875)
+
+          2193468228 PERF_COUNT_HW_CPU_CYCLES (69.72% scaling, ena=400496378615, run=121275296524)
+
+           750953436 PERF_COUNT_HW_CACHE_REFERENCES (69.55% scaling, ena=401496466529, run=122275384438)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1579036796 : prev=1586377924)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=290556326 : prev=291956377)
+
+          2195556608 PERF_COUNT_HW_CPU_CYCLES (69.55% scaling, ena=401496475812, run=122275393721)
+
+           764503564 PERF_COUNT_HW_CACHE_REFERENCES (69.37% scaling, ena=402495664059, run=123274581968)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1572007930 : prev=1579036796)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=289188608 : prev=290556326)
+
+          2193469176 PERF_COUNT_HW_CPU_CYCLES (69.37% scaling, ena=402495672575, run=123274590484)
+
+         50405340907 PERF_COUNT_HW_CACHE_REFERENCES (74.39% scaling, ena=485248326447, run=124275068350)
+
+           310909231 PERF_COUNT_HW_CACHE_MISSES (74.39% scaling, ena=485248331258, run=124275073161)
+
+            56974191 PERF_COUNT_HW_CACHE_LL (74.39% scaling, ena=485248333885, run=124275075788)
+
+        181577295137 PERF_COUNT_HW_CPU_CYCLES (74.39% scaling, ena=485248336570, run=124275078473)
+
+           417957387 PERF_COUNT_HW_CACHE_REFERENCES (74.24% scaling, ena=486246694291, run=125273436194)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1875352471 : prev=1882917161)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=344592537 : prev=346162799)
+
+          2191822716 PERF_COUNT_HW_CPU_CYCLES (74.24% scaling, ena=486246705901, run=125273447804)
+
+           420908994 PERF_COUNT_HW_CACHE_REFERENCES (74.08% scaling, ena=487246817470, run=126273559373)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1867983020 : prev=1875352471)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=343021391 : prev=344592537)
+
+          2195774465 PERF_COUNT_HW_CPU_CYCLES (74.08% scaling, ena=487246829155, run=126273571058)
+
+           426737506 PERF_COUNT_HW_CACHE_REFERENCES (73.93% scaling, ena=488245992517, run=127272734420)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1860713498 : prev=1867983020)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=341510608 : prev=343021391)
+
+          2193558898 PERF_COUNT_HW_CPU_CYCLES (73.93% scaling, ena=488246004249, run=127272746152)
+
+           428703181 PERF_COUNT_HW_CACHE_REFERENCES (73.78% scaling, ena=489246114104, run=128272856007)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1853594225 : prev=1860713498)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=340001031 : prev=341510608)
+
+          2195751969 PERF_COUNT_HW_CPU_CYCLES (73.78% scaling, ena=489246125559, run=128272867462)
+
+           431314290 PERF_COUNT_HW_CACHE_REFERENCES (73.63% scaling, ena=490245253172, run=129271995075)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=1846583272 : prev=1853594225)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=338546456 : prev=340001031)
+
+          2193435668 PERF_COUNT_HW_CPU_CYCLES Done
+
+real	1m2.233s
+user	1m1.966s
+sys	0m0.222s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark swaptions ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'simsmall' available, skipping input setup.
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/swaptions/inst/amd64-linux.gcc-serial/bin/swaptions -ns 16 -sm 5000 -nt 1':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Swaption0: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption1: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption2: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption3: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption4: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption5: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption6: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption7: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption8: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption9: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption10: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption11: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption12: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption13: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption14: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Swaption15: [SwaptionPrice: 0.0000234735 StdError: 0.0000083599] 
+Number of Simulations: 5000,  Number of threads: 1 Number of swaptions: 16
+
+real	0m0.787s
+user	0m0.784s
+sys	0m0.002s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark fluidanimate ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+in_35K.fluid
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/fluidanimate/inst/amd64-linux.gcc-serial/bin/fluidanimate 1 5 in_35K.fluid out.fluid':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Loading file "in_35K.fluid"...
+Number of cells: 36900
+Number of particles: 35402 (1102 skipped)
+Saving file "out.fluid"...
+
+real	0m2.643s
+user	0m2.602s
+sys	0m0.027s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark vips ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+pomegranate_1600x1200.v
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/vips/inst/amd64-linux.gcc-serial/bin/vips im_benchmark pomegranate_1600x1200.v output.v':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+
+real	0m2.917s
+user	0m2.778s
+sys	0m0.090s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark x264 ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+eledream_640x360_8.y4m
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/x264/inst/amd64-linux.gcc-serial/bin/x264 --quiet --qp 20 --partitions b8x8,i4x4 --ref 5 --direct auto --b-pyramid --weightb --mixed-refs --no-fast-pskip --me umh --subme 7 --analyse b8x8,i4x4 --threads 1 -o eledream.264 eledream_640x360_8.y4m':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+yuv4mpeg: 640x360@25/1fps, 0:0
+
+encoded 8 frames, 29.82 fps, 4866.98 kb/s
+
+real	0m0.276s
+user	0m0.256s
+sys	0m0.017s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark canneal ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+100000.nets
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/kernels/canneal/inst/amd64-linux.gcc-serial/bin/canneal 1 10000 2000 100000.nets 32':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Threadcount: 1
+10000 swaps per temperature step
+start temperature: 2000
+netlist filename: 100000.nets
+number of temperature steps: 32
+locs created
+locs assigned
+Just saw element: 100000
+netlist created. 100000 elements.
+Final routing is: 9.27689e+07
+
+real	0m2.748s
+user	0m2.711s
+sys	0m0.035s
+[PARSEC] [----------    End of output    ----------]
+
+[PARSEC] [========== Running benchmark streamcluster ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'simsmall' available, skipping input setup.
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/kernels/streamcluster/inst/amd64-linux.gcc-serial/bin/streamcluster 10 20 32 4096 4096 1000 none output.txt 1':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+read 4096 points
+(73.63% scaling, ena=490245265594, run=129272007497)
+
+         81342888843 PERF_COUNT_HW_CACHE_REFERENCES (79.16% scaling, ena=625012983172, run=130266894420)
+
+           494669614 PERF_COUNT_HW_CACHE_MISSES (79.16% scaling, ena=625012988375, run=130266899623)
+
+            92257284 PERF_COUNT_HW_CACHE_LL (79.16% scaling, ena=625012991619, run=130266902867)
+
+        295708202201 PERF_COUNT_HW_CPU_CYCLES (79.16% scaling, ena=625012994802, run=130266906050)
+
+          1011183055 PERF_COUNT_HW_CACHE_REFERENCES (79.08% scaling, ena=627281068511, run=131249797701)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2337982534 : prev=2341252886)
+
+             2068661 PERF_COUNT_HW_CACHE_LL (79.08% scaling, ena=627281077906, run=131249807096)
+
+          4973343105 PERF_COUNT_HW_CPU_CYCLES (79.08% scaling, ena=627281081087, run=131249810277)
+
+           386858514 PERF_COUNT_HW_CACHE_REFERENCES (78.95% scaling, ena=628281190829, run=132249920019)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2324093103 : prev=2337982534)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=431969502 : prev=432872401)
+
+          2196089187 PERF_COUNT_HW_CPU_CYCLES (78.95% scaling, ena=628281209783, run=132249938973)
+
+           421125255 PERF_COUNT_HW_CACHE_REFERENCES (78.83% scaling, ena=629280376620, run=133249105810)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2310450246 : prev=2324093103)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=431089817 : prev=431969502)
+
+          2193818038 PERF_COUNT_HW_CPU_CYCLES (78.83% scaling, ena=629280388347, run=133249117537)
+
+          5796637373 PERF_COUNT_HW_CACHE_REFERENCES (79.03% scaling, ena=640008034071, run=134179409113)
+
+            45770833 PERF_COUNT_HW_CACHE_MISSES (79.03% scaling, ena=640008039881, run=134179414923)
+
+            17417834 PERF_COUNT_HW_CACHE_LL (79.03% scaling, ena=640008043303, run=134179418345)
+
+         23523101313 PERF_COUNT_HW_CPU_CYCLES (79.03% scaling, ena=640008046598, run=134179421640)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_REFERENCES (cur=386036544495 : prev=386194956426)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2345741828 : prev=2356221079)
+
+             4726554 PERF_COUNT_HW_CACHE_LL (78.91% scaling, ena=641007040421, run=135178415463)
+
+          2193387893 PERF_COUNT_HW_CPU_CYCLES (78.91% scaling, ena=641007043725, run=135178418767)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_REFERENCES (cur=385888850181 : prev=386036544495)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2335346564 : prev=2345741828)
+
+             4012571 PERF_COUNT_HW_CACHE_LL (78.79% scaling, ena=642007032672, run=136178407714)
+
+          2195733459 PERF_COUNT_HW_CPU_CYCLES (78.79% scaling, ena=642007035849, run=136178410891)
+
+          6701902361 PERF_COUNT_HW_CACHE_REFERENCES (79.02% scaling, ena=653410025043, run=137073280795)
+
+            70527204 PERF_COUNT_HW_CACHE_MISSES (79.02% scaling, ena=653410030980, run=137073286732)
+
+            24643765 PERF_COUNT_HW_CACHE_LL (79.02% scaling, ena=653410034574, run=137073290326)
+
+         24983824441 PERF_COUNT_HW_CPU_CYCLES (79.02% scaling, ena=653410037999, run=137073293751)
+
+           225941786 PERF_COUNT_HW_CACHE_REFERENCES (78.90% scaling, ena=654410059153, run=138073314905)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2402286034 : prev=2405873768)
+
+            28119536 PERF_COUNT_HW_CACHE_LL (78.90% scaling, ena=654410068655, run=138073324407)
+
+          2196093449 PERF_COUNT_HW_CPU_CYCLES (78.90% scaling, ena=654410072062, run=138073327814)
+
+           920367458 PERF_COUNT_HW_CACHE_REFERENCES (78.85% scaling, ena=657701110616, run=139072572619)
+
+              100604 PERF_COUNT_HW_CACHE_MISSES (78.85% scaling, ena=657701116918, run=139072578921)
+
+            34080383 PERF_COUNT_HW_CACHE_LL (78.85% scaling, ena=657701120325, run=139072582328)
+
+          7222629182 PERF_COUNT_HW_CPU_CYCLES (78.85% scaling, ena=657701123644, run=139072585647)
+
+          2855410345 PERF_COUNT_HW_CACHE_REFERENCES (78.91% scaling, ena=664019670958, run=140066961734)
+
+             8132785 PERF_COUNT_HW_CACHE_MISSES (78.
+real	0m2.086s
+user	0m2.081s
+sys	0m0.004s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+91% scaling, ena=664019676574, run=140066967350)
+
+            33632173 PERF_COUNT_HW_CACHE_LL (78.91% scaling, ena=664019679860, run=140066970636)
+
+         13862665386 PERF_COUNT_HW_CPU_CYCLES (78.91% scaling, ena=664019682917, run=140066973693)
+
+           627349100 PERF_COUNT_HW_CACHE_REFERENCES (78.79% scaling, ena=665019833664, run=141067124440)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=2397194964 : prev=2410519423)
+
+             5354706 PERF_COUNT_HW_CACHE_LL (78.79% scaling, ena=665019840209, run=141067130985)
+
+          2196364896 PERF_COUNT_HW_CPU_CYCLES (78.79% scaling, ena=665019842774, run=141067133550)
+
+          3829748698 PERF_COUNT_HW_CACHE_REFERENCES (78.89% scaling, ena=671425474788, run=141715892412)
+
+            12550610 PERF_COUNT_HW_CACHE_MISSES (78.89% scaling, ena=671425474788, run=141715892412)
+
+             8922181 PERF_COUNT_HW_CACHE_LL (78.89% scaling, ena=671425474788, run=141715892412)
+
+         14055457533 PERF_COUNT_HW_CPU_CYCLES (78.89% scaling, ena=671425474788, run=141715892412)
