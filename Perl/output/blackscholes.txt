@@ -1,0 +1,2604 @@
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.939s
+user	0m3.519s
+sys	0m0.030s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+           465291288 PERF_COUNT_HW_CPU_CYCLES (0.00% scaling, ena=212507068, run=212507068)
+
+           385410062 PERF_COUNT_HW_INSTRUCTIONS (0.00% scaling, ena=212522794, run=212522794)
+
+           132840265 PERF_COUNT_HW_CACHE_REFERENCES (0.00% scaling, ena=212533045, run=212533045)
+
+             3622795 PERF_COUNT_HW_CACHE_MISSES (0.00% scaling, ena=212542595, run=212542595)
+
+         11860631781 PERF_COUNT_HW_CPU_CYCLES (94.89% scaling, ena=5636995954, run=288091539)
+
+          9110953290 PERF_COUNT_HW_INSTRUCTIONS (94.89% scaling, ena=5636995954, run=288091539)
+
+          3106787849 PERF_COUNT_HW_CACHE_REFERENCES (94.89% scaling, ena=5636995954, run=288091539)
+
+            97778900 PERF_COUNT_HW_CACHE_MISSES (94.89% scaling, ena=5636995954, run=288091539)
+
+          2902926576 PERF_COUNT_HW_CPU_CYCLES (91.49% scaling, ena=6971463138, run=593594937)
+
+          5387237644 PERF_COUNT_HW_INSTRUCTIONS (91.49% scaling, ena=6971471633, run=593603432)
+
+          1129463552 PERF_COUNT_HW_CACHE_REFERENCES (91.49% scaling, ena=6971476081, run=593607880)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=81961766 : prev=101401695)
+
+          1717130883 PERF_COUNT_HW_CPU_CYCLES (82.43% scaling, ena=7737744266, run=1359876065)
+
+           338215074 PERF_COUNT_HW_INSTRUCTIONS (82.43% scaling, ena=7737744266, run=1359876065)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_REFERENCES (cur=3736725416 : prev=4369091666)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=39870477 : prev=81961766)
+
+          1485369419 PERF_COUNT_HW_CPU_CYCLES (75.93% scaling, ena=8410774167, run=2024349341)
+
+           961178925 PERF_COUNT_HW_INSTRUCTIONS (75.93% scaling, ena=8410781656, run=2024356830)
+
+            17174531 PERF_COUNT_HW_CACHE_REFERENCES (75.93% scaling, ena=8410785736, run=2024360910)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=29226591 : prev=39870477)
+
+          1567142386 PERF_COUNT_HW_CPU_CYCLES (70.01% scaling, ena=9122786391, run=2736361565)
+
+          1162019317 PERF_COUNT_HW_INSTRUCTIONS (70.01% scaling, ena=9122786391, run=2736361565)
+
+           140098419 PERF_COUNT_HW_CACHE_REFERENCES (70.01% scaling, ena=9122786391, run=2736361565)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=23548238 : prev=29226591)
+
+          1655960633 PERF_COUNT_HW_CPU_CYCLES (64.79% scaling, ena=9876109189, run=3477760889)
+
+          1295251279 PERF_COUNT_HW_INSTRUCTIONS (64.79% scaling, ena=9876116055, run=3477767755)
+
+           204804668 PERF_COUNT_HW_CACHE_REFERENCES (64.79% scaling, ena=9876120053, run=3477771753)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=20144531 : prev=23548238)
+
+           716973024 PERF_COUNT_HW_CPU_CYCLES (62.71% scaling, ena=10202387934, run=3804039634)
+
+           571293695 PERF_COUNT_HW_INSTRUCTIONS (62.71% scaling, ena=10202387934, run=3804039634)
+
+            97251557 PERF_COUNT_HW_CACHE_REFERENCES (62.71% scaling, ena=10202387934, run=3804039634)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_MISSES (cur=19064569 : prev=20144531)
+
+         50198669543 PERF_COUNT_HW_CPU_CYCLES (88.24% scaling, ena=33098883127, run=3893775790)
+
+         43594012497 PERF_COUNT_HW_INSTRUCTIONS (88.24% scaling, ena=33098883127, run=3893775790)
+
+          9616604403 PERF_COUNT_HW_CACHE_REFERENCES (88.24% scaling, ena=33098883127, run=3893775790)
+
+            49768623 PERF_COUNT_HW_CACHE_MISSES (88.24% scaling, ena=33098883127, run=3893775790)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.625s
+user	0m3.498s
+sys	0m0.036s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+            82495190 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (0.00% scaling, ena=245534001, run=245534001)
+
+             5284528 PERF_COUNT_HW_BRANCH_MISSES (0.00% scaling, ena=245534001, run=245534001)
+
+           245485452 PERF_COUNT_SW_CPU_CLOCK (0.00% scaling, ena=245534001, run=245534001)
+
+           245534001 PERF_COUNT_SW_TASK_CLOCK (0.00% scaling, ena=245534001, run=245534001)
+
+           202591237 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (20.33% scaling, ena=646604193, run=515136552)
+
+             5294280 PERF_COUNT_HW_BRANCH_MISSES (20.33% scaling, ena=646611197, run=515143556)
+
+           402172595 PERF_COUNT_SW_CPU_CLOCK (20.33% scaling, ena=646615119, run=515147478)
+
+           401085182 PERF_COUNT_SW_TASK_CLOCK (20.33% scaling, ena=646618871, run=515151230)
+
+            94377879 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (9.76% scaling, ena=1347649581, run=1216181940)
+
+inconsistent scaling PERF_COUNT_HW_BRANCH_MISSES (cur=9935668 : prev=10578808)
+
+           700919138 PERF_COUNT_SW_CPU_CLOCK (9.76% scaling, ena=1347660594, run=1216192953)
+
+           701045303 PERF_COUNT_SW_TASK_CLOCK (9.76% scaling, ena=1347664248, run=1216196607)
+
+           109635126 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (6.42% scaling, ena=2048112830, run=1916645189)
+
+              218687 PERF_COUNT_HW_BRANCH_MISSES (6.42% scaling, ena=2048112830, run=1916645189)
+
+           700418442 PERF_COUNT_SW_CPU_CLOCK (6.42% scaling, ena=2048112830, run=1916645189)
+
+           700448344 PERF_COUNT_SW_TASK_CLOCK (6.42% scaling, ena=2048112830, run=1916645189)
+
+           103284250 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (5.10% scaling, ena=2689054787, run=2552023843)
+
+              372898 PERF_COUNT_HW_BRANCH_MISSES (5.10% scaling, ena=2689061685, run=2552030741)
+
+           640932621 PERF_COUNT_SW_CPU_CLOCK (5.10% scaling, ena=2689065791, run=2552034847)
+
+           640956712 PERF_COUNT_SW_TASK_CLOCK (5.10% scaling, ena=2689069302, run=2552038358)
+
+            87097217 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (4.25% scaling, ena=3227162551, run=3090131607)
+
+              343204 PERF_COUNT_HW_BRANCH_MISSES (4.25% scaling, ena=3227169801, run=3090138857)
+
+           538085685 PERF_COUNT_SW_CPU_CLOCK (4.25% scaling, ena=3227174160, run=3090143216)
+
+           538108467 PERF_COUNT_SW_TASK_CLOCK (4.25% scaling, ena=3227177773, run=3090146829)
+
+           108968956 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (3.52% scaling, ena=3896555875, run=3759524931)
+
+              451865 PERF_COUNT_HW_BRANCH_MISSES (3.52% scaling, ena=3896562202, run=3759531258)
+
+           669380096 PERF_COUNT_SW_CPU_CLOCK (3.52% scaling, ena=3896566168, run=3759535224)
+
+           669392250 PERF_COUNT_SW_TASK_CLOCK (3.52% scaling, ena=3896570003, run=3759539059)
+
+          4535760735 PERF_COUNT_HW_BRANCH_INSTRUCTIONS (84.88% scaling, ena=25571475493, run=3865634360)
+
+            67439563 PERF_COUNT_HW_BRANCH_MISSES (84.88% scaling, ena=25571475493, run=3865634360)
+
+         21680536219 PERF_COUNT_SW_CPU_CLOCK (84.88% scaling, ena=25571475493, run=3865634360)
+
+         21674905234 PERF_COUNT_SW_TASK_CLOCK (84.88% scaling, ena=25571475493, run=3865634360)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.996s
+user	0m3.516s
+sys	0m0.035s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+               12769 PERF_COUNT_SW_PAGE_FAULTS (0.00% scaling, ena=246683352, run=246683352)
+
+                 207 PERF_COUNT_SW_CONTEXT_SWITCHES (0.00% scaling, ena=246683352, run=246683352)
+
+                  52 PERF_COUNT_SW_CPU_MIGRATIONS (0.00% scaling, ena=246683352, run=246683352)
+
+               12768 PERF_COUNT_SW_PAGE_FAULTS_MIN (0.00% scaling, ena=246683352, run=246683352)
+
+               11288 PERF_COUNT_SW_PAGE_FAULTS (29.80% scaling, ena=585457619, run=411006122)
+
+                3231 PERF_COUNT_SW_CONTEXT_SWITCHES (29.80% scaling, ena=585457619, run=411006122)
+
+                  44 PERF_COUNT_SW_CPU_MIGRATIONS (29.80% scaling, ena=585457619, run=411006122)
+
+               11288 PERF_COUNT_SW_PAGE_FAULTS_MIN (29.80% scaling, ena=585457619, run=411006122)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS (cur=20441 : prev=24057)
+
+inconsistent scaling PERF_COUNT_SW_CONTEXT_SWITCHES (cur=2822 : prev=3438)
+
+inconsistent scaling PERF_COUNT_SW_CPU_MIGRATIONS (cur=81 : prev=96)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS_MIN (cur=20439 : prev=24056)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS (cur=19452 : prev=20441)
+
+inconsistent scaling PERF_COUNT_SW_CONTEXT_SWITCHES (cur=2713 : prev=2822)
+
+                   6 PERF_COUNT_SW_CPU_MIGRATIONS (9.27% scaling, ena=1966683238, run=1784356666)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS_MIN (cur=19451 : prev=20439)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS (cur=18917 : prev=19452)
+
+inconsistent scaling PERF_COUNT_SW_CONTEXT_SWITCHES (cur=2659 : prev=2713)
+
+                  11 PERF_COUNT_SW_CPU_MIGRATIONS (6.71% scaling, ena=2718905795, run=2536579223)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS_MIN (cur=18916 : prev=19451)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS (cur=18603 : prev=18917)
+
+inconsistent scaling PERF_COUNT_SW_CONTEXT_SWITCHES (cur=2628 : prev=2659)
+
+                  11 PERF_COUNT_SW_CPU_MIGRATIONS (5.13% scaling, ena=3553943980, run=3371617408)
+
+inconsistent scaling PERF_COUNT_SW_PAGE_FAULTS_MIN (cur=18602 : prev=18916)
+
+               80911 PERF_COUNT_SW_PAGE_FAULTS (81.24% scaling, ena=20734889638, run=3890309412)
+
+               13164 PERF_COUNT_SW_CONTEXT_SWITCHES (81.24% scaling, ena=20734889638, run=3890309412)
+
+                 525 PERF_COUNT_SW_CPU_MIGRATIONS (81.24% scaling, ena=20734889638, run=3890309412)
+
+               80906 PERF_COUNT_SW_PAGE_FAULTS_MIN (81.24% scaling, ena=20734889638, run=3890309412)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.560s
+user	0m3.529s
+sys	0m0.038s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   1 PERF_COUNT_SW_PAGE_FAULTS_MAJ (0.00% scaling, ena=246541234, run=246541234)
+
+             2808719 PERF_COUNT_HW_CACHE_L1D (0.00% scaling, ena=246541234, run=246541234)
+
+             3962371 PERF_COUNT_HW_CACHE_L1I (0.00% scaling, ena=246541234, run=246541234)
+
+             1704661 PERF_COUNT_HW_CACHE_LL (0.00% scaling, ena=246541234, run=246541234)
+
+                   0 PERF_COUNT_SW_PAGE_FAULTS_MAJ (22.65% scaling, ena=917777778, run=709926062)
+
+             5873366 PERF_COUNT_HW_CACHE_L1D (22.65% scaling, ena=917784318, run=709932602)
+
+             4636749 PERF_COUNT_HW_CACHE_L1I (22.65% scaling, ena=917788290, run=709936574)
+
+             1563800 PERF_COUNT_HW_CACHE_LL (22.65% scaling, ena=917791871, run=709940155)
+
+                   0 PERF_COUNT_SW_PAGE_FAULTS_MAJ (10.84% scaling, ena=1917882636, run=1710030920)
+
+             9032957 PERF_COUNT_HW_CACHE_L1D (10.84% scaling, ena=1917888835, run=1710037119)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_L1I (cur=7498508 : prev=8599120)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_LL (cur=3235051 : prev=3268461)
+
+                   0 PERF_COUNT_SW_PAGE_FAULTS_MAJ (8.06% scaling, ena=2578286011, run=2370434295)
+
+             6120244 PERF_COUNT_HW_CACHE_L1D (8.06% scaling, ena=2578286011, run=2370434295)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_L1I (cur=7300760 : prev=7498508)
+
+              179743 PERF_COUNT_HW_CACHE_LL (8.06% scaling, ena=2578286011, run=2370434295)
+
+                   0 PERF_COUNT_SW_PAGE_FAULTS_MAJ (6.48% scaling, ena=3387257576, run=3167916230)
+
+             7522423 PERF_COUNT_HW_CACHE_L1D (6.48% scaling, ena=3387264401, run=3167923055)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_L1I (cur=7211287 : prev=7300760)
+
+              275809 PERF_COUNT_HW_CACHE_LL (6.48% scaling, ena=3387271996, run=3167930650)
+
+                   0 PERF_COUNT_SW_PAGE_FAULTS_MAJ (5.34% scaling, ena=4106332204, run=3886990858)
+
+             6116561 PERF_COUNT_HW_CACHE_L1D (5.34% scaling, ena=4106332204, run=3886990858)
+
+              500118 PERF_COUNT_HW_CACHE_L1I (5.34% scaling, ena=4106332204, run=3886990858)
+
+              280236 PERF_COUNT_HW_CACHE_LL (5.34% scaling, ena=4106332204, run=3886990858)
+
+                   4 PERF_COUNT_SW_PAGE_FAULTS_MAJ (82.16% scaling, ena=21899628725, run=3905881222)
+
+           162914351 PERF_COUNT_HW_CACHE_L1D (82.16% scaling, ena=21899628725, run=3905881222)
+
+            35636729 PERF_COUNT_HW_CACHE_L1I (82.16% scaling, ena=21899628725, run=3905881222)
+
+            18017965 PERF_COUNT_HW_CACHE_LL (82.16% scaling, ena=21899628725, run=3905881222)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.931s
+user	0m3.550s
+sys	0m0.027s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   0 PERF_COUNT_HW_CACHE_DTLB (0.00% scaling, ena=245161287, run=245161287)
+
+                   0 PERF_COUNT_HW_CACHE_ITLB (0.00% scaling, ena=245161287, run=245161287)
+
+             5223202 PERF_COUNT_HW_CACHE_BPU (0.00% scaling, ena=245161287, run=245161287)
+
+             4151876 DISPATCHED_FPU (0.00% scaling, ena=245161287, run=245161287)
+
+                   0 PERF_COUNT_HW_CACHE_DTLB (25.12% scaling, ena=716424906, run=536436842)
+
+                   0 PERF_COUNT_HW_CACHE_ITLB (25.12% scaling, ena=716431715, run=536443651)
+
+             6145590 PERF_COUNT_HW_CACHE_BPU (25.12% scaling, ena=716435463, run=536447399)
+
+            92267513 DISPATCHED_FPU (25.12% scaling, ena=716438907, run=536450843)
+
+                   0 PERF_COUNT_HW_CACHE_DTLB (10.65% scaling, ena=1690187750, run=1510199686)
+
+                   0 PERF_COUNT_HW_CACHE_ITLB (10.65% scaling, ena=1690194131, run=1510206067)
+
+inconsistent scaling PERF_COUNT_HW_CACHE_BPU (cur=10336993 : prev=11368792)
+
+          1271103082 DISPATCHED_FPU (10.65% scaling, ena=1690201023, run=1510212959)
+
+                   0 PERF_COUNT_HW_CACHE_DTLB (6.69% scaling, ena=2690288276, run=2510300212)
+
+                   0 PERF_COUNT_HW_CACHE_ITLB (6.69% scaling, ena=2690294850, run=2510306786)
+
+              353290 PERF_COUNT_HW_CACHE_BPU (6.69% scaling, ena=2690298548, run=2510310484)
+
+          1207568192 DISPATCHED_FPU (6.69% scaling, ena=2690302170, run=2510314106)
+
+                   0 PERF_COUNT_HW_CACHE_DTLB (4.88% scaling, ena=3690327573, run=3510339509)
+
+                   0 PERF_COUNT_HW_CACHE_ITLB (4.88% scaling, ena=3690334025, run=3510345961)
+
+              573291 PERF_COUNT_HW_CACHE_BPU (4.88% scaling, ena=3690337913, run=3510349849)
+
+          1192182423 DISPATCHED_FPU (4.88% scaling, ena=3690341357, run=3510353293)
+
+                   0 PERF_COUNT_HW_CACHE_DTLB (77.92% scaling, ena=17707506706, run=3909579772)
+
+                   0 PERF_COUNT_HW_CACHE_ITLB (77.92% scaling, ena=17707506706, run=3909579772)
+
+            42491840 PERF_COUNT_HW_CACHE_BPU (77.92% scaling, ena=17707506706, run=3909579772)
+
+         14141209747 DISPATCHED_FPU (77.92% scaling, ena=17707506706, run=3909579772)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.839s
+user	0m3.540s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+           557754112 CYCLES_NO_FPU_OPS_RETIRED (0.00% scaling, ena=260935240, run=260935240)
+
+              308054 DISPATCHED_FPU_OPS_FAST_FLAG (0.00% scaling, ena=260935240, run=260935240)
+
+               46071 RETIRED_SSE_OPERATIONS (0.00% scaling, ena=260935240, run=260935240)
+
+              236445 RETIRED_MOVE_OPS (0.00% scaling, ena=260935240, run=260935240)
+
+           521282417 CYCLES_NO_FPU_OPS_RETIRED (4.55% scaling, ena=848155409, run=809549563)
+
+            16403874 DISPATCHED_FPU_OPS_FAST_FLAG (4.55% scaling, ena=848163246, run=809557400)
+
+           125004391 RETIRED_SSE_OPERATIONS (4.55% scaling, ena=848167269, run=809561423)
+
+            54288849 RETIRED_MOVE_OPS (4.55% scaling, ena=848170894, run=809565048)
+
+inconsistent scaling CYCLES_NO_FPU_OPS_RETIRED (cur=1065288969 : prev=1079036529)
+
+            45796837 DISPATCHED_FPU_OPS_FAST_FLAG (2.09% scaling, ena=1848251811, run=1809645965)
+
+           380690383 RETIRED_SSE_OPERATIONS (2.09% scaling, ena=1848255648, run=1809649802)
+
+           163597666 RETIRED_MOVE_OPS (2.09% scaling, ena=1848259381, run=1809653535)
+
+             5397759 CYCLES_NO_FPU_OPS_RETIRED (1.36% scaling, ena=2848321843, run=2809715997)
+
+            45400269 DISPATCHED_FPU_OPS_FAST_FLAG (1.36% scaling, ena=2848330153, run=2809724307)
+
+           377145774 RETIRED_SSE_OPERATIONS (1.36% scaling, ena=2848334008, run=2809728162)
+
+           162088119 RETIRED_MOVE_OPS (1.36% scaling, ena=2848337827, run=2809731981)
+
+             9409737 CYCLES_NO_FPU_OPS_RETIRED (1.00% scaling, ena=3848413647, run=3809807801)
+
+            45324423 DISPATCHED_FPU_OPS_FAST_FLAG (1.00% scaling, ena=3848420978, run=3809815132)
+
+           376463471 RETIRED_SSE_OPERATIONS (1.00% scaling, ena=3848425020, run=3809819174)
+
+           161797893 RETIRED_MOVE_OPS (1.00% scaling, ena=3848428839, run=3809822993)
+
+          4716648629 CYCLES_NO_FPU_OPS_RETIRED (78.39% scaling, ena=18094330094, run=3909794657)
+
+           553574725 DISPATCHED_FPU_OPS_FAST_FLAG (78.39% scaling, ena=18094330094, run=3909794657)
+
+          4527486218 RETIRED_SSE_OPERATIONS (78.39% scaling, ena=18094330094, run=3909794657)
+
+          1950392652 RETIRED_MOVE_OPS (78.39% scaling, ena=18094330094, run=3909794657)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.796s
+user	0m3.559s
+sys	0m0.037s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                3283 RETIRED_SERIALIZING_OPS (0.00% scaling, ena=253336651, run=253336651)
+
+               55972 FP_SCHEDULER_CYCLES (0.00% scaling, ena=253336651, run=253336651)
+
+              123505 SEGMENT_REGISTER_LOADS (0.00% scaling, ena=253336651, run=253336651)
+
+                   0 PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE (0.00% scaling, ena=253336651, run=253336651)
+
+         21370909049 RETIRED_SERIALIZING_OPS (100.00% scaling, ena=4957024017443972, run=819022208)
+
+        376308805795 FP_SCHEDULER_CYCLES (100.00% scaling, ena=4957024017450909, run=819029145)
+
+       1018727452152 SEGMENT_REGISTER_LOADS (100.00% scaling, ena=4957024017454506, run=819032742)
+
+                   0 PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE (100.00% scaling, ena=4957024017458181, run=819036417)
+
+inconsistent scaling RETIRED_SERIALIZING_OPS (cur=9643585989 : prev=21370912332)
+
+inconsistent scaling FP_SCHEDULER_CYCLES (cur=169725345426 : prev=376308861767)
+
+inconsistent scaling SEGMENT_REGISTER_LOADS (cur=483334446986 : prev=1018727575657)
+
+                   0 PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE (100.00% scaling, ena=4957025017563951, run=1819142187)
+
+inconsistent scaling RETIRED_SERIALIZING_OPS (cur=6229632009 : prev=9643585989)
+
+inconsistent scaling FP_SCHEDULER_CYCLES (cur=109611707810 : prev=169725345426)
+
+inconsistent scaling SEGMENT_REGISTER_LOADS (cur=327779727099 : prev=483334446986)
+
+                   0 PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE (100.00% scaling, ena=4957026017662429, run=2819240665)
+
+inconsistent scaling RETIRED_SERIALIZING_OPS (cur=4598678582 : prev=6229632009)
+
+inconsistent scaling FP_SCHEDULER_CYCLES (cur=80914786515 : prev=109611707810)
+
+inconsistent scaling SEGMENT_REGISTER_LOADS (cur=253693696335 : prev=327779727099)
+
+                   0 PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE (100.00% scaling, ena=4957027017521544, run=3819099780)
+
+inconsistent scaling RETIRED_SERIALIZING_OPS (cur=4566149070 : prev=4598678582)
+
+          1128763889 FP_SCHEDULER_CYCLES (100.00% scaling, ena=4957041115450990, run=3941837205)
+
+          5101699380 SEGMENT_REGISTER_LOADS (100.00% scaling, ena=4957041115450990, run=3941837205)
+
+                   0 PIPELINE_RESTART_DUE_TO_SELF_MODIFYING_CODE (100.00% scaling, ena=4957041115450990, run=3941837205)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.426s
+user	0m3.518s
+sys	0m0.030s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+               93647 PIPELINE_RESTART_DUE_TO_PROBE_HIT (0.00% scaling, ena=245209580, run=245209580)
+
+            20920271 LS_BUFFER_2_FULL_CYCLES (0.00% scaling, ena=245209580, run=245209580)
+
+            28604294 LOCKED_OPS (0.00% scaling, ena=245209580, run=245209580)
+
+               12239 RETIRED_CLFLUSH_INSTRUCTIONS (0.00% scaling, ena=245209580, run=245209580)
+
+              170715 PIPELINE_RESTART_DUE_TO_PROBE_HIT (47.98% scaling, ena=621939019, run=323506034)
+
+            60686851 LS_BUFFER_2_FULL_CYCLES (47.98% scaling, ena=621939019, run=323506034)
+
+            67832759 LOCKED_OPS (47.98% scaling, ena=621939019, run=323506034)
+
+               11290 RETIRED_CLFLUSH_INSTRUCTIONS (47.98% scaling, ena=621939019, run=323506034)
+
+        861209127346 PIPELINE_RESTART_DUE_TO_PROBE_HIT (100.00% scaling, ena=4957038548779317, run=944601399)
+
+    1180554668486493 LS_BUFFER_2_FULL_CYCLES (100.00% scaling, ena=4957038548779317, run=944601399)
+
+     521344540779814 LOCKED_OPS (100.00% scaling, ena=4957038548779317, run=944601399)
+
+         64227273680 RETIRED_CLFLUSH_INSTRUCTIONS (100.00% scaling, ena=4957038548779317, run=944601399)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_PROBE_HIT (cur=540160148051 : prev=861209391708)
+
+     257911800542655 LS_BUFFER_2_FULL_CYCLES (100.00% scaling, ena=4957039118905986, run=1506392164)
+
+inconsistent scaling LOCKED_OPS (cur=398738350667445 : prev=521344637216867)
+
+inconsistent scaling RETIRED_CLFLUSH_INSTRUCTIONS (cur=40274507014 : prev=64227297209)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_PROBE_HIT (cur=378039094022 : prev=540160148051)
+
+     130522090644863 LS_BUFFER_2_FULL_CYCLES (100.00% scaling, ena=4957039768773520, run=2152739913)
+
+inconsistent scaling LOCKED_OPS (cur=319323155908824 : prev=398738350667445)
+
+inconsistent scaling RETIRED_CLFLUSH_INSTRUCTIONS (cur=28182218871 : prev=40274507014)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_PROBE_HIT (cur=276586185160 : prev=378039094022)
+
+      81863748781959 LS_BUFFER_2_FULL_CYCLES (100.00% scaling, ena=4957040559068415, run=2943034808)
+
+inconsistent scaling LOCKED_OPS (cur=259522477597858 : prev=319323155908824)
+
+inconsistent scaling RETIRED_CLFLUSH_INSTRUCTIONS (cur=20614455188 : prev=28182218871)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_PROBE_HIT (cur=225160036737 : prev=276586185160)
+
+      41376785722463 LS_BUFFER_2_FULL_CYCLES (100.00% scaling, ena=4957041231843580, run=3615809973)
+
+inconsistent scaling LOCKED_OPS (cur=247224516094000 : prev=259522477597858)
+
+inconsistent scaling RETIRED_CLFLUSH_INSTRUCTIONS (cur=16778839231 : prev=20614455188)
+
+          6356066469 PIPELINE_RESTART_DUE_TO_PROBE_HIT (100.00% scaling, ena=4957061415844747, run=3884074583)
+
+inconsistent scaling LS_BUFFER_2_FULL_CYCLES (cur=1670771778739456 : prev=1692229175785555)
+
+inconsistent scaling LOCKED_OPS (cur=240606754278131 : prev=247224516094000)
+
+inconsistent scaling RETIRED_CLFLUSH_INSTRUCTIONS (cur=15620059134 : prev=16778839231)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.534s
+user	0m3.522s
+sys	0m0.030s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                 217 RETIRED_CPUID_INSTRUCTIONS (0.00% scaling, ena=248656696, run=248656696)
+
+              884244 CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (0.00% scaling, ena=248656696, run=248656696)
+
+                   0 SMIS_RECEIVED (0.00% scaling, ena=248656696, run=248656696)
+
+           220516542 DATA_CACHE_ACCESSES (0.00% scaling, ena=248656696, run=248656696)
+
+                 164 RETIRED_CPUID_INSTRUCTIONS (14.37% scaling, ena=641457018, run=549271342)
+
+             2046688 CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (14.37% scaling, ena=641464813, run=549279137)
+
+                   0 SMIS_RECEIVED (14.37% scaling, ena=641468817, run=549283141)
+
+           385493842 DATA_CACHE_ACCESSES (14.37% scaling, ena=641472458, run=549286782)
+
+inconsistent scaling RETIRED_CPUID_INSTRUCTIONS (cur=355 : prev=381)
+
+inconsistent scaling CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (cur=2756713 : prev=2930932)
+
+                   0 SMIS_RECEIVED (7.95% scaling, ena=1160003889, run=1067818213)
+
+           443903249 DATA_CACHE_ACCESSES (7.95% scaling, ena=1160003889, run=1067818213)
+
+inconsistent scaling RETIRED_CPUID_INSTRUCTIONS (cur=346 : prev=355)
+
+inconsistent scaling CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (cur=2720818 : prev=2756713)
+
+                   0 SMIS_RECEIVED (5.57% scaling, ena=1751823710, run=1654195012)
+
+           509673668 DATA_CACHE_ACCESSES (5.57% scaling, ena=1751827344, run=1654198646)
+
+inconsistent scaling RETIRED_CPUID_INSTRUCTIONS (cur=340 : prev=346)
+
+inconsistent scaling CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (cur=2714988 : prev=2720818)
+
+                   0 SMIS_RECEIVED (3.96% scaling, ena=2466955688, run=2369326990)
+
+           617167468 DATA_CACHE_ACCESSES (3.96% scaling, ena=2466959370, run=2369330672)
+
+inconsistent scaling RETIRED_CPUID_INSTRUCTIONS (cur=336 : prev=340)
+
+               18831 CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (2.94% scaling, ena=3316078302, run=3218449604)
+
+                   0 SMIS_RECEIVED (2.94% scaling, ena=3316078302, run=3218449604)
+
+           733699527 DATA_CACHE_ACCESSES (2.94% scaling, ena=3316078302, run=3218449604)
+
+inconsistent scaling RETIRED_CPUID_INSTRUCTIONS (cur=335 : prev=336)
+
+              392671 CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (2.60% scaling, ena=3971317624, run=3867952309)
+
+                   0 SMIS_RECEIVED (2.60% scaling, ena=3971317624, run=3867952309)
+
+           593823643 DATA_CACHE_ACCESSES (2.60% scaling, ena=3971317624, run=3867952309)
+
+                1955 RETIRED_CPUID_INSTRUCTIONS (84.85% scaling, ena=25658779383, run=3887231071)
+
+            18747900 CANCELLED_STORE_TO_LOAD_FORWARD_OPERATIONS (84.85% scaling, ena=25658779383, run=3887231071)
+
+                   0 SMIS_RECEIVED (84.85% scaling, ena=25658779383, run=3887231071)
+
+         19094994359 DATA_CACHE_ACCESSES (84.85% scaling, ena=25658779383, run=3887231071)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.962s
+user	0m3.513s
+sys	0m0.028s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             2924439 DATA_CACHE_MISSES (0.00% scaling, ena=246320495, run=246320495)
+
+             3985176 DATA_CACHE_REFILLS (0.00% scaling, ena=246320495, run=246320495)
+
+             1425545 DATA_CACHE_REFILLS_FROM_SYSTEM (0.00% scaling, ena=246320495, run=246320495)
+
+             5603794 DATA_CACHE_LINES_EVICTED (0.00% scaling, ena=246320495, run=246320495)
+
+             2840785 DATA_CACHE_MISSES (8.21% scaling, ena=612078244, run=561852641)
+
+             4138802 DATA_CACHE_REFILLS (8.21% scaling, ena=612085972, run=561860369)
+
+             1490186 DATA_CACHE_REFILLS_FROM_SYSTEM (8.21% scaling, ena=612089609, run=561864006)
+
+             5799950 DATA_CACHE_LINES_EVICTED (8.21% scaling, ena=612093175, run=561867572)
+
+             5658301 DATA_CACHE_MISSES (4.09% scaling, ena=1226712071, run=1176486468)
+
+             6096224 DATA_CACHE_REFILLS (4.09% scaling, ena=1226712071, run=1176486468)
+
+              444304 DATA_CACHE_REFILLS_FROM_SYSTEM (4.09% scaling, ena=1226712071, run=1176486468)
+
+             6525089 DATA_CACHE_LINES_EVICTED (4.09% scaling, ena=1226712071, run=1176486468)
+
+             6139682 DATA_CACHE_MISSES (2.88% scaling, ena=1890926887, run=1836392745)
+
+             6678461 DATA_CACHE_REFILLS (2.88% scaling, ena=1890926887, run=1836392745)
+
+              562480 DATA_CACHE_REFILLS_FROM_SYSTEM (2.88% scaling, ena=1890926887, run=1836392745)
+
+             7236835 DATA_CACHE_LINES_EVICTED (2.88% scaling, ena=1890926887, run=1836392745)
+
+             6258393 DATA_CACHE_MISSES (2.26% scaling, ena=2567809567, run=2509857697)
+
+             6818548 DATA_CACHE_REFILLS (2.26% scaling, ena=2567816980, run=2509865110)
+
+              587713 DATA_CACHE_REFILLS_FROM_SYSTEM (2.26% scaling, ena=2567821064, run=2509869194)
+
+             7404361 DATA_CACHE_LINES_EVICTED (2.26% scaling, ena=2567824741, run=2509872871)
+
+             9251574 DATA_CACHE_MISSES (1.62% scaling, ena=3567905854, run=3509953984)
+
+            10086247 DATA_CACHE_REFILLS (1.62% scaling, ena=3567913700, run=3509961830)
+
+              865494 DATA_CACHE_REFILLS_FROM_SYSTEM (1.62% scaling, ena=3567917463, run=3509965593)
+
+            10949700 DATA_CACHE_LINES_EVICTED (1.62% scaling, ena=3567921149, run=3509969279)
+
+           163108437 DATA_CACHE_MISSES (81.92% scaling, ena=21447139217, run=3878493144)
+
+           186519333 DATA_CACHE_REFILLS (81.92% scaling, ena=21447139217, run=3878493144)
+
+            26722609 DATA_CACHE_REFILLS_FROM_SYSTEM (81.92% scaling, ena=21447139217, run=3878493144)
+
+           214947089 DATA_CACHE_LINES_EVICTED (81.92% scaling, ena=21447139217, run=3878493144)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.224s
+user	0m3.518s
+sys	0m0.024s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             1518523 L1_DTLB_MISS_AND_L2_DTLB_HIT (0.00% scaling, ena=275978928, run=275978928)
+
+              137281 L1_DTLB_AND_L2_DTLB_MISS (0.00% scaling, ena=275978928, run=275978928)
+
+              392466 MISALIGNED_ACCESSES (0.00% scaling, ena=275978928, run=275978928)
+
+            24468388 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (0.00% scaling, ena=275978928, run=275978928)
+
+              507328 L1_DTLB_MISS_AND_L2_DTLB_HIT (13.26% scaling, ena=867485643, run=752418509)
+
+               46491 L1_DTLB_AND_L2_DTLB_MISS (13.26% scaling, ena=867493798, run=752426664)
+
+               63343 MISALIGNED_ACCESSES (13.26% scaling, ena=867497439, run=752430305)
+
+            39485892 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (13.26% scaling, ena=867501069, run=752433935)
+
+inconsistent scaling L1_DTLB_MISS_AND_L2_DTLB_HIT (cur=1904453 : prev=2025851)
+
+inconsistent scaling L1_DTLB_AND_L2_DTLB_MISS (cur=176639 : prev=183772)
+
+inconsistent scaling MISALIGNED_ACCESSES (cur=426285 : prev=455809)
+
+            39540654 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (7.26% scaling, ena=1585585381, run=1470518247)
+
+inconsistent scaling L1_DTLB_MISS_AND_L2_DTLB_HIT (cur=1869636 : prev=1904453)
+
+                4843 L1_DTLB_AND_L2_DTLB_MISS (5.47% scaling, ena=2105519014, run=1990451880)
+
+inconsistent scaling MISALIGNED_ACCESSES (cur=418204 : prev=426285)
+
+            29028008 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (5.47% scaling, ena=2105526315, run=1990459181)
+
+inconsistent scaling L1_DTLB_MISS_AND_L2_DTLB_HIT (cur=1851677 : prev=1869636)
+
+                 900 L1_DTLB_AND_L2_DTLB_MISS (3.94% scaling, ena=2919949743, run=2804882609)
+
+inconsistent scaling MISALIGNED_ACCESSES (cur=411568 : prev=418204)
+
+            45664446 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (3.94% scaling, ena=2919949743, run=2804882609)
+
+inconsistent scaling L1_DTLB_MISS_AND_L2_DTLB_HIT (cur=1849550 : prev=1851677)
+
+                6516 L1_DTLB_AND_L2_DTLB_MISS (3.57% scaling, ena=3602530130, run=3473773840)
+
+inconsistent scaling MISALIGNED_ACCESSES (cur=410003 : prev=411568)
+
+            38413098 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (3.57% scaling, ena=3602530130, run=3473773840)
+
+             8984223 L1_DTLB_MISS_AND_L2_DTLB_HIT (82.70% scaling, ena=22377014277, run=3870883048)
+
+              914262 L1_DTLB_AND_L2_DTLB_MISS (82.70% scaling, ena=22377014277, run=3870883048)
+
+             2136966 MISALIGNED_ACCESSES (82.70% scaling, ena=22377014277, run=3870883048)
+
+          1107170586 MICROARCHITECTURAL_LATE_CANCEL_OF_AN_ACCESS (82.70% scaling, ena=22377014277, run=3870883048)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.824s
+user	0m3.538s
+sys	0m0.044s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+            80806636 MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS (0.00% scaling, ena=245038330, run=245038330)
+
+                   0 SCRUBBER_SINGLE_BIT_ECC_ERRORS (0.00% scaling, ena=245038330, run=245038330)
+
+                7351 PREFETCH_INSTRUCTIONS_DISPATCHED (0.00% scaling, ena=245038330, run=245038330)
+
+               41499 DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS (0.00% scaling, ena=245038330, run=245038330)
+
+           153290446 MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS (18.50% scaling, ena=779847856, run=635609342)
+
+                   0 SCRUBBER_SINGLE_BIT_ECC_ERRORS (18.50% scaling, ena=779855018, run=635616504)
+
+               15196 PREFETCH_INSTRUCTIONS_DISPATCHED (18.50% scaling, ena=779858680, run=635620166)
+
+               73898 DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS (18.50% scaling, ena=779862279, run=635623765)
+
+           218631597 MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS (8.10% scaling, ena=1779958395, run=1635719881)
+
+                   0 SCRUBBER_SINGLE_BIT_ECC_ERRORS (8.10% scaling, ena=1779966198, run=1635727684)
+
+inconsistent scaling PREFETCH_INSTRUCTIONS_DISPATCHED (cur=22259 : prev=22547)
+
+inconsistent scaling DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS (cur=104457 : prev=115397)
+
+           223528114 MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS (5.19% scaling, ena=2780015592, run=2635777078)
+
+                   0 SCRUBBER_SINGLE_BIT_ECC_ERRORS (5.19% scaling, ena=2780022931, run=2635784417)
+
+                1499 PREFETCH_INSTRUCTIONS_DISPATCHED (5.19% scaling, ena=2780026899, run=2635788385)
+
+inconsistent scaling DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS (cur=103260 : prev=104457)
+
+           224499316 MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS (3.82% scaling, ena=3780105798, run=3635867284)
+
+                   0 SCRUBBER_SINGLE_BIT_ECC_ERRORS (3.82% scaling, ena=3780112802, run=3635874288)
+
+                1813 PREFETCH_INSTRUCTIONS_DISPATCHED (3.82% scaling, ena=3780116745, run=3635878231)
+
+                 469 DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS (3.82% scaling, ena=3780120158, run=3635881644)
+
+          3340316031 MICROARCHITECTURAL_EARLY_CANCEL_OF_AN_ACCESS (77.89% scaling, ena=17702387179, run=3913346968)
+
+                   0 SCRUBBER_SINGLE_BIT_ECC_ERRORS (77.89% scaling, ena=17702387179, run=3913346968)
+
+               99691 PREFETCH_INSTRUCTIONS_DISPATCHED (77.89% scaling, ena=17702387179, run=3913346968)
+
+              420283 DCACHE_MISSES_BY_LOCKED_INSTRUCTIONS (77.89% scaling, ena=17702387179, run=3913346968)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.197s
+user	0m3.524s
+sys	0m0.034s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+           229476399 L1_DTLB_HIT (0.00% scaling, ena=250092499, run=250092499)
+
+               16514 INEFFECTIVE_SW_PREFETCHES (0.00% scaling, ena=250092499, run=250092499)
+
+                   0 GLOBAL_TLB_FLUSHES (0.00% scaling, ena=250092499, run=250092499)
+
+               11095 MEMORY_REQUESTS (0.00% scaling, ena=250092499, run=250092499)
+
+    4843780093038754 L1_DTLB_HIT (100.00% scaling, ena=4957108246801151, run=579817104)
+
+        446514067930 INEFFECTIVE_SW_PREFETCHES (100.00% scaling, ena=4957108246808645, run=579824598)
+
+             8549268 GLOBAL_TLB_FLUSHES (100.00% scaling, ena=4957108246812419, run=579828372)
+
+        255108533422 MEMORY_REQUESTS (100.00% scaling, ena=4957108246816096, run=579832049)
+
+      15953867631554 L1_DTLB_HIT (100.00% scaling, ena=4957108889812123, run=1222828076)
+
+inconsistent scaling INEFFECTIVE_SW_PREFETCHES (cur=222702594885 : prev=446514084444)
+
+inconsistent scaling GLOBAL_TLB_FLUSHES (cur=4053769 : prev=8549268)
+
+inconsistent scaling MEMORY_REQUESTS (cur=152737472477 : prev=255108544517)
+
+       6213686637943 L1_DTLB_HIT (100.00% scaling, ena=4957109649602942, run=1982618895)
+
+inconsistent scaling INEFFECTIVE_SW_PREFETCHES (cur=145230938636 : prev=222702594885)
+
+inconsistent scaling GLOBAL_TLB_FLUSHES (cur=2500269 : prev=4053769)
+
+inconsistent scaling MEMORY_REQUESTS (cur=117254912545 : prev=152737472477)
+
+       3115141398726 L1_DTLB_HIT (100.00% scaling, ena=4957110439651709, run=2772667662)
+
+inconsistent scaling INEFFECTIVE_SW_PREFETCHES (cur=109791497903 : prev=145230938636)
+
+inconsistent scaling GLOBAL_TLB_FLUSHES (cur=1787841 : prev=2500269)
+
+inconsistent scaling MEMORY_REQUESTS (cur=100984309560 : prev=117254912545)
+
+       1474539434012 L1_DTLB_HIT (100.00% scaling, ena=4957111175702983, run=3508718936)
+
+inconsistent scaling INEFFECTIVE_SW_PREFETCHES (cur=91088559769 : prev=109791497903)
+
+inconsistent scaling GLOBAL_TLB_FLUSHES (cur=1412793 : prev=1787841)
+
+inconsistent scaling MEMORY_REQUESTS (cur=92441775664 : prev=100984309560)
+
+      14607935392032 L1_DTLB_HIT (100.00% scaling, ena=4957129451536356, run=3897304527)
+
+          5867452799 INEFFECTIVE_SW_PREFETCHES (100.00% scaling, ena=4957129451536356, run=3897304527)
+
+inconsistent scaling GLOBAL_TLB_FLUSHES (cur=1271937 : prev=1412793)
+
+          3305895871 MEMORY_REQUESTS (100.00% scaling, ena=4957129451536356, run=3897304527)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.721s
+user	0m3.474s
+sys	0m0.038s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   0 DATA_PREFETCHES (0.00% scaling, ena=252172412, run=252172412)
+
+             2359207 SYSTEM_READ_RESPONSES (0.00% scaling, ena=252172412, run=252172412)
+
+             7671885 QUADWORDS_WRITTEN_TO_SYSTEM (0.00% scaling, ena=252172412, run=252172412)
+
+           551836893 CPU_CLK_UNHALTED (0.00% scaling, ena=252172412, run=252172412)
+
+                   0 DATA_PREFETCHES (100.00% scaling, ena=4957122372204713, run=623749308)
+
+      30588986307032 SYSTEM_READ_RESPONSES (100.00% scaling, ena=4957122372212472, run=623757067)
+
+     101554673111919 QUADWORDS_WRITTEN_TO_SYSTEM (100.00% scaling, ena=4957122372215947, run=623760542)
+
+   10846832956262941 CPU_CLK_UNHALTED (100.00% scaling, ena=4957122372219441, run=623764036)
+
+                   0 DATA_PREFETCHES (100.00% scaling, ena=4957123299329318, run=1550873913)
+
+inconsistent scaling SYSTEM_READ_RESPONSES (cur=14941494397867 : prev=30588988666239)
+
+inconsistent scaling QUADWORDS_WRITTEN_TO_SYSTEM (cur=51302938890067 : prev=101554680783804)
+
+      18854435687128 CPU_CLK_UNHALTED (100.00% scaling, ena=4957123299344167, run=1550888762)
+
+                   0 DATA_PREFETCHES (100.00% scaling, ena=4957123904209537, run=2155754132)
+
+inconsistent scaling SYSTEM_READ_RESPONSES (cur=12008425457196 : prev=14941494397867)
+
+inconsistent scaling QUADWORDS_WRITTEN_TO_SYSTEM (cur=41852367645549 : prev=51302938890067)
+
+       3196759759860 CPU_CLK_UNHALTED (100.00% scaling, ena=4957123904224331, run=2155768926)
+
+                   0 DATA_PREFETCHES (100.00% scaling, ena=4957124627044604, run=2878589199)
+
+inconsistent scaling SYSTEM_READ_RESPONSES (cur=10115967936604 : prev=12008425457196)
+
+inconsistent scaling QUADWORDS_WRITTEN_TO_SYSTEM (cur=35762799660788 : prev=41852367645549)
+
+       2181978640426 CPU_CLK_UNHALTED (100.00% scaling, ena=4957124627059093, run=2878603688)
+
+                   0 DATA_PREFETCHES (100.00% scaling, ena=4957125530227910, run=3781772505)
+
+inconsistent scaling SYSTEM_READ_RESPONSES (cur=8762871690482 : prev=10115967936604)
+
+inconsistent scaling QUADWORDS_WRITTEN_TO_SYSTEM (cur=31431600073366 : prev=35762799660788)
+
+       1749185394572 CPU_CLK_UNHALTED (100.00% scaling, ena=4957125530227910, run=3781772505)
+
+                   0 DATA_PREFETCHES (100.00% scaling, ena=4957143541630867, run=3852071820)
+
+        277735596489 SYSTEM_READ_RESPONSES (100.00% scaling, ena=4957143541630867, run=3852071820)
+
+        800860417050 QUADWORDS_WRITTEN_TO_SYSTEM (100.00% scaling, ena=4957143541630867, run=3852071820)
+
+inconsistent scaling CPU_CLK_UNHALTED (cur=10871798794638206 : prev=10872815867581820)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.265s
+user	0m3.512s
+sys	0m0.034s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+            16311030 REQUESTS_TO_L2 (0.00% scaling, ena=244703805, run=244703805)
+
+             2688174 L2_CACHE_MISS (0.00% scaling, ena=244703805, run=244703805)
+
+            10893838 L2_FILL_WRITEBACK (0.00% scaling, ena=244703805, run=244703805)
+
+           147036237 INSTRUCTION_CACHE_FETCHES (0.00% scaling, ena=244703805, run=244703805)
+
+            23067715 REQUESTS_TO_L2 (22.43% scaling, ena=670362409, run=519983623)
+
+             2712899 L2_CACHE_MISS (22.43% scaling, ena=670362409, run=519983623)
+
+            12128260 L2_FILL_WRITEBACK (22.43% scaling, ena=670362409, run=519983623)
+
+           297893623 INSTRUCTION_CACHE_FETCHES (22.43% scaling, ena=670362409, run=519983623)
+
+            22786316 REQUESTS_TO_L2 (11.76% scaling, ena=1357814119, run=1198135168)
+
+              286579 L2_CACHE_MISS (11.76% scaling, ena=1357821033, run=1198142082)
+
+             5831388 L2_FILL_WRITEBACK (11.76% scaling, ena=1357824722, run=1198145771)
+
+           232107750 INSTRUCTION_CACHE_FETCHES (11.76% scaling, ena=1357828250, run=1198149299)
+
+            25372531 REQUESTS_TO_L2 (7.59% scaling, ena=2103806540, run=1944127589)
+
+              729379 L2_CACHE_MISS (7.59% scaling, ena=2103813847, run=1944134896)
+
+             7736701 L2_FILL_WRITEBACK (7.59% scaling, ena=2103817667, run=1944138716)
+
+           269750462 INSTRUCTION_CACHE_FETCHES (7.59% scaling, ena=2103821675, run=1944142724)
+
+            22304893 REQUESTS_TO_L2 (5.73% scaling, ena=2788808759, run=2629129808)
+
+              761091 L2_CACHE_MISS (5.73% scaling, ena=2788815391, run=2629136440)
+
+             7418517 L2_FILL_WRITEBACK (5.73% scaling, ena=2788818843, run=2629139892)
+
+           251648861 INSTRUCTION_CACHE_FETCHES (5.73% scaling, ena=2788822359, run=2629143408)
+
+            22248345 REQUESTS_TO_L2 (4.64% scaling, ena=3442275095, run=3282596144)
+
+              756929 L2_CACHE_MISS (4.64% scaling, ena=3442282886, run=3282603935)
+
+             7190351 L2_FILL_WRITEBACK (4.64% scaling, ena=3442286593, run=3282607642)
+
+           241266715 INSTRUCTION_CACHE_FETCHES (4.64% scaling, ena=3442290332, run=3282611381)
+
+           690266965 REQUESTS_TO_L2 (82.07% scaling, ena=21622379410, run=3875917450)
+
+            39841249 L2_CACHE_MISS (82.07% scaling, ena=21622379410, run=3875917450)
+
+           263751783 L2_FILL_WRITEBACK (82.07% scaling, ena=21622379410, run=3875917450)
+
+          7602619874 INSTRUCTION_CACHE_FETCHES (82.07% scaling, ena=21622379410, run=3875917450)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.807s
+user	0m3.571s
+sys	0m0.023s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             4033835 INSTRUCTION_CACHE_MISSES (0.00% scaling, ena=245510368, run=245510368)
+
+             3232277 INSTRUCTION_CACHE_REFILLS_FROM_L2 (0.00% scaling, ena=245510368, run=245510368)
+
+              801595 INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM (0.00% scaling, ena=245510368, run=245510368)
+
+             1515143 L1_ITLB_MISS_AND_L2_ITLB_HIT (0.00% scaling, ena=245510368, run=245510368)
+
+      42858787905474 INSTRUCTION_CACHE_MISSES (100.00% scaling, ena=4957150669436862, run=767543888)
+
+      36398801746741 INSTRUCTION_CACHE_REFILLS_FROM_L2 (100.00% scaling, ena=4957150669443344, run=767550370)
+
+       6459946434463 INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM (100.00% scaling, ena=4957150669447264, run=767554290)
+
+      10213389381032 L1_ITLB_MISS_AND_L2_ITLB_HIT (100.00% scaling, ena=4957150669451172, run=767558198)
+
+inconsistent scaling INSTRUCTION_CACHE_MISSES (cur=18755211392794 : prev=42858791939309)
+
+inconsistent scaling INSTRUCTION_CACHE_REFILLS_FROM_L2 (cur=15948635678949 : prev=36398804979018)
+
+inconsistent scaling INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM (cur=2806637756984 : prev=6459947236058)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_HIT (cur=4434868660281 : prev=10213390896175)
+
+inconsistent scaling INSTRUCTION_CACHE_MISSES (cur=12039526529064 : prev=18755211392794)
+
+inconsistent scaling INSTRUCTION_CACHE_REFILLS_FROM_L2 (cur=10246503845323 : prev=15948635678949)
+
+inconsistent scaling INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM (cur=1793086364673 : prev=2806637756984)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_HIT (cur=2832390784321 : prev=4434868660281)
+
+inconsistent scaling INSTRUCTION_CACHE_MISSES (cur=8889269110326 : prev=12039526529064)
+
+inconsistent scaling INSTRUCTION_CACHE_REFILLS_FROM_L2 (cur=7571704600183 : prev=10246503845323)
+
+inconsistent scaling INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM (cur=1317613689976 : prev=1793086364673)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_HIT (cur=2080644858401 : prev=2832390784321)
+
+        816997805863 INSTRUCTION_CACHE_MISSES (100.00% scaling, ena=4957167738177101, run=3926500031)
+
+        791743671354 INSTRUCTION_CACHE_REFILLS_FROM_L2 (100.00% scaling, ena=4957167738177101, run=3926500031)
+
+         25284491557 INSTRUCTION_CACHE_REFILLS_FROM_SYSTEM (100.00% scaling, ena=4957167738177101, run=3926500031)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_HIT (cur=2021046045205 : prev=2080644858401)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.105s
+user	0m3.489s
+sys	0m0.030s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+               69450 L1_ITLB_MISS_AND_L2_ITLB_MISS (0.00% scaling, ena=261151879, run=261151879)
+
+                 610 PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (0.00% scaling, ena=261158719, run=261158719)
+
+           407318841 INSTRUCTION_FETCH_STALL (0.00% scaling, ena=261161709, run=261161709)
+
+            11822333 RETURN_STACK_HITS (0.00% scaling, ena=261164685, run=261164685)
+
+                7187 L1_ITLB_MISS_AND_L2_ITLB_MISS (5.43% scaling, ena=640109099, run=605379052)
+
+                 214 PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (5.43% scaling, ena=640115653, run=605385606)
+
+           581205301 INSTRUCTION_FETCH_STALL (5.43% scaling, ena=640119038, run=605388991)
+
+            12639517 RETURN_STACK_HITS (5.43% scaling, ena=640122545, run=605392498)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_MISS (cur=74507 : prev=76637)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (cur=801 : prev=824)
+
+          1325015686 INSTRUCTION_FETCH_STALL (2.54% scaling, ena=1365348626, run=1330618579)
+
+            21781135 RETURN_STACK_HITS (2.54% scaling, ena=1365352294, run=1330622247)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_MISS (cur=73974 : prev=74507)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (cur=794 : prev=801)
+
+          1318069782 INSTRUCTION_FETCH_STALL (1.66% scaling, ena=2088790121, run=2054060074)
+
+            21838566 RETURN_STACK_HITS (1.66% scaling, ena=2088790121, run=2054060074)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_MISS (cur=73921 : prev=73974)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (cur=793 : prev=794)
+
+          1301849803 INSTRUCTION_FETCH_STALL (1.40% scaling, ena=2803914010, run=2764605051)
+
+            21614489 RETURN_STACK_HITS (1.40% scaling, ena=2803917781, run=2764608822)
+
+inconsistent scaling L1_ITLB_MISS_AND_L2_ITLB_MISS (cur=73850 : prev=73921)
+
+inconsistent scaling PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (cur=790 : prev=793)
+
+          1300014393 INSTRUCTION_FETCH_STALL (1.12% scaling, ena=3517997700, run=3478688741)
+
+            21577371 RETURN_STACK_HITS (1.12% scaling, ena=3518001314, run=3478692355)
+
+              354835 L1_ITLB_MISS_AND_L2_ITLB_MISS (82.54% scaling, ena=22082770519, run=3854644602)
+
+                4285 PIPELINE_RESTART_DUE_TO_INSTRUCTION_STREAM_PROBE (82.54% scaling, ena=22082770519, run=3854644602)
+
+         32826550429 INSTRUCTION_FETCH_STALL (82.54% scaling, ena=22082770519, run=3854644602)
+
+           600060459 RETURN_STACK_HITS (82.54% scaling, ena=22082770519, run=3854644602)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.238s
+user	0m3.525s
+sys	0m0.027s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+              169368 RETURN_STACK_OVERFLOWS (0.00% scaling, ena=250009947, run=250009947)
+
+             4006415 INSTRUCTION_CACHE_VICTIMS (0.00% scaling, ena=250009947, run=250009947)
+
+                 446 INSTRUCTION_CACHE_LINES_INVALIDATED (0.00% scaling, ena=250009947, run=250009947)
+
+               99893 ITLB_RELOADS (0.00% scaling, ena=250009947, run=250009947)
+
+       5689119117703 RETURN_STACK_OVERFLOWS (100.00% scaling, ena=4957176651232758, run=570830144)
+
+      57496830420670 INSTRUCTION_CACHE_VICTIMS (100.00% scaling, ena=4957176651232758, run=570830144)
+
+          4012078518 INSTRUCTION_CACHE_LINES_INVALIDATED (100.00% scaling, ena=4957176651232758, run=570830144)
+
+        968196185210 ITLB_RELOADS (100.00% scaling, ena=4957176651232758, run=570830144)
+
+       5846919429408 RETURN_STACK_OVERFLOWS (100.00% scaling, ena=4957177302701088, run=1215043652)
+
+inconsistent scaling INSTRUCTION_CACHE_VICTIMS (cur=27110101532853 : prev=57496834427085)
+
+inconsistent scaling INSTRUCTION_CACHE_LINES_INVALIDATED (cur=1884865779 : prev=4012078964)
+
+inconsistent scaling ITLB_RELOADS (cur=455821950656 : prev=968196285103)
+
+       2201851973787 RETURN_STACK_OVERFLOWS (100.00% scaling, ena=4957178192709342, run=2105051906)
+
+inconsistent scaling INSTRUCTION_CACHE_VICTIMS (cur=15722480645039 : prev=27110101532853)
+
+inconsistent scaling INSTRUCTION_CACHE_LINES_INVALIDATED (cur=1087956055 : prev=1884865779)
+
+inconsistent scaling ITLB_RELOADS (cur=263261350843 : prev=455821950656)
+
+        745246730856 RETURN_STACK_OVERFLOWS (100.00% scaling, ena=4957178892119102, run=2804461666)
+
+inconsistent scaling INSTRUCTION_CACHE_VICTIMS (cur=11849175249613 : prev=15722480645039)
+
+inconsistent scaling INSTRUCTION_CACHE_LINES_INVALIDATED (cur=816633251 : prev=1087956055)
+
+inconsistent scaling ITLB_RELOADS (cur=197915133917 : prev=263261350843)
+
+        417409142413 RETURN_STACK_OVERFLOWS (100.00% scaling, ena=4957179545193749, run=3452978402)
+
+inconsistent scaling INSTRUCTION_CACHE_VICTIMS (cur=9660756045032 : prev=11849175249613)
+
+inconsistent scaling INSTRUCTION_CACHE_LINES_INVALIDATED (cur=663256035 : prev=816633251)
+
+inconsistent scaling ITLB_RELOADS (cur=161064810491 : prev=197915133917)
+
+inconsistent scaling RETURN_STACK_OVERFLOWS (cur=14795548246177 : prev=14900546563535)
+
+        194917699681 INSTRUCTION_CACHE_VICTIMS (100.00% scaling, ena=4957197964582730, run=3885207276)
+
+inconsistent scaling INSTRUCTION_CACHE_LINES_INVALIDATED (cur=597128668 : prev=663256035)
+
+inconsistent scaling ITLB_RELOADS (cur=148977223201 : prev=161064810491)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.737s
+user	0m3.553s
+sys	0m0.023s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+               21217 ITLB_RELOADS_ABORTED (0.00% scaling, ena=248722646, run=248722646)
+
+           438124180 RETIRED_INSTRUCTIONS (0.00% scaling, ena=248722646, run=248722646)
+
+           498750436 RETIRED_UOPS (0.00% scaling, ena=248722646, run=248722646)
+
+            82980509 RETIRED_BRANCH_INSTRUCTIONS (0.00% scaling, ena=248722646, run=248722646)
+
+               17431 ITLB_RELOADS_ABORTED (36.67% scaling, ena=980693909, run=621068309)
+
+          1656173498 RETIRED_INSTRUCTIONS (36.67% scaling, ena=980700782, run=621075182)
+
+          1901131274 RETIRED_UOPS (36.67% scaling, ena=980704455, run=621078855)
+
+           305596845 RETIRED_BRANCH_INSTRUCTIONS (36.67% scaling, ena=980708068, run=621082468)
+
+inconsistent scaling ITLB_RELOADS_ABORTED (cur=29905 : prev=38648)
+
+          1752419559 RETIRED_INSTRUCTIONS (18.16% scaling, ena=1980802056, run=1621176456)
+
+          1813639318 RETIRED_UOPS (18.16% scaling, ena=1980805772, run=1621180172)
+
+           110592228 RETIRED_BRANCH_INSTRUCTIONS (18.16% scaling, ena=1980809464, run=1621183864)
+
+inconsistent scaling ITLB_RELOADS_ABORTED (cur=27836 : prev=29905)
+
+          1803801271 RETIRED_INSTRUCTIONS (12.06% scaling, ena=2980878843, run=2621253243)
+
+          1899612258 RETIRED_UOPS (12.06% scaling, ena=2980882741, run=2621257141)
+
+           150015344 RETIRED_BRANCH_INSTRUCTIONS (12.06% scaling, ena=2980886551, run=2621260951)
+
+inconsistent scaling ITLB_RELOADS_ABORTED (cur=26908 : prev=27836)
+
+          1813670918 RETIRED_INSTRUCTIONS (9.03% scaling, ena=3980968972, run=3621343372)
+
+          1915471082 RETIRED_UOPS (9.03% scaling, ena=3980973020, run=3621347420)
+
+           156869769 RETIRED_BRANCH_INSTRUCTIONS (9.03% scaling, ena=3980977056, run=3621351456)
+
+               90595 ITLB_RELOADS_ABORTED (77.68% scaling, ena=17535412286, run=3913786095)
+
+         25633270858 RETIRED_INSTRUCTIONS (77.68% scaling, ena=17535412286, run=3913786095)
+
+         27879340534 RETIRED_UOPS (77.68% scaling, ena=17535412286, run=3913786095)
+
+          2813860543 RETIRED_BRANCH_INSTRUCTIONS (77.68% scaling, ena=17535412286, run=3913786095)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.778s
+user	0m3.507s
+sys	0m0.024s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             5382588 RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (0.00% scaling, ena=250450580, run=250450580)
+
+            55748027 RETIRED_TAKEN_BRANCH_INSTRUCTIONS (0.00% scaling, ena=250450580, run=250450580)
+
+             3856962 RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (0.00% scaling, ena=250450580, run=250450580)
+
+               43972 RETIRED_FAR_CONTROL_TRANSFERS (0.00% scaling, ena=250450580, run=250450580)
+
+      71233046622608 RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (100.00% scaling, ena=4957202855185560, run=590146660)
+
+    1168799896993651 RETIRED_TAKEN_BRANCH_INSTRUCTIONS (100.00% scaling, ena=4957202855193084, run=590154184)
+
+      47796748420489 RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (100.00% scaling, ena=4957202855196663, run=590157763)
+
+        481741911402 RETIRED_FAR_CONTROL_TRANSFERS (100.00% scaling, ena=4957202855200282, run=590161382)
+
+inconsistent scaling RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (cur=35206475699799 : prev=71233052005196)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS (cur=815530777078294 : prev=1168799952741678)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (cur=23212434077429 : prev=47796752277451)
+
+inconsistent scaling RETIRED_FAR_CONTROL_TRANSFERS (cur=229687682043 : prev=481741955374)
+
+inconsistent scaling RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (cur=23291664840702 : prev=35206475699799)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS (cur=698734561974336 : prev=815530777078294)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (cur=15080704064520 : prev=23212434077429)
+
+inconsistent scaling RETIRED_FAR_CONTROL_TRANSFERS (cur=146307754147 : prev=229687682043)
+
+inconsistent scaling RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (cur=17426100449100 : prev=23291664840702)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS (cur=641543481110356 : prev=698734561974336)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (cur=11073260697727 : prev=15080704064520)
+
+inconsistent scaling RETIRED_FAR_CONTROL_TRANSFERS (cur=105402713298 : prev=146307754147)
+
+inconsistent scaling RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (cur=14317310731401 : prev=17426100449100)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS (cur=611250643579201 : prev=641543481110356)
+
+inconsistent scaling RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (cur=8950240361525 : prev=11073260697727)
+
+inconsistent scaling RETIRED_FAR_CONTROL_TRANSFERS (cur=83728315129 : prev=105402713298)
+
+        871208633012 RETIRED_MISPREDICTED_BRANCH_INSTRUCTIONS (100.00% scaling, ena=4957224277707305, run=3863185722)
+
+      20242550211189 RETIRED_TAKEN_BRANCH_INSTRUCTIONS (100.00% scaling, ena=4957224277707305, run=3863185722)
+
+        565803511573 RETIRED_TAKEN_BRANCH_INSTRUCTIONS_MISPREDICTED (100.00% scaling, ena=4957224277707305, run=3863185722)
+
+          2761658382 RETIRED_FAR_CONTROL_TRANSFERS (100.00% scaling, ena=4957224277707305, run=3863185722)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.761s
+user	0m3.484s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+              117360 RETIRED_BRANCH_RESYNCS (0.00% scaling, ena=248239251, run=248239251)
+
+             8221381 RETIRED_NEAR_RETURNS (0.00% scaling, ena=248239251, run=248239251)
+
+              202009 RETIRED_NEAR_RETURNS_MISPREDICTED (0.00% scaling, ena=248239251, run=248239251)
+
+             1502258 RETIRED_INDIRECT_BRANCHES_MISPREDICTED (0.00% scaling, ena=248239251, run=248239251)
+
+               89137 RETIRED_BRANCH_RESYNCS (21.59% scaling, ena=910680991, run=714063207)
+
+            20057261 RETIRED_NEAR_RETURNS (21.59% scaling, ena=910687821, run=714070037)
+
+              228866 RETIRED_NEAR_RETURNS_MISPREDICTED (21.59% scaling, ena=910691638, run=714073854)
+
+              690753 RETIRED_INDIRECT_BRANCHES_MISPREDICTED (21.59% scaling, ena=910695535, run=714077751)
+
+inconsistent scaling RETIRED_BRANCH_RESYNCS (cur=180610 : prev=206497)
+
+            30079169 RETIRED_NEAR_RETURNS (10.29% scaling, ena=1910795050, run=1714177266)
+
+inconsistent scaling RETIRED_NEAR_RETURNS_MISPREDICTED (cur=379504 : prev=430875)
+
+inconsistent scaling RETIRED_INDIRECT_BRANCHES_MISPREDICTED (cur=1920758 : prev=2193011)
+
+inconsistent scaling RETIRED_BRANCH_RESYNCS (cur=173889 : prev=180610)
+
+            30152100 RETIRED_NEAR_RETURNS (6.75% scaling, ena=2910855873, run=2714238089)
+
+inconsistent scaling RETIRED_NEAR_RETURNS_MISPREDICTED (cur=367961 : prev=379504)
+
+inconsistent scaling RETIRED_INDIRECT_BRANCHES_MISPREDICTED (cur=1851793 : prev=1920758)
+
+inconsistent scaling RETIRED_BRANCH_RESYNCS (cur=170848 : prev=173889)
+
+            30170709 RETIRED_NEAR_RETURNS (5.03% scaling, ena=3910941961, run=3714324177)
+
+inconsistent scaling RETIRED_NEAR_RETURNS_MISPREDICTED (cur=364057 : prev=367961)
+
+inconsistent scaling RETIRED_INDIRECT_BRANCHES_MISPREDICTED (cur=1821941 : prev=1851793)
+
+              633468 RETIRED_BRANCH_RESYNCS (78.38% scaling, ena=17816910688, run=3851190996)
+
+           431650506 RETIRED_NEAR_RETURNS (78.38% scaling, ena=17816910688, run=3851190996)
+
+             1433617 RETIRED_NEAR_RETURNS_MISPREDICTED (78.38% scaling, ena=17816910688, run=3851190996)
+
+             6679061 RETIRED_INDIRECT_BRANCHES_MISPREDICTED (78.38% scaling, ena=17816910688, run=3851190996)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.221s
+user	0m3.504s
+sys	0m0.045s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             2507022 RETIRED_MMX_AND_FP_INSTRUCTIONS (0.00% scaling, ena=241852978, run=241852978)
+
+             1098541 RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (0.00% scaling, ena=241852978, run=241852978)
+
+            19821100 INTERRUPTS_MASKED_CYCLES (0.00% scaling, ena=241852978, run=241852978)
+
+                5967 INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (0.00% scaling, ena=241852978, run=241852978)
+
+            90515668 RETIRED_MMX_AND_FP_INSTRUCTIONS (34.67% scaling, ena=807890819, run=527831501)
+
+              582888 RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (34.67% scaling, ena=807897943, run=527838625)
+
+            41675123 INTERRUPTS_MASKED_CYCLES (34.67% scaling, ena=807901391, run=527842073)
+
+               13504 INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (34.66% scaling, ena=807904718, run=527845400)
+
+           988961927 RETIRED_MMX_AND_FP_INSTRUCTIONS (18.26% scaling, ena=1533902179, run=1253842861)
+
+inconsistent scaling RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (cur=1343932 : prev=1681429)
+
+inconsistent scaling INTERRUPTS_MASKED_CYCLES (cur=52665566 : prev=61496223)
+
+inconsistent scaling INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (cur=15563 : prev=19471)
+
+           784082207 RETIRED_MMX_AND_FP_INSTRUCTIONS (12.79% scaling, ena=2188947287, run=1908887969)
+
+inconsistent scaling RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (cur=1259731 : prev=1343932)
+
+inconsistent scaling INTERRUPTS_MASKED_CYCLES (cur=52502557 : prev=52665566)
+
+inconsistent scaling INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (cur=14588 : prev=15563)
+
+           741572984 RETIRED_MMX_AND_FP_INSTRUCTIONS (9.91% scaling, ena=2825916130, run=2545856812)
+
+inconsistent scaling RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (cur=1219406 : prev=1259731)
+
+             1401468 INTERRUPTS_MASKED_CYCLES (9.91% scaling, ena=2825927295, run=2545867977)
+
+inconsistent scaling INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (cur=14121 : prev=14588)
+
+           907054827 RETIRED_MMX_AND_FP_INSTRUCTIONS (7.75% scaling, ena=3613136254, run=3333076936)
+
+inconsistent scaling RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (cur=1190864 : prev=1219406)
+
+             2241425 INTERRUPTS_MASKED_CYCLES (7.75% scaling, ena=3613147096, run=3333087778)
+
+inconsistent scaling INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (cur=13790 : prev=14121)
+
+         17475388095 RETIRED_MMX_AND_FP_INSTRUCTIONS (82.06% scaling, ena=21622056473, run=3879433721)
+
+             5297435 RETIRED_FASTPATH_DOUBLE_OP_INSTRUCTIONS (82.06% scaling, ena=21622056473, run=3879433721)
+
+           276086654 INTERRUPTS_MASKED_CYCLES (82.06% scaling, ena=21622056473, run=3879433721)
+
+              117806 INTERRUPTS_MASKED_CYCLES_WITH_INTERRUPT_PENDING (82.06% scaling, ena=21622056473, run=3879433721)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.734s
+user	0m3.506s
+sys	0m0.034s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                 377 INTERRUPTS_TAKEN (0.00% scaling, ena=255311692, run=255311692)
+
+           154205176 DECODER_EMPTY (0.00% scaling, ena=255311692, run=255311692)
+
+           172296934 DISPATCH_STALLS (0.00% scaling, ena=255311692, run=255311692)
+
+            39175941 DISPATCH_STALL_FOR_BRANCH_ABORT (0.00% scaling, ena=255311692, run=255311692)
+
+          5872218085 INTERRUPTS_TAKEN (100.00% scaling, ena=4957243109357294, run=622164893)
+
+    1863901608433914 DECODER_EMPTY (100.00% scaling, ena=4957243109357294, run=622164893)
+
+    3862922852811165 DISPATCH_STALLS (100.00% scaling, ena=4957243109357294, run=622164893)
+
+     484786382048073 DISPATCH_STALL_FOR_BRANCH_ABORT (100.00% scaling, ena=4957243109357294, run=622164893)
+
+inconsistent scaling INTERRUPTS_TAKEN (cur=5410949659 : prev=5872218462)
+
+inconsistent scaling DECODER_EMPTY (cur=939070668433903 : prev=1863901762639090)
+
+    1739780397389172 DISPATCH_STALLS (100.00% scaling, ena=4957243747422361, run=1256958362)
+
+inconsistent scaling DISPATCH_STALL_FOR_BRANCH_ABORT (cur=253328654084493 : prev=484786421224014)
+
+inconsistent scaling INTERRUPTS_TAKEN (cur=5275672855 : prev=5410949659)
+
+inconsistent scaling DECODER_EMPTY (cur=665061588056134 : prev=939070668433903)
+
+     515660556250900 DISPATCH_STALLS (100.00% scaling, ena=4957244302105999, run=1802244439)
+
+inconsistent scaling DISPATCH_STALL_FOR_BRANCH_ABORT (cur=184870258595211 : prev=253328654084493)
+
+inconsistent scaling INTERRUPTS_TAKEN (cur=5207687968 : prev=5275672855)
+
+inconsistent scaling DECODER_EMPTY (cur=512851351799343 : prev=665061588056134)
+
+     286706706600525 DISPATCH_STALLS (100.00% scaling, ena=4957244874885986, run=2375024426)
+
+inconsistent scaling DISPATCH_STALL_FOR_BRANCH_ABORT (cur=146734529890975 : prev=184870258595211)
+
+inconsistent scaling INTERRUPTS_TAKEN (cur=5165090693 : prev=5207687968)
+
+inconsistent scaling DECODER_EMPTY (cur=419017131443735 : prev=512851351799343)
+
+     176736465203325 DISPATCH_STALLS (100.00% scaling, ena=4957245453041894, run=2953180334)
+
+inconsistent scaling DISPATCH_STALL_FOR_BRANCH_ABORT (cur=123278341798117 : prev=146734529890975)
+
+inconsistent scaling INTERRUPTS_TAKEN (cur=5119704017 : prev=5165090693)
+
+inconsistent scaling DECODER_EMPTY (cur=334157781696162 : prev=419017131443735)
+
+     158874867407913 DISPATCH_STALLS (100.00% scaling, ena=4957246283687252, run=3782066867)
+
+inconsistent scaling DISPATCH_STALL_FOR_BRANCH_ABORT (cur=101520420352032 : prev=123278341798117)
+
+             3246235 INTERRUPTS_TAKEN (100.00% scaling, ena=4957268393337322, run=3877409202)
+
+      27114866603850 DECODER_EMPTY (100.00% scaling, ena=4957268393337322, run=3877409202)
+
+inconsistent scaling DISPATCH_STALLS (cur=6641886324037217 : prev=6740682017959934)
+
+       6936324421587 DISPATCH_STALL_FOR_BRANCH_ABORT (100.00% scaling, ena=4957268393337322, run=3877409202)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.084s
+user	0m3.502s
+sys	0m0.036s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             3988608 DISPATCH_STALL_FOR_SERIALIZATION (0.00% scaling, ena=243397535, run=243397535)
+
+             1153070 DISPATCH_STALL_FOR_SEGMENT_LOAD (0.00% scaling, ena=243397535, run=243397535)
+
+            21984859 DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (0.00% scaling, ena=243397535, run=243397535)
+
+            42245665 DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (0.00% scaling, ena=243397535, run=243397535)
+
+      44725807143175 DISPATCH_STALL_FOR_SERIALIZATION (100.00% scaling, ena=4957259184309173, run=618194200)
+
+      12845114038672 DISPATCH_STALL_FOR_SEGMENT_LOAD (100.00% scaling, ena=4957259184309173, run=618194200)
+
+    1233064006143740 DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (100.00% scaling, ena=4957259184309173, run=618194200)
+
+     777635036752260 DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (100.00% scaling, ena=4957259184309173, run=618194200)
+
+inconsistent scaling DISPATCH_STALL_FOR_SERIALIZATION (cur=21332341645009 : prev=44725811131783)
+
+inconsistent scaling DISPATCH_STALL_FOR_SEGMENT_LOAD (cur=6241431260415 : prev=12845115191742)
+
+    1378878099849385 DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (100.00% scaling, ena=4957259887751998, run=1309407752)
+
+     149933782869977 DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (100.00% scaling, ena=4957259887755604, run=1309411358)
+
+inconsistent scaling DISPATCH_STALL_FOR_SERIALIZATION (cur=13624428266928 : prev=21332341645009)
+
+inconsistent scaling DISPATCH_STALL_FOR_SEGMENT_LOAD (cur=4056449523239 : prev=6241431260415)
+
+     453413747688101 DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (100.00% scaling, ena=4957260651641503, run=2073297257)
+
+      49609698472406 DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (100.00% scaling, ena=4957260651645077, run=2073300831)
+
+inconsistent scaling DISPATCH_STALL_FOR_SERIALIZATION (cur=10314986703349 : prev=13624428266928)
+
+inconsistent scaling DISPATCH_STALL_FOR_SEGMENT_LOAD (cur=3121151761246 : prev=4056449523239)
+
+     195238310989244 DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (100.00% scaling, ena=4957261345368546, run=2767024300)
+
+      21223724520921 DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (100.00% scaling, ena=4957261345368546, run=2767024300)
+
+inconsistent scaling DISPATCH_STALL_FOR_SERIALIZATION (cur=8249617904873 : prev=10314986703349)
+
+inconsistent scaling DISPATCH_STALL_FOR_SEGMENT_LOAD (cur=2538359241859 : prev=3121151761246)
+
+     121613956200020 DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (100.00% scaling, ena=4957262078798979, run=3495871105)
+
+      13253676991813 DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (100.00% scaling, ena=4957262078798979, run=3495871105)
+
+inconsistent scaling DISPATCH_STALL_FOR_SERIALIZATION (cur=8116141339912 : prev=8249617904873)
+
+inconsistent scaling DISPATCH_STALL_FOR_SEGMENT_LOAD (cur=2443889135978 : prev=2538359241859)
+
+inconsistent scaling DISPATCH_STALL_FOR_REORDER_BUFFER_FULL (cur=3346049221960662 : prev=3382208142855349)
+
+inconsistent scaling DISPATCH_STALL_FOR_RESERVATION_STATION_FULL (cur=1011113675431158 : prev=1011655961853042)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.421s
+user	0m3.485s
+sys	0m0.029s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+               11949 DISPATCH_STALL_FOR_FPU_FULL (0.00% scaling, ena=243116756, run=243116756)
+
+            57933432 DISPATCH_STALL_FOR_LS_FULL (0.00% scaling, ena=243116756, run=243116756)
+
+             4414542 DISPATCH_STALL_WAITING_FOR_ALL_QUIET (0.00% scaling, ena=243116756, run=243116756)
+
+              425645 DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (0.00% scaling, ena=243116756, run=243116756)
+
+                9993 DISPATCH_STALL_FOR_FPU_FULL (35.81% scaling, ena=537097197, run=344770932)
+
+            81584305 DISPATCH_STALL_FOR_LS_FULL (35.81% scaling, ena=537103792, run=344777527)
+
+             5054491 DISPATCH_STALL_WAITING_FOR_ALL_QUIET (35.81% scaling, ena=537107535, run=344781270)
+
+              466444 DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (35.81% scaling, ena=537111283, run=344785018)
+
+           158386194 DISPATCH_STALL_FOR_FPU_FULL (18.52% scaling, ena=1038291544, run=845965279)
+
+            84714343 DISPATCH_STALL_FOR_LS_FULL (18.52% scaling, ena=1038299034, run=845972769)
+
+inconsistent scaling DISPATCH_STALL_WAITING_FOR_ALL_QUIET (cur=7723836 : prev=9469033)
+
+inconsistent scaling DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (cur=735686 : prev=892089)
+
+           197769738 DISPATCH_STALL_FOR_FPU_FULL (12.47% scaling, ena=1542797171, run=1350470906)
+
+           115335711 DISPATCH_STALL_FOR_LS_FULL (12.47% scaling, ena=1542797171, run=1350470906)
+
+inconsistent scaling DISPATCH_STALL_WAITING_FOR_ALL_QUIET (cur=7295516 : prev=7723836)
+
+inconsistent scaling DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (cur=687909 : prev=735686)
+
+           286109686 DISPATCH_STALL_FOR_FPU_FULL (8.36% scaling, ena=2306910438, run=2114087681)
+
+           174289542 DISPATCH_STALL_FOR_LS_FULL (8.36% scaling, ena=2306917696, run=2114094939)
+
+inconsistent scaling DISPATCH_STALL_WAITING_FOR_ALL_QUIET (cur=7123748 : prev=7295516)
+
+inconsistent scaling DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (cur=660896 : prev=687909)
+
+           266712806 DISPATCH_STALL_FOR_FPU_FULL (6.36% scaling, ena=3031670653, run=2838847896)
+
+           164974496 DISPATCH_STALL_FOR_LS_FULL (6.36% scaling, ena=3031678979, run=2838856222)
+
+inconsistent scaling DISPATCH_STALL_WAITING_FOR_ALL_QUIET (cur=7118921 : prev=7123748)
+
+inconsistent scaling DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (cur=650570 : prev=660896)
+
+           292231413 DISPATCH_STALL_FOR_FPU_FULL (5.03% scaling, ena=3830720350, run=3637897593)
+
+           181749697 DISPATCH_STALL_FOR_LS_FULL (5.03% scaling, ena=3830727827, run=3637905070)
+
+               50557 DISPATCH_STALL_WAITING_FOR_ALL_QUIET (5.03% scaling, ena=3830731725, run=3637908968)
+
+inconsistent scaling DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (cur=645497 : prev=650570)
+
+          6254977994 DISPATCH_STALL_FOR_FPU_FULL (84.12% scaling, ena=24220329570, run=3847360182)
+
+          4532216884 DISPATCH_STALL_FOR_LS_FULL (84.12% scaling, ena=24220329570, run=3847360182)
+
+            39420451 DISPATCH_STALL_WAITING_FOR_ALL_QUIET (84.12% scaling, ena=24220329570, run=3847360182)
+
+             3492115 DISPATCH_STALL_FOR_FAR_TRANSFER_OR_RSYNC (84.12% scaling, ena=24220329570, run=3847360182)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.802s
+user	0m3.507s
+sys	0m0.030s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   0 FPU_EXCEPTIONS (0.00% scaling, ena=245539859, run=245539859)
+
+                   0 DR0_BREAKPOINT_MATCHES (0.00% scaling, ena=245539859, run=245539859)
+
+                   0 DR1_BREAKPOINT_MATCHES (0.00% scaling, ena=245539859, run=245539859)
+
+                   0 DR2_BREAKPOINT_MATCHES (0.00% scaling, ena=245539859, run=245539859)
+
+                   0 FPU_EXCEPTIONS (32.12% scaling, ena=937075754, run=636052473)
+
+                   0 DR0_BREAKPOINT_MATCHES (32.12% scaling, ena=937082877, run=636059596)
+
+                   0 DR1_BREAKPOINT_MATCHES (32.12% scaling, ena=937086798, run=636063517)
+
+                   0 DR2_BREAKPOINT_MATCHES (32.12% scaling, ena=937090576, run=636067295)
+
+                   0 FPU_EXCEPTIONS (15.54% scaling, ena=1937139360, run=1636116079)
+
+                   0 DR0_BREAKPOINT_MATCHES (15.54% scaling, ena=1937146391, run=1636123110)
+
+                   0 DR1_BREAKPOINT_MATCHES (15.54% scaling, ena=1937150335, run=1636127054)
+
+                   0 DR2_BREAKPOINT_MATCHES (15.54% scaling, ena=1937154011, run=1636130730)
+
+                   0 FPU_EXCEPTIONS (10.25% scaling, ena=2937244013, run=2636220732)
+
+                   0 DR0_BREAKPOINT_MATCHES (10.25% scaling, ena=2937251829, run=2636228548)
+
+                   0 DR1_BREAKPOINT_MATCHES (10.25% scaling, ena=2937255765, run=2636232484)
+
+                   0 DR2_BREAKPOINT_MATCHES (10.25% scaling, ena=2937259589, run=2636236308)
+
+                   0 FPU_EXCEPTIONS (7.65% scaling, ena=3937314910, run=3636291629)
+
+                   0 DR0_BREAKPOINT_MATCHES (7.65% scaling, ena=3937321736, run=3636298455)
+
+                   0 DR1_BREAKPOINT_MATCHES (7.65% scaling, ena=3937325543, run=3636302262)
+
+                   0 DR2_BREAKPOINT_MATCHES (7.65% scaling, ena=3937329648, run=3636306367)
+
+                   0 FPU_EXCEPTIONS (78.31% scaling, ena=17833239155, run=3868692480)
+
+                   0 DR0_BREAKPOINT_MATCHES (78.31% scaling, ena=17833239155, run=3868692480)
+
+                   0 DR1_BREAKPOINT_MATCHES (78.31% scaling, ena=17833239155, run=3868692480)
+
+                   0 DR2_BREAKPOINT_MATCHES (78.31% scaling, ena=17833239155, run=3868692480)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.178s
+user	0m3.509s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   0 DR3_BREAKPOINT_MATCHES (2.20% scaling, ena=271843513, run=265850298)
+
+             7540743 DRAM_ACCESSES_PAGE (1.84% scaling, ena=272004506, run=267010290)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (2.92% scaling, ena=271683733, run=263756267)
+
+            20892960 MEMORY_CONTROLLER_SLOT_MISSES (3.29% scaling, ena=271686791, run=262760179)
+
+                   0 DR3_BREAKPOINT_MATCHES (9.78% scaling, ena=713321473, run=643549879)
+
+            11297438 DRAM_ACCESSES_PAGE (9.62% scaling, ena=713506527, run=644844644)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (10.06% scaling, ena=712996634, run=641241881)
+
+            31277107 MEMORY_CONTROLLER_SLOT_MISSES (10.20% scaling, ena=712996634, run=640242735)
+
+                   0 DR3_BREAKPOINT_MATCHES (5.75% scaling, ena=1338803765, run=1261770439)
+
+            13482594 DRAM_ACCESSES_PAGE (5.67% scaling, ena=1338996578, run=1263072963)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (5.90% scaling, ena=1338490537, run=1259474052)
+
+            38099129 MEMORY_CONTROLLER_SLOT_MISSES (5.98% scaling, ena=1338494324, run=1258478693)
+
+                   0 DR3_BREAKPOINT_MATCHES (3.58% scaling, ena=2150739262, run=2073705936)
+
+            19024300 DRAM_ACCESSES_PAGE (3.53% scaling, ena=2150931764, run=2075008149)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (3.67% scaling, ena=2150425767, run=2071409282)
+
+            53272992 MEMORY_CONTROLLER_SLOT_MISSES (3.72% scaling, ena=2150429566, run=2070413935)
+
+                   0 DR3_BREAKPOINT_MATCHES (2.65% scaling, ena=2903810873, run=2826777547)
+
+            17741650 DRAM_ACCESSES_PAGE (2.61% scaling, ena=2904003012, run=2828079397)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (2.72% scaling, ena=2903496604, run=2824480119)
+
+            49698209 MEMORY_CONTROLLER_SLOT_MISSES (2.76% scaling, ena=2903500091, run=2823484460)
+
+                   0 DR3_BREAKPOINT_MATCHES (2.14% scaling, ena=3595545851, run=3518512525)
+
+            12869238 DRAM_ACCESSES_PAGE (2.11% scaling, ena=3595738508, run=3519814893)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (2.20% scaling, ena=3595232891, run=3516216406)
+
+            35436853 MEMORY_CONTROLLER_SLOT_MISSES (2.23% scaling, ena=3595236294, run=3515220663)
+
+                   0 DR3_BREAKPOINT_MATCHES (82.57% scaling, ena=22201999036, run=3869831072)
+
+           396949388 DRAM_ACCESSES_PAGE (82.56% scaling, ena=22202152682, run=3871177165)
+
+                   0 MEMORY_CONTROLLER_PAGE_TABLE_OVERFLOWS (82.58% scaling, ena=22201828601, run=3867360737)
+
+          1099817343 MEMORY_CONTROLLER_SLOT_MISSES (82.59% scaling, ena=22201828601, run=3866361591)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.073s
+user	0m3.523s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+              121960 MEMORY_CONTROLLER_TURNAROUNDS (3.25% scaling, ena=246362646, run=238347127)
+
+               13054 MEMORY_CONTROLLER_BYPASS (3.34% scaling, ena=246362646, run=238141772)
+
+           490048366 THERMAL_STATUS_AND_ECC_ERRORS (3.34% scaling, ena=246362646, run=238141772)
+
+             5653025 CPU_IO_REQUESTS_TO_MEMORY_IO (3.35% scaling, ena=246362646, run=238112407)
+
+              189033 MEMORY_CONTROLLER_TURNAROUNDS (18.55% scaling, ena=636768833, run=518674704)
+
+               22914 MEMORY_CONTROLLER_BYPASS (18.58% scaling, ena=636768833, run=518469349)
+
+           774936699 THERMAL_STATUS_AND_ECC_ERRORS (18.58% scaling, ena=636768833, run=518469349)
+
+             8056595 CPU_IO_REQUESTS_TO_MEMORY_IO (18.58% scaling, ena=636768833, run=518439984)
+
+              219628 MEMORY_CONTROLLER_TURNAROUNDS (10.66% scaling, ena=1213274392, run=1083879094)
+
+               22426 MEMORY_CONTROLLER_BYPASS (10.68% scaling, ena=1213281983, run=1083681330)
+
+          1150403886 THERMAL_STATUS_AND_ECC_ERRORS (10.68% scaling, ena=1213285731, run=1083685078)
+
+             7329535 CPU_IO_REQUESTS_TO_MEMORY_IO (10.68% scaling, ena=1213289572, run=1083659554)
+
+              318805 MEMORY_CONTROLLER_TURNAROUNDS (6.44% scaling, ena=2008296061, run=1878900763)
+
+               33490 MEMORY_CONTROLLER_BYPASS (6.45% scaling, ena=2008303681, run=1878703028)
+
+          1586222736 THERMAL_STATUS_AND_ECC_ERRORS (6.45% scaling, ena=2008307352, run=1878706699)
+
+            10938699 CPU_IO_REQUESTS_TO_MEMORY_IO (6.45% scaling, ena=2008311116, run=1878681098)
+
+              263823 MEMORY_CONTROLLER_TURNAROUNDS (4.76% scaling, ena=2720720947, run=2591325649)
+
+               27571 MEMORY_CONTROLLER_BYPASS (4.76% scaling, ena=2720720947, run=2591120294)
+
+          1421226989 THERMAL_STATUS_AND_ECC_ERRORS (4.76% scaling, ena=2720720947, run=2591120294)
+
+             9317081 CPU_IO_REQUESTS_TO_MEMORY_IO (4.76% scaling, ena=2720720947, run=2591090929)
+
+              299210 MEMORY_CONTROLLER_TURNAROUNDS (3.73% scaling, ena=3595342905, run=3461205618)
+
+               30760 MEMORY_CONTROLLER_BYPASS (3.74% scaling, ena=3595350962, run=3461008320)
+
+          1744916618 THERMAL_STATUS_AND_ECC_ERRORS (3.74% scaling, ena=3595354810, run=3461012168)
+
+            12025469 CPU_IO_REQUESTS_TO_MEMORY_IO (3.74% scaling, ena=3595358617, run=3460986610)
+
+             7147076 MEMORY_CONTROLLER_TURNAROUNDS (82.03% scaling, ena=21618895923, run=3884810846)
+
+              759445 MEMORY_CONTROLLER_BYPASS (82.03% scaling, ena=21618895923, run=3884605491)
+
+         35929506002 THERMAL_STATUS_AND_ECC_ERRORS (82.03% scaling, ena=21618895923, run=3884605491)
+
+           266608581 CPU_IO_REQUESTS_TO_MEMORY_IO (82.03% scaling, ena=21618895923, run=3884576126)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.803s
+user	0m3.489s
+sys	0m0.039s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             5644086 CACHE_BLOCK (6.64% scaling, ena=245037089, run=228766490)
+
+               31440 SIZED_COMMANDS (6.64% scaling, ena=245037089, run=228766490)
+
+             7888293 PROBE (6.66% scaling, ena=245037089, run=228729350)
+
+                   0 GART (6.64% scaling, ena=245075392, run=228804793)
+
+             8851036 CACHE_BLOCK (20.40% scaling, ena=685634432, run=545741111)
+
+              118304 SIZED_COMMANDS (20.40% scaling, ena=685642401, run=545749080)
+
+            13328274 PROBE (20.41% scaling, ena=685646100, run=545715639)
+
+                   0 GART (20.40% scaling, ena=685687997, run=545794676)
+
+             8996073 CACHE_BLOCK (10.05% scaling, ena=1391654129, run=1251760808)
+
+               11291 SIZED_COMMANDS (10.05% scaling, ena=1391662324, run=1251769003)
+
+            16774038 PROBE (10.05% scaling, ena=1391666047, run=1251735586)
+
+                   0 GART (10.05% scaling, ena=1391707974, run=1251814653)
+
+            10440586 CACHE_BLOCK (6.50% scaling, ena=2151629234, run=2011735913)
+
+               23462 SIZED_COMMANDS (6.50% scaling, ena=2151635353, run=2011742032)
+
+            18708377 PROBE (6.50% scaling, ena=2151639264, run=2011708803)
+
+                   0 GART (6.50% scaling, ena=2151681347, run=2011788026)
+
+            11969646 CACHE_BLOCK (4.63% scaling, ena=3024297269, run=2884403948)
+
+               29587 SIZED_COMMANDS (4.63% scaling, ena=3024304585, run=2884411264)
+
+            21197105 PROBE (4.63% scaling, ena=3024308061, run=2884377600)
+
+                   0 GART (4.63% scaling, ena=3024349885, run=2884456564)
+
+            10525124 CACHE_BLOCK (3.66% scaling, ena=3826417651, run=3686524330)
+
+               28168 SIZED_COMMANDS (3.66% scaling, ena=3826425730, run=3686532409)
+
+            19414402 PROBE (3.66% scaling, ena=3826429437, run=3686498976)
+
+                   0 GART (3.66% scaling, ena=3826471657, run=3686578336)
+
+           264081433 CACHE_BLOCK (82.18% scaling, ena=21561460746, run=3842339367)
+
+             1132728 SIZED_COMMANDS (82.18% scaling, ena=21561460746, run=3842339367)
+
+           454718230 PROBE (82.18% scaling, ena=21561460746, run=3842302227)
+
+                   0 GART (82.18% scaling, ena=21561499049, run=3842377670)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m6.121s
+user	0m3.512s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             8561404 MEMORY_CONTROLLER_REQUESTS (0.50% scaling, ena=245536150, run=244307427)
+
+             6656377 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (0.50% scaling, ena=245536150, run=244307427)
+
+                 974 IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (0.50% scaling, ena=245536150, run=244307427)
+
+           188670401 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (0.50% scaling, ena=245536150, run=244307427)
+
+             6457344 MEMORY_CONTROLLER_REQUESTS (14.20% scaling, ena=401901981, run=344836112)
+
+             4828155 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (14.20% scaling, ena=401910378, run=344844509)
+
+               55756 IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (14.20% scaling, ena=401914388, run=344848519)
+
+           135145960 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (14.20% scaling, ena=401918117, run=344852248)
+
+            18796972 MEMORY_CONTROLLER_REQUESTS (6.34% scaling, ena=900690170, run=843624301)
+
+             7301562 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (6.34% scaling, ena=900697125, run=843631256)
+
+inconsistent scaling IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (cur=51968 : prev=56730)
+
+           237669864 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (6.34% scaling, ena=900704732, run=843638863)
+
+            20015658 MEMORY_CONTROLLER_REQUESTS (4.00% scaling, ena=1426648745, run=1369582876)
+
+             8133632 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (4.00% scaling, ena=1426656819, run=1369590950)
+
+inconsistent scaling IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (cur=50704 : prev=51968)
+
+           272131419 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (4.00% scaling, ena=1426664376, run=1369598507)
+
+            25558197 MEMORY_CONTROLLER_REQUESTS (2.73% scaling, ena=2091630566, run=2034564697)
+
+            10715360 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (2.73% scaling, ena=2091637973, run=2034572104)
+
+inconsistent scaling IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (cur=50041 : prev=50704)
+
+           350824211 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (2.73% scaling, ena=2091645365, run=2034579496)
+
+            28295806 MEMORY_CONTROLLER_REQUESTS (2.01% scaling, ena=2834693371, run=2777627502)
+
+            11983548 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (2.01% scaling, ena=2834701265, run=2777635396)
+
+inconsistent scaling IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (cur=49676 : prev=50041)
+
+           390927691 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (2.01% scaling, ena=2834708904, run=2777643035)
+
+            23071410 MEMORY_CONTROLLER_REQUESTS (1.66% scaling, ena=3439511396, run=3382445527)
+
+             9820656 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (1.66% scaling, ena=3439511396, run=3382445527)
+
+inconsistent scaling IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (cur=49497 : prev=49676)
+
+           317355869 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (1.66% scaling, ena=3439511396, run=3382445527)
+
+            17854154 MEMORY_CONTROLLER_REQUESTS (1.71% scaling, ena=3924985506, run=3858043030)
+
+             8138098 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (1.71% scaling, ena=3924985506, run=3858043030)
+
+                  23 IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (1.71% scaling, ena=3924985506, run=3858043030)
+
+           263700030 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (1.71% scaling, ena=3924985506, run=3858043030)
+
+           917021365 MEMORY_CONTROLLER_REQUESTS (86.23% scaling, ena=28119341235, run=3872593648)
+
+           417987925 CPU_TO_DRAM_REQUESTS_TO_TARGET_NODE (86.23% scaling, ena=28119341235, run=3872593648)
+
+              304212 IO_TO_DRAM_REQUESTS_TO_TARGET_NODE (86.23% scaling, ena=28119341235, run=3872593648)
+
+         13343482210 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_0_3 (86.23% scaling, ena=28119341235, run=3872593648)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.305s
+user	0m3.507s
+sys	0m0.038s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+             1205262 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3 (7.21% scaling, ena=244040159, run=226453342)
+
+                5766 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7 (7.21% scaling, ena=243944029, run=226357212)
+
+                   0 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7 (7.21% scaling, ena=243990012, run=226403195)
+
+                   0 CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7 (7.21% scaling, ena=243990012, run=226403195)
+
+             2433822 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3 (36.24% scaling, ena=824378018, run=525631775)
+
+                2626 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7 (36.24% scaling, ena=824281888, run=525535645)
+
+                   0 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7 (36.24% scaling, ena=824327871, run=525581628)
+
+                   0 CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7 (36.24% scaling, ena=824327871, run=525581628)
+
+             2485116 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3 (19.98% scaling, ena=1527233981, run=1222024173)
+
+inconsistent scaling CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7 (cur=6687 : prev=8392)
+
+                   0 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7 (19.99% scaling, ena=1527183834, run=1221974026)
+
+                   0 CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7 (19.99% scaling, ena=1527183834, run=1221974026)
+
+             3601638 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3 (12.29% scaling, ena=2482766205, run=2177531408)
+
+inconsistent scaling CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7 (cur=6101 : prev=6687)
+
+                   0 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7 (12.29% scaling, ena=2482726880, run=2177492083)
+
+                   0 CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7 (12.29% scaling, ena=2482730568, run=2177495771)
+
+             3544222 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3 (8.76% scaling, ena=3482874410, run=3177639613)
+
+inconsistent scaling CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7 (cur=5865 : prev=6101)
+
+                   0 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7 (8.76% scaling, ena=3482834623, run=3177599826)
+
+                   0 CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7 (8.76% scaling, ena=3482838181, run=3177603384)
+
+            54151756 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_0_3 (78.51% scaling, ena=17946901405, run=3856715028)
+
+               19035 CPU_READ_COMMAND_LATENCY_TO_TARGET_NODE_4_7 (78.51% scaling, ena=17946805275, run=3856618898)
+
+                   0 CPU_READ_COMMAND_REQUESTS_TO_TARGET_NODE_4_7 (78.51% scaling, ena=17946851258, run=3856664881)
+
+                   0 CPU_COMMAND_LATENCY_TO_TARGET_NODE_0_3_4_7 (78.51% scaling, ena=17946851258, run=3856664881)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.882s
+user	0m3.476s
+sys	0m0.041s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (3.88% scaling, ena=243233113, run=233787050)
+
+           241846409 HYPERTRANSPORT_LINK0 (4.58% scaling, ena=245110307, run=233895037)
+
+           240034216 HYPERTRANSPORT_LINK1 (3.88% scaling, ena=243292753, run=233846690)
+
+            62828578 HYPERTRANSPORT_LINK2 (3.88% scaling, ena=243295478, run=233849415)
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (5.22% scaling, ena=547025648, run=518477260)
+
+           299088588 HYPERTRANSPORT_LINK0 (5.52% scaling, ena=548904077, run=518586482)
+
+           299133264 HYPERTRANSPORT_LINK1 (5.22% scaling, ena=547087271, run=518508407)
+
+           279903730 HYPERTRANSPORT_LINK2 (5.22% scaling, ena=547090852, run=518511988)
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (2.45% scaling, ena=1167175925, run=1138627537)
+
+           613771091 HYPERTRANSPORT_LINK0 (2.59% scaling, ena=1169046968, run=1138729373)
+
+           613763920 HYPERTRANSPORT_LINK1 (2.45% scaling, ena=1167226392, run=1138647528)
+
+           619350225 HYPERTRANSPORT_LINK2 (2.45% scaling, ena=1167226392, run=1138647528)
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (1.51% scaling, ena=1889090391, run=1860518194)
+
+           714494636 HYPERTRANSPORT_LINK0 (1.60% scaling, ena=1890961434, run=1860620030)
+
+           714493738 HYPERTRANSPORT_LINK1 (1.51% scaling, ena=1889140858, run=1860538185)
+
+           716305083 HYPERTRANSPORT_LINK2 (1.51% scaling, ena=1889140858, run=1860538185)
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (1.60% scaling, ena=2700261075, run=2657049564)
+
+           802823681 HYPERTRANSPORT_LINK0 (1.66% scaling, ena=2702132118, run=2657151400)
+
+           802823564 HYPERTRANSPORT_LINK1 (1.60% scaling, ena=2700311542, run=2657069555)
+
+           802656314 HYPERTRANSPORT_LINK2 (1.60% scaling, ena=2700311542, run=2657069555)
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (1.19% scaling, ena=3638569851, run=3595325148)
+
+           928712376 HYPERTRANSPORT_LINK0 (1.24% scaling, ena=3640440894, run=3595426984)
+
+           928712158 HYPERTRANSPORT_LINK1 (1.19% scaling, ena=3638620318, run=3595345139)
+
+           929501446 HYPERTRANSPORT_LINK2 (1.19% scaling, ena=3638620318, run=3595345139)
+
+                   0 CPU_REQUESTS_TO_TARGET_NODE_0_3_4_7 (82.15% scaling, ena=21455748793, run=3830345620)
+
+         17620889312 HYPERTRANSPORT_LINK0 (82.15% scaling, ena=21457619836, run=3830447456)
+
+         17621068675 HYPERTRANSPORT_LINK1 (82.15% scaling, ena=21455799260, run=3830365611)
+
+         16743351606 HYPERTRANSPORT_LINK2 (82.15% scaling, ena=21455799260, run=3830365611)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m5.176s
+user	0m3.508s
+sys	0m0.020s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   0 HYPERTRANSPORT_LINK3 (0.52% scaling, ena=247527214, run=246250074)
+
+            50649603 READ_REQUEST_TO_L3_CACHE (0.52% scaling, ena=247546350, run=246269210)
+
+             3719568 L3_CACHE_MISSES (0.52% scaling, ena=247554446, run=246277306)
+
+              117778 L3_FILLS_CAUSED_BY_L2_EVICTIONS (0.52% scaling, ena=247562969, run=246285829)
+
+                   0 HYPERTRANSPORT_LINK3 (2.14% scaling, ena=720290668, run=704911515)
+
+            99583560 READ_REQUEST_TO_L3_CACHE (2.14% scaling, ena=720297601, run=704918448)
+
+             5869393 L3_CACHE_MISSES (2.14% scaling, ena=720301599, run=704922446)
+
+              166001 L3_FILLS_CAUSED_BY_L2_EVICTIONS (2.14% scaling, ena=720305495, run=704926342)
+
+                   0 HYPERTRANSPORT_LINK3 (1.00% scaling, ena=1537223192, run=1521844039)
+
+           139593914 READ_REQUEST_TO_L3_CACHE (1.00% scaling, ena=1537230493, run=1521851340)
+
+             7241788 L3_CACHE_MISSES (1.00% scaling, ena=1537234426, run=1521855273)
+
+              188385 L3_FILLS_CAUSED_BY_L2_EVICTIONS (1.00% scaling, ena=1537238160, run=1521859007)
+
+                   0 HYPERTRANSPORT_LINK3 (0.72% scaling, ena=2134137415, run=2118758262)
+
+           116098468 READ_REQUEST_TO_L3_CACHE (0.72% scaling, ena=2134145935, run=2118766782)
+
+             5991536 L3_CACHE_MISSES (0.72% scaling, ena=2134149951, run=2118770798)
+
+              160879 L3_FILLS_CAUSED_BY_L2_EVICTIONS (0.72% scaling, ena=2134153617, run=2118774464)
+
+                   0 HYPERTRANSPORT_LINK3 (0.56% scaling, ena=2757132030, run=2741752877)
+
+           108054620 READ_REQUEST_TO_L3_CACHE (0.56% scaling, ena=2757139710, run=2741760557)
+
+             5534457 L3_CACHE_MISSES (0.56% scaling, ena=2757143721, run=2741764568)
+
+              147874 L3_FILLS_CAUSED_BY_L2_EVICTIONS (0.56% scaling, ena=2757147722, run=2741768569)
+
+                   0 HYPERTRANSPORT_LINK3 (0.44% scaling, ena=3504093853, run=3488714700)
+
+           136867081 READ_REQUEST_TO_L3_CACHE (0.44% scaling, ena=3504100961, run=3488721808)
+
+             7192165 L3_CACHE_MISSES (0.44% scaling, ena=3504104630, run=3488725477)
+
+              191468 L3_FILLS_CAUSED_BY_L2_EVICTIONS (0.44% scaling, ena=3504108189, run=3488729036)
+
+                   0 HYPERTRANSPORT_LINK3 (82.44% scaling, ena=21962807331, run=3856650919)
+
+          3400357458 READ_REQUEST_TO_L3_CACHE (82.44% scaling, ena=21962807331, run=3856650919)
+
+           185534963 L3_CACHE_MISSES (82.44% scaling, ena=21962807331, run=3856650919)
+
+             5074357 L3_FILLS_CAUSED_BY_L2_EVICTIONS (82.44% scaling, ena=21962807331, run=3856650919)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m4.779s
+user	0m3.517s
+sys	0m0.032s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+               17815 L3_EVICTIONS (0.00% scaling, ena=244058339, run=244058339)
+
+                   0 PAGE_SIZE_MISMATCHES (0.00% scaling, ena=244058339, run=244058339)
+
+                   0 RETIRED_X87_OPS (0.00% scaling, ena=244058339, run=244058339)
+
+                   0 IBS_OPS_TAGGED (0.00% scaling, ena=244058339, run=244058339)
+
+               31298 L3_EVICTIONS (22.19% scaling, ena=841220619, run=654581399)
+
+                   0 PAGE_SIZE_MISMATCHES (22.19% scaling, ena=841228028, run=654588808)
+
+                   0 RETIRED_X87_OPS (22.19% scaling, ena=841231568, run=654592348)
+
+                   0 IBS_OPS_TAGGED (22.19% scaling, ena=841235007, run=654595787)
+
+               19767 L3_EVICTIONS (11.11% scaling, ena=1679277039, run=1492637819)
+
+                   0 PAGE_SIZE_MISMATCHES (11.11% scaling, ena=1679284254, run=1492645034)
+
+                   0 RETIRED_X87_OPS (11.11% scaling, ena=1679288297, run=1492649077)
+
+                   0 IBS_OPS_TAGGED (11.11% scaling, ena=1679292576, run=1492653356)
+
+               19448 L3_EVICTIONS (7.86% scaling, ena=2375815866, run=2189176646)
+
+                   0 PAGE_SIZE_MISMATCHES (7.86% scaling, ena=2375815866, run=2189176646)
+
+                   0 RETIRED_X87_OPS (7.86% scaling, ena=2375815866, run=2189176646)
+
+                   0 IBS_OPS_TAGGED (7.86% scaling, ena=2375815866, run=2189176646)
+
+               19052 L3_EVICTIONS (6.56% scaling, ena=3037014839, run=2837816812)
+
+                   0 PAGE_SIZE_MISMATCHES (6.56% scaling, ena=3037023562, run=2837825535)
+
+                   0 RETIRED_X87_OPS (6.56% scaling, ena=3037027443, run=2837829416)
+
+                   0 IBS_OPS_TAGGED (6.56% scaling, ena=3037031735, run=2837833708)
+
+               20588 L3_EVICTIONS (5.15% scaling, ena=3864706734, run=3665508707)
+
+                   0 PAGE_SIZE_MISMATCHES (5.15% scaling, ena=3864714148, run=3665516121)
+
+                   0 RETIRED_X87_OPS (5.15% scaling, ena=3864717875, run=3665519848)
+
+                   0 IBS_OPS_TAGGED (5.15% scaling, ena=3864721613, run=3665523586)
+
+              599193 L3_EVICTIONS (82.16% scaling, ena=21779264116, run=3884894139)
+
+                   0 PAGE_SIZE_MISMATCHES (82.16% scaling, ena=21779264116, run=3884894139)
+
+                   0 RETIRED_X87_OPS (82.16% scaling, ena=21779264116, run=3884894139)
+
+                   0 IBS_OPS_TAGGED (82.16% scaling, ena=21779264116, run=3884894139)
+[PARSEC] Benchmarks to run:  blackscholes
+
+[PARSEC] [========== Running benchmark blackscholes ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simlarge'.
+in_64K.txt
+[PARSEC] Running 'time /afs/cs.pitt.edu/projects/mosse/HetCMP/shared/parsec-2.1/pkgs/apps/blackscholes/inst/amd64-linux.gcc-serial/bin/blackscholes 1 in_64K.txt prices.txt':
+[PARSEC] [---------- Beginning of output ----------]
+PARSEC Benchmark Suite Version 2.1
+Num of Options: 65536
+Num of Runs: 100
+Size of data: 2621440
+
+real	0m3.761s
+user	0m3.527s
+sys	0m0.027s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC] Done.
+
+                   6 LFENCE_INST_RETIRED (0.00% scaling, ena=243192134, run=243192134)
+
+                  20 SFENCE_INST_RETIRED (0.00% scaling, ena=243192134, run=243192134)
+
+               85125 MFENCE_INST_RETIRED (0.00% scaling, ena=243192134, run=243192134)
+
+                   6 LFENCE_INST_RETIRED (27.23% scaling, ena=1039376726, run=756378787)
+
+                  22 SFENCE_INST_RETIRED (27.23% scaling, ena=1039384113, run=756386174)
+
+               54867 MFENCE_INST_RETIRED (27.23% scaling, ena=1039387995, run=756390056)
+
+inconsistent scaling LFENCE_INST_RETIRED (cur=10 : prev=12)
+
+inconsistent scaling SFENCE_INST_RETIRED (cur=35 : prev=42)
+
+inconsistent scaling MFENCE_INST_RETIRED (cur=118337 : prev=139992)
+
+inconsistent scaling LFENCE_INST_RETIRED (cur=9 : prev=10)
+
+inconsistent scaling SFENCE_INST_RETIRED (cur=34 : prev=35)
+
+inconsistent scaling MFENCE_INST_RETIRED (cur=112414 : prev=118337)
+
+                   0 LFENCE_INST_RETIRED (7.01% scaling, ena=4039595608, run=3756597669)
+
+inconsistent scaling SFENCE_INST_RETIRED (cur=33 : prev=34)
+
+inconsistent scaling MFENCE_INST_RETIRED (cur=109685 : prev=112414)
+
+                  32 LFENCE_INST_RETIRED (78.32% scaling, ena=17933432625, run=3888597658)
+
+                 119 SFENCE_INST_RETIRED (78.32% scaling, ena=17933432625, run=3888597658)
+
+              380839 MFENCE_INST_RETIRED (78.32% scaling, ena=17933432625, run=3888597658)
