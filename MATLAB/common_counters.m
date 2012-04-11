@@ -1,6 +1,11 @@
 clc
 clear
 
+feature_analysis
+
+training_file = 'full-training.csv';
+
+disp(' ~~~~~~ COMMON COUNTERS ~~~~~~');
 f = fopen('parsec-all-counters/labels.txt', 'r');
 counter_names = textscan(f, '%s');
 
@@ -14,32 +19,13 @@ for f=1:size(infiles, 1)
     all_counters = horzcat(all_counters, data);
 end
 
+figure
 [dist, centers] = hist(all_counters, max(all_counters));
 hist(all_counters, max(all_counters));
 
 dist = vertcat(1:139, dist)';
 dist = sortrows(dist, -2);
-%dist
 
-features = 20;
-top = dist(1:features, :);
-names = {};
-
-disp('common counters');
-for i=1:features
-    disp(sprintf('%d \t %s', top(i, 1), counter_names{1}{top(i, 1)}));
-    names = horzcat(names, counter_names{1}{top(i, 1)});
-end
-
-
-%%
-%prepare data for training 
-
-thread_data = csvread('./training_data/all-training.csv');
-phase_data = csvread('./training_data/training-phase.csv');
-
-norm_data = normalize_m(thread_data, 0);
-norm_phase = normalize_m(phase_data, 0);
 
 
 %{
@@ -53,14 +39,36 @@ norm_phase = normalize_m(phase_data, 0);
 
     *used by task3.c
 
-    IPC = RETIRED-INSTRUCTIONS / CPU-CLK-UNHALTED
+    IPC = RETIRED-INSTRUCTIONS / CPU-CLK-UNHALTED2
 %}
 
-%ctrs = [6];
+%disp(dist(1:10, :));
+features = 10;
+%foo = [7, 9, 3, 4];
+%foo = [3, 9];
+%top = dist(foo, :);
+top = dist(1:features, :);
+%top = [6,0;47,0;13,0;68,0;];
+names = {};
+
+disp('common counters');
+for i=1:features
+    disp(sprintf('%d \t %s', top(i, 1), counter_names{1}{top(i, 1)}));
+    names = horzcat(names, counter_names{1}{top(i, 1)});
+end
+
+
+%%
+%prepare data for training 
+path = sprintf('./training_data/%s',training_file);
+thread_data = csvread(path);
+%norm_data = thread_data;
+norm_data = standardize_m(thread_data, 0);
+
 ctrs = top(:, 1)';
 
-figure
-plot(thread_data(:, ctrs));
+%figure
+%plot(thread_data(:, ctrs));
 
 %only use the counters specified by the extraction
 cols = [ctrs, size(norm_data, 2)];
@@ -68,42 +76,85 @@ norm_data = norm_data(:, cols);
 
 %norm_data = horzcat(ipc, norm_data);
 
-trials = 100;
-
-avg_err = 0;
-avg_conf = [0,0;0,0];
-
-
 
 %%
 % training and testing different models
+disp('----- extracted results -----');
+all_errs = zeros(1,100);
 
-for t=1:trials
-    [train_data, test_data] = divideset2(norm_data, .25);
-    attrs_n = size(test_data, 2);
-
-    %logistic regression 
-    %weights_v = online_glr(train_data, size(train_data, 1), 0, []);
-    %[predict_y, posterior_y] = binary_logistic_predict(test_data, weights_v);
-
-    %support vector machine (SVM)
-    %[weights_v, bias] = svml(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 5);
-    %[predict_y, posterior_y] = binary_svm_predict(test_data(:,1:attrs_n-1), weights_v, bias); 
+for trials=1:1
+    K = 10;
+    groupings = crossvalind('Kfold', (1:size(norm_data, 1)), K);
+    avg_conf = [0,0; 0,0];
+    avg_err = 0;
     
-    %decision tree
-    [train_data, test_data] = divideset2(norm_data, .25);
-    attrs_n = size(test_data, 2);
-    tree = classregtree(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 'names', names, 'method', 'classification');
-    predict_y = cell2mat(eval(tree, test_data(:, 1:attrs_n - 1)));
-    predict_y = str2num(predict_y);
+    for k=1:K
 
+        test_data = norm_data(find(groupings == k), :);
+        train_data = norm_data(find(groupings ~= k), :);
+        attrs_n = size(test_data, 2);
+
+        %logistic regression 
+        weights_v = online_glr(train_data, size(train_data, 1), 0, []);
+        [predict_y, posterior_y] = binary_logistic_predict(test_data, weights_v);
         
-    [conf_m, stats_m] = binary_confusion_matrix(test_data(:,attrs_n), predict_y);
-    [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
-    
-    avg_err = avg_err + err_rate;
-    avg_conf = avg_conf + conf_m; 
+        %support vector machine (SVM)
+        %[weights_v, bias] = svml(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 5);
+        %[predict_y, posterior_y] = binary_svm_predict(test_data(:,1:attrs_n-1), weights_v, bias); 
+
+        %decision tree
+        %tree = classregtree(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 'names', names, 'method', 'classification');    
+        %predict_y = cell2mat(eval(tree, test_data(:, 1:attrs_n - 1)));
+        %predict_y = str2num(predict_y);
+
+
+        [conf_m, stats_m] = binary_confusion_matrix(test_data(:,attrs_n), predict_y);
+        [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
+
+        avg_err = avg_err + err_rate;
+        avg_conf = avg_conf + conf_m; 
+    end
+    %disp(avg_conf / K);
+    %disp(avg_err / K);
+    all_errs(trials) = avg_err / K;
 end
 
-avg_conf ./ trials
-avg_err / trials
+disp(mean(all_errs));
+disp(std(all_errs));
+
+
+%%
+%independent run of the decision tree against all counters of phase data
+disp('----- baseline -----');
+all_errs = zeros(1,100);
+
+%for trials=1:100
+
+    K = 10;
+    groupings = crossvalind('Kfold', (1:size(thread_data, 1)), K);
+    avg_conf = [0,0; 0,0];
+    avg_err = 0;
+
+    for k=1:K
+
+        test_data = thread_data(find(groupings == k), :);
+        train_data = thread_data(find(groupings ~= k), :);
+
+        attrs_n = size(test_data, 2);
+        all_tree = classregtree(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 'names', counter_names{1}, 'method', 'classification');
+        predict_y = cell2mat(eval(all_tree, test_data(:, 1:attrs_n - 1)));
+        predict_y = str2num(predict_y);
+
+        [conf_m, stats_m] = binary_confusion_matrix(test_data(:,attrs_n), predict_y);
+        [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
+
+        avg_conf = avg_conf + conf_m;
+        avg_err = avg_err + err_rate;
+    end
+
+    %disp(avg_conf / K );
+    %disp(avg_err / K);
+    all_errs(trials) = avg_err / K;
+%end
+disp(mean(all_errs));
+disp(std(all_errs));

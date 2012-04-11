@@ -15,7 +15,9 @@
 clear
 clc
 
-
+coverage = .3;
+top_n = 4;
+cor_thresh = .75; %
 
 %load the input files
 f = fopen('parsec-all-counters/labels.txt', 'r');
@@ -25,6 +27,7 @@ infiles = dir(fullfile('./parsec-all-counters','*.csv'));
 
 for f=1:size(infiles, 1);
     filename = infiles(f).name;
+    %filename = 'ferret.csv'
     disp(sprintf('0] ======loading %s======', filename));
     data_raw = csvread(sprintf('parsec-all-counters/%s', filename));
 
@@ -45,49 +48,19 @@ for f=1:size(infiles, 1);
     disp(' ');
 
     %%
-    %histogram analysis
-    %
-    disp('2] ====== histogram dist of log(mu) ======');
-    mu_v = mean(data_m(2:size(data_m, 1),:));
-
-    %show histogram of all the counters based on the log10 of their mean counter value
-    [count_v, center_v] = histogram_analysis('log(mu)-distribution (20 bins)', log10(mu_v), 20, 1);
-    bin_width = center_v(2) - center_v(1);
-    threshold = 0;  %tinkerable
-    indices = [];
-
-    %creating and displaying counters in their bins
-    for bin=1:20
-
-        %find the counters whose mean value falls within the bounds of the
-        %current bin
-        filter_1 = (log10(mu_v) > (bin - 1)*bin_width);
-        filter_2 = (log10(mu_v) <= bin*bin_width);
-        new_indices = find(filter_1 .* filter_2);
-        disp(sprintf('---- %d ----', bin));
-        disp(new_indices);
-
-        %remove counters that have a mean value below this threshold
-        if bin <= threshold
-            indices = horzcat(indices, new_indices);
-        end
-    end
-    disp(sprintf('removed counters with mu <= 10^%d', threshold));
-    disp(data_m(1, indices));
-    data_m(:, indices) = [];    %remove counters listed in indices
-
-
-    %%
     % standardize(normalized) the data 
     %
-    data_norm = normalize_m(data_m(2:size(data_m, 1),:), 1);
+    data_norm = standardize_m(data_m(2:size(data_m, 1),:), 1);
 
     %label standardized data
     data_norm = vertcat(data_m(1, :), data_norm);
-    %{
-    figure
-    plot(data_norm(2:size(data_norm, 1), :));
-    %}
+    
+    %plot all counters
+
+    %figure
+    %plot(data_norm(2:size(data_norm, 1), :));
+
+    
     disp(' ');
 
     %calcuate and label the covariance matrix
@@ -114,7 +87,7 @@ for f=1:size(infiles, 1);
             end
 
             %remove the row since this column represents it
-            if ~any(keep == (row - 1)) && cov_m(row,col) > .95
+            if ~any(keep == (row - 1)) && cov_m(row,col) > cor_thresh
                 if ~any(destroy == row)
                     count = count + 1;
                     members(length(members) + 1) = cov_m(1, row-1);
@@ -156,7 +129,6 @@ for f=1:size(infiles, 1);
     disp('5] ====== extracted counter groups ======');
     %define the percentage of destroyed countes you want the chosen groups to
     %cover
-    coverage = .50;
 
     covered = 0; chosen = [];
 
@@ -192,11 +164,21 @@ for f=1:size(infiles, 1);
     sort_absavg = sortrows(abs(avgcov_v), 2);   %sort into ascending order
 
     %how many to consider from each of the above lists
-    cut = min(15, size(sort_std, 1)); %tinkerable
+    cut = min(top_n, size(sort_std, 1)); %tinkerable
 
     %the "best" counters are given by the intersection of the top N of each
     %list
-    best_ctrs = intersect(sort_absavg(1:cut, 1), sort_std(1:cut, 1));
+    best_ctrs = [];
+    for c=1:length(sort_absavg)
+        if any(sort_std(:, 1) ==  sort_absavg(c, 1))
+            score = mean([c, find(sort_std(:, 1) ==  sort_absavg(c, 1))]);
+            if score <= cut
+                best_ctrs = horzcat(best_ctrs, sort_absavg(c, 1));
+            end
+        end
+    end
+    
+    %best_ctrs = intersect(sort_absavg(1:cut, 1), sort_std(1:cut, 1));
     if ~isrow(best_ctrs)
         best_ctrs = best_ctrs';
     end
@@ -224,7 +206,8 @@ for f=1:size(infiles, 1);
     plot(data_norm(2:size(data_norm, 1), cols));
     legend(counter_names{1}{the_best_ctrs});
     title('all discovered counters');
-
+    
+    
     figure
     plot(data_norm(2:size(data_norm, 1), cols(1:length(chosen))));
     legend(counter_names{1}{the_best_ctrs(1:length(chosen))});
