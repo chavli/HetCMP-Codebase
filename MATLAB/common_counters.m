@@ -1,7 +1,6 @@
-clc
-clear
 
-feature_analysis
+
+%feature_analysis
 
 training_file = 'full-training.csv';
 
@@ -26,8 +25,6 @@ hist(all_counters, max(all_counters));
 dist = vertcat(1:139, dist)';
 dist = sortrows(dist, -2);
 
-
-
 %{
     6 - L3-CACHE-MISSES*
     13 - CPU-CLK-UNHALTED*
@@ -43,17 +40,19 @@ dist = sortrows(dist, -2);
 %}
 
 %disp(dist(1:10, :));
-features = 4;
-%foo = [7, 9, 3, 4];
+features = 139;
+%foo = [2 3 9 10];
 %foo = [3, 9];
 %top = dist(foo, :);
-%top = dist(1:features, :);
-top = [6,0;47,0;13,0;68,0;];
-%top = [6,0;13,0;];
+top = dist(1:features, :);
+%top = [6,0;47,0;13,0;68,0;];
+%top = [13,0;67,0;102,0;103,0;];
+%top = [103 0;];
+%top = [111,0;];
 names = {};
 
 disp('common counters');
-for i=1:features
+for i=1:size(top, 1)
     disp(sprintf('%d \t %s', top(i, 1), counter_names{1}{top(i, 1)}));
     names = horzcat(names, counter_names{1}{top(i, 1)});
 end
@@ -63,20 +62,14 @@ end
 %prepare data for training 
 path = sprintf('./training_data/%s',training_file);
 thread_data = csvread(path);
-%norm_data = thread_data;
+%norm_data =thread_data; 
 norm_data = standardize_m(thread_data, 0);
 
 ctrs = top(:, 1)';
 
-%figure
-%plot(thread_data(:, ctrs));
-
 %only use the counters specified by the extraction
 cols = [ctrs, size(norm_data, 2)];
 norm_data = norm_data(:, cols);
-
-%norm_data = horzcat(ipc, norm_data);
-
 
 %%
 % training and testing different models
@@ -100,9 +93,10 @@ for trials=1:100
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);        
         avg_err(1, 1) = avg_err(1, 1) + err_rate;
         
-        %support vector machine (SVM) 2
-        [weights_v, bias] = svml(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 5);
-        [predict_y, posterior_y] = binary_svm_predict(test_data(:,1:attrs_n-1), weights_v, bias); 
+        %support vector machine (SVM) 2 
+        non_zero = find( std(train_data(1:size(train_data, 1),:)) ~= NaN ); %only for all counters
+        [weights_v, bias] = svml(train_data(:, non_zero), train_data(:, attrs_n), 5);
+        [predict_y, posterior_y] = binary_svm_predict(test_data(:,non_zero), weights_v, bias); 
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
         avg_err(2, 1) = avg_err(2, 1) + err_rate;
         
@@ -121,13 +115,11 @@ end
 
 disp('average error');
 disp(mean(all_errs, 2));
-disp('average std');
-disp(std(all_errs, 0, 2));
 
 
+%{
 %%
 %independent run of the decision tree against all counters of phase data
-%{
 disp('----- baseline -----');
 all_errs = zeros(1,100);
 
