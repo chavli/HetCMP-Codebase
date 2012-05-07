@@ -2,6 +2,7 @@
 
 %feature_analysis
 
+%the training dataset
 training_file = 'full-training.csv';
 
 disp(' ~~~~~~ COMMON COUNTERS ~~~~~~');
@@ -25,30 +26,25 @@ hist(all_counters, max(all_counters));
 dist = vertcat(1:139, dist)';
 dist = sortrows(dist, -2);
 
+%%
+%decide which counters to evaluate
+
+%original counters used to measure IPC and LLCM
 %{
     6 - L3-CACHE-MISSES*
     13 - CPU-CLK-UNHALTED*
-    32 - PERF-COUNT-HW-CPU-CYCLES
     47 - RETIRED-INSTRUCTIONS*
     68 - MEMORY-CONTROLLER-REQUESTS*
-    98 - PERF-COUNT-HW-INSTRUCTIONS
-    118 - PERF-COUNT-HW-CACHE-LL
-
-    *used by task3.c
-
     IPC = RETIRED-INSTRUCTIONS / CPU-CLK-UNHALTED2
 %}
 
-%disp(dist(1:10, :));
-features = 139;
-%foo = [2 3 9 10];
-%foo = [3, 9];
-%top = dist(foo, :);
-top = dist(1:features, :);
-%top = [6,0;47,0;13,0;68,0;];
-%top = [13,0;67,0;102,0;103,0;];
-%top = [103 0;];
-%top = [111,0;];
+%choose or make a set of counters to evaluate
+features = 4;
+%top = [103,0];
+%top = dist(1:features, :);          %use top extracted features
+%top = [6,0;47,0;13,0;68,0;];       %use IPC and LLCM counters
+top = [13,0;67,0;102,0;103,0;];    %use best 4 extracted features
+
 names = {};
 
 disp('common counters');
@@ -62,7 +58,6 @@ end
 %prepare data for training 
 path = sprintf('./training_data/%s',training_file);
 thread_data = csvread(path);
-%norm_data =thread_data; 
 norm_data = standardize_m(thread_data, 0);
 
 ctrs = top(:, 1)';
@@ -74,13 +69,14 @@ norm_data = norm_data(:, cols);
 %%
 % training and testing different models
 disp('----- extracted results -----');
-all_errs = zeros(3,100);
+T=10;
+all_errs = zeros(3,T);
 
-for trials=1:100
+for trials=1:T
     K = 10;
     groupings = crossvalind('Kfold', (1:size(norm_data, 1)), K);
     avg_err = zeros(3, 1);
-    
+    disp(sprintf('iteration %d', trials));
     for k=1:K
 
         test_data = norm_data(find(groupings == k), :);
@@ -88,13 +84,14 @@ for trials=1:100
         attrs_n = size(test_data, 2);
 
         %logistic regression 1
-        weights_v = online_glr(train_data, size(train_data, 1), 0, []);
-        [predict_y, posterior_y] = binary_logistic_predict(test_data, weights_v);
+        weights_v = online_glr(train_data(:, 1:attrs_n-1), train_data(:, attrs_n), size(train_data, 1), 0, []);
+        [predict_y, posterior_y] = binary_logistic_predict(test_data(:, 1:attrs_n-1), weights_v);
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);        
         avg_err(1, 1) = avg_err(1, 1) + err_rate;
         
         %support vector machine (SVM) 2 
-        non_zero = find( std(train_data(1:size(train_data, 1),:)) ~= NaN ); %only for all counters
+        %non_zero = find( std(train_data(1:size(train_data, 1),:)) ~= NaN ); %only for all counters
+        non_zero = 1:attrs_n-1;
         [weights_v, bias] = svml(train_data(:, non_zero), train_data(:, attrs_n), 5);
         [predict_y, posterior_y] = binary_svm_predict(test_data(:,non_zero), weights_v, bias); 
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
@@ -108,51 +105,8 @@ for trials=1:100
         avg_err(3, 1) = avg_err(3, 1) + err_rate;
 
     end
-    %disp(avg_conf / K);
-    %disp(avg_err / K);
     all_errs(:, trials) = avg_err / K;
 end
 
 disp('average error');
 disp(mean(all_errs, 2));
-
-
-%{
-%%
-%independent run of the decision tree against all counters of phase data
-disp('----- baseline -----');
-all_errs = zeros(1,100);
-
-%for trials=1:100
-
-    K = 10;
-    groupings = crossvalind('Kfold', (1:size(thread_data, 1)), K);
-    avg_conf = [0,0; 0,0];
-    avg_err = 0;
-
-    for k=1:K
-
-        test_data = thread_data(find(groupings == k), :);
-        train_data = thread_data(find(groupings ~= k), :);
-
-        attrs_n = size(test_data, 2);
-        all_tree = classregtree(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 'names', counter_names{1}, 'method', 'classification');
-        predict_y = cell2mat(eval(all_tree, test_data(:, 1:attrs_n - 1)));
-        predict_y = str2num(predict_y);
-
-        [conf_m, stats_m] = binary_confusion_matrix(test_data(:,attrs_n), predict_y);
-        [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
-
-        avg_conf = avg_conf + conf_m;
-        avg_err = avg_err + err_rate;
-    end
-
-    %disp(avg_conf / K );
-    %disp(avg_err / K);
-    all_errs(trials) = avg_err / K;
-%end
-disp('average error');
-disp(mean(all_errs));
-disp('average std');
-disp(std(all_errs));
-%}

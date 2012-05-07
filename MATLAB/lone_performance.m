@@ -41,10 +41,8 @@ dist = sortrows(dist, -2);
 %}
 
 %disp(dist(1:10, :));
-features = 10;
-%foo = [6 13 47 68];
+features = 4;
 %foo = [3, 9];
-%all_top = dist(foo, :);
 all_top = [6 0; 13 0; 47 0; 68 0];
 %all_top = dist(1:features, :);
 names = {};
@@ -56,6 +54,8 @@ thread_data = csvread(path);
 %norm_data = thread_data;
 norm_data = standardize_m(thread_data, 0);
 
+graph_data = zeros(3, features);
+
 
 for j=1:size(all_top, 1)
     top = all_top(j, :);
@@ -65,6 +65,7 @@ for j=1:size(all_top, 1)
         disp(sprintf('%d \t %s', top(i, 1), counter_names{1}{top(i, 1)}));
         names = horzcat([], counter_names{1}{top(i, 1)});
     end    
+    
     
     
     ctrs = top(:, 1)';
@@ -96,8 +97,8 @@ for j=1:size(all_top, 1)
             attrs_n = size(test_data, 2);
 
             %logistic regression 1
-            weights_v = online_glr(train_data, size(train_data, 1), 0, []);
-            [predict_y, posterior_y] = binary_logistic_predict(test_data, weights_v);
+            weights_v = online_glr(train_data(:, 1:attrs_n-1), train_data(:, attrs_n), size(train_data, 1), 0, []);
+            [predict_y, posterior_y] = binary_logistic_predict(test_data(:, 1:attrs_n-1), weights_v);
             [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);        
             avg_err(1, 1) = avg_err(1, 1) + err_rate;
 
@@ -122,8 +123,11 @@ for j=1:size(all_top, 1)
 
     disp('average error');
     disp(mean(all_errs, 2));
+    
+    graph_data(:, j) = mean(all_errs, 2);
+    
     %disp('average std');
     %disp(std(all_errs, 0, 2));
 end
 
-%bar(lol); set(gca, 'XTickLabel', {'MEM-CTRL-REQS', 'RET-INST', 'L3-MISS', 'CPU-CLK-UNHALT'}); ylim([0, 1])
+bar(graph_data'); set(gca, 'XTickLabel', all_top(:,1)); ylim([0, 1])

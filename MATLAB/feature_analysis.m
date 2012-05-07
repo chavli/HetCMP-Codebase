@@ -27,7 +27,7 @@ infiles = dir(fullfile('./parsec-all-counters','*.csv'));
 
 for f=1:size(infiles, 1);
     filename = infiles(f).name;
-    %filename = 'ferret.csv'
+    %filename = 'raytrace.csv';
     disp(sprintf('0] ======loading %s======', filename));
     data_raw = csvread(sprintf('parsec-all-counters/%s', filename));
 
