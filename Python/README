@@ -1,0 +1,15 @@
+
+benchmark-analysis/ - contains the output files created by performance_analysis.py 
+
+benchmark-data/ - contains the counter measurments for various programs. files should be in csv format with each line representing the results
+                  of polling the counters being watched (see example files for formatting).
+              
+
+labels.txt contains the human-readable string names of the counters that were measured (see example)
+
+Usage:
+run performance_analysis.py
+run extract_common.py
+
+
+
