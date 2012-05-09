@@ -39,11 +39,11 @@ dist = sortrows(dist, -2);
 %}
 
 %choose or make a set of counters to evaluate
-features = 4;
+features = 10;
 %top = [103,0];
-%top = dist(1:features, :);          %use top extracted features
+top = dist(1:features, :);          %use top extracted features
 %top = [6,0;47,0;13,0;68,0;];       %use IPC and LLCM counters
-top = [13,0;67,0;102,0;103,0;];    %use best 4 extracted features
+%top = [13,0;67,0;102,0;103,0;];    %use best 4 extracted features
 
 names = {};
 
