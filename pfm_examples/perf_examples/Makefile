@@ -48,7 +48,7 @@ LPC_UTILS_HDR=perf_util.h
 
 TARGETS+=self self_basic self_count task task_attach_timeout syst \
 	notify_self notify_group task_smpl self_smpl_multi \
-	self_pipe syst_count task_cpu syst_smpl evt2raw first task2 task3
+	self_pipe syst_count task_cpu syst_smpl evt2raw first task2 task3 phase_task
 
 EXAMPLESDIR=$(DOCDIR)/perf_examples
 

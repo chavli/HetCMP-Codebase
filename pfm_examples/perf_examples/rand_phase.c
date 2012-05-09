@@ -11,6 +11,8 @@
 
 
 #define GIGABYTE 1073741824
+#define MEMMODE 1
+#define CPUMODE 0
 
 void sig_end(int);
 void stress_cpu(int);
@@ -19,6 +21,8 @@ void stress_fileio(void);
 double cycles = 0;
 int minrun = 0;
 int maxrun = 0;
+FILE *fp;
+
 
 void stress_cpu(int seconds){
   unsigned int iseed = (unsigned int)time(NULL);
@@ -27,7 +31,9 @@ void stress_cpu(int seconds){
   time_t start;
   time(&start);
     
+
   while(time(0) - start < seconds){
+    fprintf(fp, "%d", 0);
     rando = rand();
     rando *= 1.9987823;
     rando /= .977288;
@@ -43,10 +49,12 @@ void stress_memio(int seconds){
   time_t start;
   time(&start);
 
+
   while(time(0) - start < seconds){
+    fprintf(fp, "%d", 1);
     long int i = 0;
     char *pool = (char *)malloc(GIGABYTE);
-    for(i=0;i<16777216;i++){
+   for(i=0;i<16777216;i++){
       *(pool+(i*64)) = 'F';
     }
     free(pool);
@@ -55,6 +63,10 @@ void stress_memio(int seconds){
 
 
 int main (int argc, char **argv){
+  //shared file to write the current phase of this program
+  fp = fopen("/afs/cs.pitt.edu/projects/mosse/HetCMP/home/chavli/Shared/randphase.state", "w");
+
+
  int i;
   srand( time(NULL));
 	if(argc == 4){	
@@ -70,9 +82,10 @@ int main (int argc, char **argv){
 	
 	for(i=0;i<cycles;i++){
   		
-	//		time_t t1; 
 	//		t1 = time(NULL);
+
   			stress_memio( rand() % (maxrun - minrun + 1) + minrun);
+
   			stress_cpu( rand() % (maxrun - minrun + 1) + minrun);
 	//		time_t t2;
 		//	t2 = time(NULL);
@@ -85,6 +98,7 @@ int main (int argc, char **argv){
 		printf("Wrong number of arguments - argc should be 4 not %d\n",argc);
 		printf("arg1 is # of cycles arg2 is time to run memint arg3 is time to run cpuint\n");
 	}
+  fclose(fp);
 
 	return 0;
 }

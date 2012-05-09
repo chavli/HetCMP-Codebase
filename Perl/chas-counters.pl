@@ -1,10 +1,13 @@
 #Auth: Nathan Hega
-#Date: 3.18.12
-#File: counters.pl
+#Date: 4.2.12
+#File: countersv2.pl
 #Desc: A revised version of allcounters.pl that will take in only three parameters
 #(to simplify things) one parameter for the name of the resulting .txt .csv and 
 #.sh files and then one file that contains the counters the user would like to run
 #and last but not least an input with the process to execute on task
+#
+#
+#UPDATE: v2 just added support to include the new data parser <pfm_data_parserv2.pl>
 
 use Getopt::Long;
 use LWP::Simple;
