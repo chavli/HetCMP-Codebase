@@ -12,6 +12,7 @@
   used in various learning models to classify the phase of the thread
   for each sample.
 
+  Original code written in MATLAB
 """
 
 import os, sys, csv
