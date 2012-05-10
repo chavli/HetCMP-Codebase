@@ -19,7 +19,7 @@ import numpy as np
 from operator import itemgetter
 
 #performance constants
-TOP = 4;            
+TOP = 4;            #cut off ranking when determining uniqueness 
 CORR_THRESH = .75;  #correlation threshold used for grouping
 COVERAGE = .3;      #percentage of removed counters to be used
 
@@ -27,18 +27,18 @@ AXIS_COLS = 1;
 AXIS_ROWS = 0;
 
 
+#read the file of human-readable counter names
 label_file = open("labels.txt", "r");
 counter_names = label_file.read();
 counter_names = counter_names.split("\n");
-
 NUM_COUNTERS = len(counter_names);
 
 
-
+#directory where benchmark data is located
 data_dir = "./benchmark-data";
 datasets = os.listdir(data_dir);
 
-'''uncomment'''
+#process each dataset
 for dataset in datasets:
   labels = range(1,NUM_COUNTERS + 1);
   print "\n\n********************************************"
@@ -57,7 +57,7 @@ for dataset in datasets:
     new_data.append(new_sample);
 
 
-  #add counter labels
+  #add counter labels to dataset
   new_data.insert(0, labels);
   
   #convert dataset in numpy format
@@ -84,7 +84,8 @@ for dataset in datasets:
   cov_dataset = np.insert(cov_dataset, 0, labels, axis=AXIS_ROWS);
 
   #see which counters have high inter-counter correlation. highly correlated 
-  #counters can be removed since they represent redundant knowledge
+  #counters can be removed (abstracted away through grouping) since they 
+  #represent redundant knowledge
   print "\n2]=====> correlated counters [%f]" % CORR_THRESH
   keep = []; destroy = []; groups = [];
   for col in range(len(cov_dataset[0])):
@@ -92,6 +93,11 @@ for dataset in datasets:
       members = []; #keep track of counters correlated with this counter
       
       for row in range(1, len(cov_dataset)):
+        
+        #only consider a counter if:
+        # 1. it isn't marked for removal
+        # 2. it isn't being compared to itself
+        # 3. it isn't marked for being kept
         if cov_dataset[row, col] > CORR_THRESH and \
           (row - 1) not in destroy and \
           (row - 1) != col and \
@@ -121,9 +127,8 @@ for dataset in datasets:
   cov_dataset = np.delete(cov_dataset, destroy, axis=AXIS_COLS);
   cov_dataset = np.delete(cov_dataset, destroy + 1, axis=AXIS_ROWS);
 
-  #print cov_dataset[0];
 
-  extracted_counters = [];    #hold results 
+  extracted_counters = [];    #hold results of extraction process 
 
   coverage = 0;
   print "\n4]=====> extracted counter groups"
@@ -146,10 +151,12 @@ for dataset in datasets:
   for i,label in enumerate(cov_dataset[0]):
     lbl_means.append([label, means[i]]);  
     lbl_stdd.append([label, stdd[i]]);  
-
+  
+  #sort these values into ascending order
   np_means = np.abs(np.array(sorted(np.abs(lbl_means), key=itemgetter(1))));
   np_stdd = np.array(sorted(lbl_stdd, key=itemgetter(1)));
   
+  #pick out unique counters --> low mean corr and low std dev for corr values
   unique_counters = []
   cut = min(TOP, len(lbl_means));
 
@@ -169,6 +176,10 @@ for dataset in datasets:
   print extracted_counters
 
   #write extracted counters to file
-  fout = 'benchmark-analysis/' + dataset + '-output'
-  np.savetxt(fout, extracted_counters, fmt="%d", newline=",", delimiter=" ");
+  fname = 'benchmark-analysis/' + dataset + '-output'
+  fout = open(fname, "w");
+  np.save(fout, extracted_counters);
+  fout.close();
+
+  #np.savetxt(fout, extracted_counters, fmt="%d", newline=",", delimiter=" ");
 

@@ -15,6 +15,8 @@
 import sys
 import os
 from operator import itemgetter
+import numpy as np
+
 
 #load the readable counter names from file
 label_file = open("labels.txt", "r");
@@ -46,14 +48,13 @@ for i in range(NUM_COUNTERS):
 result_dir = "./benchmark-analysis";
 csvs = os.listdir(result_dir);
 
-#read each csv file and see which counters were extracted for that instance
+#read each output file and see which counters were extracted for that instance
 for csv_file in csvs:
+   
   fin = open(result_dir +"/" +csv_file, "r");
-  
-  line = fin.read();
-  line = line.strip();
-  counters = line.split(",");
-  
+  counters = np.load(fin);
+
+
   for counter in counters:
     if counter != "":
       pair = data[int(counter) - 1];
