@@ -1,0 +1,12 @@
+these python scripts require the latest version of numpy. (v1.6 at time of creation)
+
+files:
+  logisticRegression.py - the class for the logistic regression learning model
+  modelEvaluator.py     - contains some convenient functions for model evaluation
+  example.py            - an example file demonstrating how to use the above classes
+  README                - this file
+
+directories:
+  misc-data/  - contains example datasets used by example.py. refer to these files for formatting requirements
+
+

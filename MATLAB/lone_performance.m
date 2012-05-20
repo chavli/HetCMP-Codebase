@@ -41,10 +41,10 @@ dist = sortrows(dist, -2);
 %}
 
 %disp(dist(1:10, :));
-features = 4;
+features = 10;
 %foo = [3, 9];
-all_top = [6 0; 13 0; 47 0; 68 0];
-%all_top = dist(1:features, :);
+%all_top = [6 0; 13 0; 47 0; 68 0];
+all_top = dist(1:features, :);
 names = {};
 
 %%
@@ -130,4 +130,4 @@ for j=1:size(all_top, 1)
     %disp(std(all_errs, 0, 2));
 end
 
-bar(graph_data'); set(gca, 'XTickLabel', all_top(:,1)); ylim([0, 1])
+bar(graph_data'); set(gca, 'XTickLabel', all_top(:,1)); ylim([0, 1]);

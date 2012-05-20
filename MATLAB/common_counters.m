@@ -41,10 +41,10 @@ dist = sortrows(dist, -2);
 %choose or make a set of counters to evaluate
 features = 10;
 %top = [103,0];
-top = dist(1:features, :);          %use top extracted features
-%top = [6,0;47,0;13,0;68,0;];       %use IPC and LLCM counters
-%top = [13,0;67,0;102,0;103,0;];    %use best 4 extracted features
-
+%top = dist(1:features, :);          %use top extracted features
+%top = [6,0;47,0;13,0;];       %use IPC and LLCM counters
+%top = [103,0;13,0;67,0;48,0;];    %use best 4 extracted features
+top = [103,0;13,0;111,0;120,0;];    %greedy counters
 names = {};
 
 disp('common counters');
@@ -82,28 +82,32 @@ for trials=1:T
         test_data = norm_data(find(groupings == k), :);
         train_data = norm_data(find(groupings ~= k), :);
         attrs_n = size(test_data, 2);
-
+        
+        %{
         %logistic regression 1
         weights_v = online_glr(train_data(:, 1:attrs_n-1), train_data(:, attrs_n), size(train_data, 1), 0, []);
         [predict_y, posterior_y] = binary_logistic_predict(test_data(:, 1:attrs_n-1), weights_v);
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);        
         avg_err(1, 1) = avg_err(1, 1) + err_rate;
+        %}
         
         %support vector machine (SVM) 2 
-        %non_zero = find( std(train_data(1:size(train_data, 1),:)) ~= NaN ); %only for all counters
+        non_zero = find( std(train_data(1:size(train_data, 1),:)) ~= NaN ); %only for all counters
         non_zero = 1:attrs_n-1;
         [weights_v, bias] = svml(train_data(:, non_zero), train_data(:, attrs_n), 5);
         [predict_y, posterior_y] = binary_svm_predict(test_data(:,non_zero), weights_v, bias); 
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
         avg_err(2, 1) = avg_err(2, 1) + err_rate;
         
+        %{
         %decision tree 3
         tree = classregtree(train_data(:, 1:attrs_n - 1), train_data(:, attrs_n), 'names', names, 'method', 'classification');    
         predict_y = cell2mat(eval(tree, test_data(:, 1:attrs_n - 1)));
         predict_y = str2num(predict_y);
         [err_count, err_rate] = misclass_count(test_data(:,attrs_n), predict_y);
         avg_err(3, 1) = avg_err(3, 1) + err_rate;
-
+        %}
+        
     end
     all_errs(:, trials) = avg_err / K;
 end
