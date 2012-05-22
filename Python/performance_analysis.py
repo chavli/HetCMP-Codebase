@@ -70,7 +70,12 @@ for dataset in datasets:
   for col in range(len(np_dataset[0])):
     attribute = [];
     for row in range(1,len(np_dataset)):
-      attribute.append(np_dataset[row][col]);
+      try:
+        attribute.append(np_dataset[row][col]);
+      except IndexError:
+        print "Error with sample " + str(row);
+        print "Exiting...";
+        sys.exit();
     
     if np.mean(attribute) == 0 and np.std(attribute) == 0:
       to_rm.append(col); 
